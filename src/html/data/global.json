@@ -1,6 +1,6 @@
 {
     "template_name": "themebau",
-    "copyright": "© 2020-2022 | Themebau by RunWebRun.",
+    "copyright": "© 2022 | Emelia May Hughes",
     "navbar": "top",
     "navbar_dark": false,
     "navbar_mobile": "style-2",
@@ -8,14 +8,14 @@
     "navbar_logo": "assets/images/emelia-logo-v2.png",
     "navbar_logo_white": "assets/images/emelia-logo-v2.png",
     "navbar_logo_width": "107",
-    "navbar_left_logo": "assets/images/logo-circle.svg",
-    "navbar_left_logo_white": "assets/images/logo-circle-white.svg",
+    "navbar_left_logo": "assets/images/emelia-logo-v2.png",
+    "navbar_left_logo_white": "assets/images/emelia-logo-v2.png",
     "navbar_left_logo_width": "80",
     "navbar_left_copyright": "© 2020-2022 | Themebau by RunWebRun.",
-    "footer": "default",
+    "footer": "default-2",
     "footer_dark": false,
-    "footer_logo": "assets/images/logo.svg",
-    "footer_logo_white": "assets/images/logo-white.svg",
+    "footer_logo": "assets/images/emelia-logo-v2.png",
+    "footer_logo_white": "assets/images/emelia-logo-v2.png",
     "footer_logo_width": "184",
     "footer_3_logo_width": "108",
     "navigation": {
@@ -26,38 +26,10 @@
             "name": "projects",
             "sub": {
                 "portfolio-col-2-style-6.html": {
-                    "name": "Research",
-                    "sub": {
-                        "portfolio-col-1-style-1.html": {
-                            "name": "Style 1"
-                        },
-                        "portfolio-col-1-style-2.html": {
-                            "name": "Style 2"
-                        }
-                    }
+                    "name": "Research"
                 },
                 "portfolio-col-2-style-2.html": {
-                    "name": "Design",
-                    "sub": {
-                        "portfolio-col-2-style-1.html": {
-                            "name": "Style 1"
-                        },
-                        "portfolio-col-2-style-2.html": {
-                            "name": "Style 2"
-                        },
-                        "portfolio-col-2-style-3.html": {
-                            "name": "Style 3"
-                        },
-                        "portfolio-col-2-style-4.html": {
-                            "name": "Style 4"
-                        },
-                        "portfolio-col-2-style-5.html": {
-                            "name": "Style 5"
-                        },
-                        "portfolio-col-2-style-6.html": {
-                            "name": "Style 6"
-                        }
-                    }
+                    "name": "Design"
                 },
                 
                 "portfolio-single-style-1.html": {
@@ -85,16 +57,8 @@
                 }
             }
         },
-        "portfolio-col-4-style-2.html": {
-            "name": "painting",
-            "sub": {
-                "about-us.html": {
-                    "name": "About Us"
-                },
-                "services.html": {
-                    "name": "Services"
-                }
-            }
+        "art-portfolio.html": {
+            "name": "painting"
         },
         "about-me.html": {
             "name": "about me"
@@ -184,7 +148,114 @@
             "image": {
                 "sm": "assets/images/portfolio/way-home-cover-740-540.png"
             }
-        }
+        },
+        "duck-still-life": {
+            "href": "duck-still-life.html",
+            "title": "Still Life of a Duck",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/duck-still-life.png"
+            }
+        },
+        "family-life": {
+            "href": "family-life.html",
+            "title": "Family Life",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/family-life.jpg"
+            }
+        },
+        "gloria-horizontal": {
+            "href": "gloria-horizontal.html",
+            "title": "Painting of Gloria",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/gloria-horizontal.jpg"
+            }
+        },
+        "gloria": {
+            "href": "gloria.html",
+            "title": "Painting of Gloria",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/gloria.jpg"
+            }
+        },
+        "greenhouse": {
+            "href": "greenhouse.html",
+            "title": "Greenhouse",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/greenhouse.png"
+            }
+        },
+        "hampton-court-watercolor": {
+            "href": "hampton-court-watercolor.html",
+            "title": "Hampton Court Palace",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/hampton-court-watercolor.jpg"
+            }
+        },
+        "home-landscape": {
+            "href": "home-landscape.html",
+            "title": "Home",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/home-landscape.jpg"
+            }
+        },
+        "kitchen-painting": {
+            "href": "kitchen-painting.html",
+            "title": "Kitchen in the Morning",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/kitchen-painting.jpg"
+            }
+        },
+        "living-room-painting": {
+            "href": "living-room-painting.html",
+            "title": "Wednesday Afternoon",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/living-room-painting.jpg"
+            }
+        },
+        "plants-still-life": {
+            "href": "plants-still-life.html",
+            "title": "Still Life of Plants",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/plants-still-life.png"
+            }
+        },
+        "psyche-mirror": {
+            "href": "psyche-mirror.html",
+            "title": "Psyche Mirror",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/psyche-mirror.png"
+            }
+        },
+        "reflections": {
+            "href": "reflections.html",
+            "title": "Reflections",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/reflections.jpg"
+            }
+        },
+        "robert": {
+            "href": "robert.html",
+            "title": "Painting of Robert",
+            "category": ["art", "#"],
+            "image": {
+                "sm": "assets/images/art/robert.jpg"
+            }
+        },
+        "button": "view project",
+        "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+
     },
     "single_portfolio_images": {
         "style_1": {
