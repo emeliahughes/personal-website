@@ -25,17 +25,17 @@
 
     <div class="pt-30 show-on-scroll" data-show-duration="800">
         {% macro portfolio_grid(name="", filter="", classes="") %}
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}">
-            <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}" data-show-duration="500">
-                <img class="mw-100" src="{{ portfolio[name].image.sm }}" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-text" data-cursor-text="{{ art-portfolio[name].title }}">
+            <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ art-portfolio[name].title }}" data-show-duration="500">
+                <img class="mw-100" src="{{ art-portfolio[name].image.sm }}" alt="">
             </a>
         </div>
         {% endmacro %}
 
         {% macro portfolio_grid_horizontal(name="", filter="", classes="") %}
-        <div class="col-12 col-sm-12 col-md-8 col-lg-6 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}">
-            <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}" data-show-duration="500">
-                <img class="mw-100" src="{{ portfolio[name].image.sm }}" alt="">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-6 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-text" data-cursor-text="{{ art-portfolio[name].title }}">
+            <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ art-portfolio[name].title }}" data-show-duration="500">
+                <img class="mw-100" src="{{ art-portfolio[name].image.sm }}" alt="">
             </a>
         </div>
         {% endmacro %}
