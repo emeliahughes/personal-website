@@ -55,12 +55,12 @@
 
         {% block content %}{% endblock %}
         {% if footer_show %}
-            {% include "shared/footer.html" %}
+            {% include "shared/footer-2.html" %}
         {% endif %}
     </div>
 
     {% if footer == false %}{% else %}
-        {% include "shared/footer.html" %}
+        {% include "shared/footer-2.html" %}
     {% endif %}
 
     {% block after_content %}{% endblock %}

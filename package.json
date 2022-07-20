@@ -77,7 +77,7 @@
             }
         },
         "html": {
-            "from": "{src}/html/*.html",
+            "from": "{src}/html/**/*.html",
             "to": "{dist}",
             "dataFile": "{src}/html/data/global.json",
             "renderPath": "{src}/html",

@@ -1,0 +1,121 @@
+{% set page_title = 'The Way Home' %}
+{% set navbar_sticky = true %}
+{% set navbar_expand = false %}
+{% set navbar_mobile = 'style-2' %}
+{% set footer = 'default-2' %}
+{% set footer_dark = false %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+    <a href="{{ src }}" class="d-block show-on-scroll"  data-show-duration="500">
+        <img class="mw-100" src="{{ src }}" alt="">
+    </a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(portfolio_project_images.way_home[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+
+{% block content %}
+<div class="container w-100 mt-10 align-items-center">
+    <div class="pt-60 pb-130 mt-30 mb-30 text-center">
+        <h1 class="mb-n7 show-on-scroll" data-show-duration="700" data-show-distance="10">The Way Home</h1>
+    </div>
+
+    <div class="row align-items-center mb-100 mb-lg-0">
+        <div class="col-5">{{ image_portfolio_init('way-home-green', 'w-100', 'gallery') }}</div>
+
+        <div class="d-none d-lg-block col-1 me-xl-10"></div>
+
+        <div class="align-middle col-7 col-lg ms-xl-5 me-xl-10">
+            <div class="row justify-content-center mb-130">
+                <div class="text-center">
+                    <h2 class="h3 mb-30 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">About project</h2>
+                    <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">This project was inspired by the California Sunday’s <a href="https://www.californiasunday.com/issues/2018-12-02/">The Way Home</a>. My aim was to take the overarching themes of the magazine and translate them into a cover for the New York Times Magazine.</p>
+                </div>
+                <div class="w-100 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                    <hr class="mt-30 mb-30">
+                    <div class="row justify-content-around gh-1">
+                        <div class="col-auto mb-8">
+                            <span class="fw-medium me-8">Date:</span> Spring 2020
+                        </div>
+                        <div class="col-auto mb-8">
+                            <span class="fw-medium me-8">Duration:</span> 3 weeks
+                        </div>
+                        <div class="col-auto mb-8">
+                            <span class="fw-medium me-8">Purpose:</span> Class Project
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="row mt-100 mb-75 justify-content-center">
+    <div class="row justify-content-center mb-80 mt-80">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h3 mb-20 mt-20 show-on-scroll" data-show-duration="500" data-show-distance="10">Initial Brainstorming</h2>
+        </div>
+    </div>
+</div>
+
+<div class="row gh-1 gv-1 p-20 justify-content-center">
+    <div class="col-6">{{ image_portfolio_init('mind-map', 'w-100', 'gallery') }}</div>
+    <div class="col-6 gh-1 gv-1">
+        <div class="row gh-1 gv-1 pt-30 pb-30 justify-content-center">
+            <div class="col-12 col-sm-5">{{ image_portfolio_init('r1-1', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+            <div class="col-12 col-sm-5">{{ image_portfolio_init('r1-2', 'gallery-item-lg', 'gallery') }}</div>
+        </div>
+        <div class="row gh-1 gv-1 pt-30 pb-30 justify-content-center">
+            <div class="col-12 col-sm-5">{{ image_portfolio_init('r1-3', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="d-none d-lg-block col-1 me-xl-10"></div>
+            <div class="col-12 col-sm-5">{{ image_portfolio_init('r1-4', 'gallery-item-lg', 'gallery') }}</div>
+        </div>
+    </div>
+</div>
+
+    <div class="row justify-content-center mb-80 mt-100">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h3 mb-20 mt-20 show-on-scroll" data-show-duration="500" data-show-distance="10">Refining Ideas</h2>
+        </div>
+    </div>
+
+    <div class="row gh-1 gv-1 justify-content-center">
+        <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r2-1', 'gallery-item-lg', 'gallery') }}</div>
+        <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r2-2', 'gallery-item-lg', 'gallery') }}</div>
+        <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r2-3', 'gallery-item-lg', 'gallery') }}</div>
+    </div>
+
+    <div class="row gv-3 justify-content-center mb-130">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h3 mb-20 mt-20 show-on-scroll" data-show-duration="500" data-show-distance="10">Final Iterations</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gh-1 gv-1">
+        <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r3-1', 'gallery-item-lg', 'gallery') }}</div>
+        <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r3-2', 'gallery-item-lg', 'gallery') }}</div>
+        <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r3-3', 'gallery-item-lg', 'gallery') }}</div>
+    </div>
+
+    <div class="row gv-3 justify-content-center mb-130">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h3 mb-20 mt-20 show-on-scroll" data-show-duration="500" data-show-distance="10">Final Result</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gh-1 gv-1">
+        <div class="col-6 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('final-cover', 'gallery-item-lg', 'gallery') }}</div>
+    </div>
+
+    <div class="page-navigation mt-160">
+        <a href="portfolio-single-style-5.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="portfolio-col-1-style-2.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="portfolio-single-style-1.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+{% endblock %}
