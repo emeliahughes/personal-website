@@ -1,0 +1,76 @@
+{% set page_title = 'QAnon Project' %}
+{% set navbar_sticky = true %}
+{% set navbar_expand = false %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center text-center pt-60 pb-120 mt-30">
+        <div class="col-12 col-lg-8">
+            <h1 class="h2 mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10">QAnon - Analysis of #SaveTheChildren</h1>
+            <div class="subtitle show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Collaborators: Rachel Elizabeth Moran, Stephen Prochaska, Isabelle Schlegel, Owen Prout</div>
+        </div>
+    </div>
+    <div class="row justify-content-center text-center pt-20 pb-20 mt-30">
+        <img class="w-100 show-on-scroll" src="assets/images/portfolio/qanon-photos/stc-1.png" alt="" data-show-duration="800">
+        <div class="subtitle show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">People march during a “Save the Children” rally outside the Capitol building in St. Paul, Minnesota, on August 22, 2020. Stephen Maturen/Getty Images</div>
+    </div>
+    
+    
+
+    <div class="row justify-content-center gh-1 mb-100">
+        <div class="col-lg-8 post-content">
+            <p>When looking at the recent social-political history of America it is difficult to avoid references to QAnon, a widespread, conservative-leaning conspiracy that amalgamates numerous conspiracies into a single movement. Central to the movement’s growth has been a moral panic around child sex trafficking that has served as a gateway for new adherents to become exposed to broader QAnon rhetoric. QAnon’s co-optation of the #SaveTheChildren (#STC) movement exemplifies this networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority.</p>
+            <p>This paper explores the proponents of #SaveTheChildren on social media platform Instagram—paying particular attention to their motivations, tactics and desired outcomes—in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories. </p>
+            <p>Research is drawn from an inductive thematic analysis of 1,400 Instagram posts related to the #SaveTheChildren movement across 2020. Analysis illuminates how the #SaveTheChildren movement is defined more as an identity based, social-political movement rooted in moral panic— rather than one focused on truly supporting human rights. Our analysis illuminates how networked moral panics— facilitated by the affordances and tactics of social media —can bring together disparate communities to spread misinformation under the guise of activism.</p>
+        </div>
+    </div>
+
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="50">
+            <a href="assets/images/portfolio/qanon-photos/stc-2.png" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
+                <img src="assets/images/portfolio/qanon-photos/stc-2.png" alt="">
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="150">
+            <a href="assets/images/portfolio/qanon-photos/stc-3.png" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
+                <img src="assets/images/portfolio/qanon-photos/stc-3.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gh-1 mb-100">
+        <div class="col-lg-8 post-content">
+            <h4>Suggested Citation</h4>
+            <p>Moran, R. E., Prochaska, S., Schlegel, I., Hughes, E. M., & Prout, O. (2021). MISINFORMATION OR ACTIVISM: MAPPING NETWORKED MORAL PANIC THROUGH AN ANALYSIS OF #SAVETHECHILDREN. AoIR Selected Papers of Internet Research, 2021. https://doi.org/10.5210/spir.v2021i0.12212</p>
+        </div>
+    </div>
+
+    <div class="row gh-1 gv-1 mb-100">
+        <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="50">
+            <a href="assets/images/portfolio/qanon-photos/stc-4.png" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
+                <img src="assets/images/portfolio/qanon-photos/stc-4.png" alt="">
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="150">
+            <a href="assets/images/portfolio/qanon-photos/stc-5.png" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
+                <img src="assets/images/portfolio/qanon-photos/stc-5.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gh-1 mb-100">
+        <button class="h5 btn btn-dark text-white btn-with-ball" href="https://spir.aoir.org/ojs/index.php/spir/article/view/12212">View Paper</button>
+    </div>
+
+    <div class="page-navigation mt-160">
+        <a href="#" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> post</span></a>
+        <a href="blog-col-1.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="#" class="btn btn-clean">next<span class="d-none d-sm-inline"> post</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+</div>
+{% endblock %}

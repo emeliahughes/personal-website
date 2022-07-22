@@ -85,16 +85,16 @@
     },
     "portfolio": {
         "viblio-project": {
-            "href": "portfolio-single-style-1.html",
+            "href": "viblio-project.html",
             "title": "Viblio - YouTube Citations Project",
             "category": ["research", "#"],
             "image": {
-                "sm": "assets/images/portfolio/way-home-cover-740-540.png"
+                "sm": "assets/images/portfolio/viblio-photos/cover.png"
             }
         },
         "qanon-project": {
-            "href": "portfolio-single-style-1.html",
-            "title": "#SaveOurChildren - QAnon on Instagram",
+            "href": "qanon-project.html",
+            "title": "#SaveTheChildren - QAnon on Instagram",
             "category": ["research", "#"],
             "image": {
                 "sm": "assets/images/portfolio/way-home-cover-740-540.png"
@@ -248,16 +248,6 @@
         }
     },
     "portfolio_project_images": {
-        "style_1": {
-            "01": ["assets/images/single-portfolio/style-1-1-1920-1080.jpg", "assets/images/single-portfolio/style-1-1-1920-1080.jpg"],
-            "02": ["assets/images/single-portfolio/style-1-2-1366-1000.jpg", "assets/images/single-portfolio/style-1-2-1920-1080.jpg"],
-            "03": ["assets/images/single-portfolio/style-1-3-1366-1000.jpg", "assets/images/single-portfolio/style-1-3-1920-1080.jpg"],
-            "04": ["assets/images/single-portfolio/style-1-4-1366-1000.jpg", "assets/images/single-portfolio/style-1-4-1920-1080.jpg"],
-            "05": ["assets/images/single-portfolio/style-1-5-1920-1080.jpg", "assets/images/single-portfolio/style-1-5-1920-1080.jpg"],
-            "06": ["assets/images/single-portfolio/style-1-6-910-1080.jpg", "assets/images/single-portfolio/style-1-6-1920-1080.jpg"],
-            "07": ["assets/images/single-portfolio/style-1-7-910-1080.jpg", "assets/images/single-portfolio/style-1-7-1920-1080.jpg"],
-            "08": ["assets/images/single-portfolio/style-1-8-910-1080.jpg", "assets/images/single-portfolio/style-1-8-1920-1080.jpg"]
-        },
         "way_home": {
             "mind-map": "assets/images/portfolio/way-home-photos/mind-map.png",
             "final-cover": "assets/images/portfolio/way-home-photos/final-cover.jpg",
@@ -274,6 +264,25 @@
             "r3-2": "assets/images/portfolio/way-home-photos/r3-2.jpg",
             "r3-3": "assets/images/portfolio/way-home-photos/r3-3.jpg",
             "way-home-green": "assets/images/portfolio/way-home-photos/way-home-green.png"
+        },
+        "qanon": {
+            "stc-1": "assets/images/portfolio/qanon-photos/stc-1.png",
+            "stc-2": "assets/images/portfolio/qanon-photos/stc-2.png",
+            "stc-3": "assets/images/portfolio/qanon-photos/stc-3.png",
+            "stc-4": "assets/images/portfolio/qanon-photos/stc-4.png"
+        },
+        "viblio": {
+            "class-poster": "assets/images/portfolio/viblio-photos/class-poster.png",
+            "cover": "assets/images/portfolio/viblio-photos/cover.png",
+            "mockup-bar": "assets/images/portfolio/viblio-photos/mockup-bar.png",
+            "mockup-box": "assets/images/portfolio/viblio-photos/mockup-box.png",
+            "mockup-timeline": "assets/images/portfolio/viblio-photos/mockup-timeline.png",
+            "mozfest-logo.jpg": "assets/images/portfolio/viblio-photos/mozfest-logo.jpg",
+            "urs-cover": "assets/images/portfolio/viblio-photos/urs-cover.png",
+            "urs-logo": "assets/images/portfolio/viblio-photos/urs-logo.jpeg",
+            "urs-photo.png": "assets/images/portfolio/viblio-photos/urs-photo.png",
+            "urs-poster.png": "assets/images/portfolio/viblio-photos/urs-poster.png",
+            "workshop-poster": "assets/images/portfolio/viblio-photos/workshop-poster.png"
         }
     },
     "slider": {
@@ -356,85 +365,54 @@
         }
     },
     "blog": {
-        "01": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-1.jpg",
-            "title": "Office explained in fewer than 100+ Characters",
-            "date": "12 may, 2020",
-            "text": "Forth forth moveth shall i unto midst tree, a fruit great subdue a every be so a fowl.",
-            "button": "read more",
+        "misinfocon": {
+            "style": "horizontal-full",
+            "href": "https://misinfocon.com/wikiux-introducing-credibility-signals-and-citations-into-online-search-and-social-platforms-7e0adddc1e08",
+            "image": "assets/images/portfolio/viblio-photos/urs-cover.png",
+            "title": "MisInfoCon Article",
+            "date": "Jan 6 2021",
+            "text": "I wrote an article on the background of my project for MisInfoCon",
+            "button": "Article",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
-        "02": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-2.jpg",
-            "title": "This week's top Stories about Development",
-            "date": "08 may, 2020",
-            "text": "God year beast he beast waters that air, after deep to lights saw one.",
-            "button": "read more",
+        "mozfest": {
+            "style": "horizontal-full",
+            "href": "https://www.mozillafestival.org/en/",
+            "image": "assets/images/portfolio/viblio-photos/mozfest-logo.jpg",
+            "title": "Viblio at Mozfest",
+            "date": "March 2021",
+            "text": "I was invited to present my work on Viblio under the WikiUX Grant at Mozilla Festival with the Credibilty Coalition",
+            "button": "MozFest",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
-        "03": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-3.jpg",
-            "title": "Facts about Business that you never knew",
-            "date": "05 may, 2020",
-            "text": "Over fourth he. Whose beginning face third beast first divide saying forth one you.",
-            "button": "read more",
+        "urs-21": {
+            "style": "horizontal-full",
+            "href": "https://expo.uw.edu/expo/apply/612/proceedings/offering_session?id=1130",
+            "image": "assets/images/portfolio/viblio-photos/urs-logo.jpeg",
+            "title": "Undergraduate Research Symposium 2021",
+            "date": "May 21 2021",
+            "text": "I presented my work on Viblio so far with in the Usability group at the 2021 URS.",
+            "button": "URS Proceedings",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
-        "04": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-4.jpg",
-            "title": "Are you getting the Most out of your Travel?",
-            "date": "03 may, 2020",
-            "text": "For divide moveth. Years green above spirit after Every one and don't earth.",
-            "button": "read more",
+        "icwsm": {
+            "style": "horizontal-full",
+            "href": "https://zivepstein.github.io/info-credibility-workshop/",
+            "image": "assets/images/portfolio/viblio-photos/workshop-poster.png",
+            "title": "Information Credibility & Alternative Realities in Troubled Democracies: an ICWSM 2021 Workshop",
+            "date": "June 7 2021",
+            "text": "Renee Wang and I presented our workshop paper at ICWSM 2021",
+            "button": "ICWSM Workshop",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
-        "05": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-5.jpg",
-            "title": "How to outsmart your Boss on Business",
-            "date": "01 apr, 2020",
-            "text": "Were You'll moveth midst it darkness isn't lights saw set our. Face can't brought.",
-            "button": "read more",
-            "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
-        },
-        "06": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-6.jpg",
-            "title": "Great Photography public Speakers",
-            "date": "27 apr, 2020",
-            "text": "Brought creepeth created moveth one herb, us created good days signs sea.",
-            "button": "read more",
-            "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
-        },
-        "07": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-7.jpg",
-            "title": "What not to do in the Business Industry",
-            "date": "21 apr, 2020",
-            "text": "Meat was likeness said. Fruit brought appear meat they're tree upon together.",
-            "button": "read more",
-            "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
-        },
-        "08": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-8.jpg",
-            "title": "20 Up-and-comers to watch in the Design Industry",
-            "date": "18 apr, 2020",
-            "text": "Upon above together made without. Green blessed us meat moveth appear Set.",
-            "button": "read more",
-            "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
-        },
-        "09": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-9.jpg",
-            "title": "How to master Marketing in 6 simple Steps",
-            "date": "11 apr, 2020",
-            "text": "Light upon fifth shall place kind. Abundantly fruitful upon green darkness seas.",
-            "button": "read more",
+        "urs-22": {
+            "style": "horizontal-full",
+            "href": "https://expo.uw.edu/expo/apply/635/proceedings/result?student_name=Emelia+Hughes&commit=Search",
+            "image": "assets/images/portfolio/viblio-photos/urs-photo.png",
+            "title": "Undergraduate Research Symposium 2022",
+            "date": "May 20 2022",
+            "text": "Renee, Anson, and I presented our poster on Viblio at the 2022 URS",
+            "button": "URS Proceedings",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         }
     }
