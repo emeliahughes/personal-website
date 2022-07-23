@@ -1,0 +1,80 @@
+{% set page_title = 'Painting Thesis' %}
+{% set navbar_fixed = false %}
+{% set navbar_expand = false %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<a href="{{ src.image }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade" data-cursor-style="cursor-text" data-cursor-text="{{ src.artist }}">
+    <img src="{{ src.image }}" alt="">
+</a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(art-research[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+
+{% block content %}
+<div class="pt-160 shape-parent overflow-hidden">
+    <div class="container text-center">
+        <h1 class="mb-40 show-on-scroll" data-show-duration="700" data-show-distance="10" style="color: #a32121">Painting Thesis</h1>
+    </div>
+
+    <div class="shape justify-content-end mt-n160">
+        <svg class="mt-n160" data-rellax-speed="-1" width="504" height="641" viewBox="0 0 504 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="320.5" cy="320.5" r="320.5" fill="#a32121"/>
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-7 text-center">
+                <h2 class="h3 mb-30 pb-10 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">About project</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">To complete my painting & drawing degree, I explored my painting through the following thesis project. I pushed myself out of my comfort zone and spent a lot of time painting in new ways.</p>
+            </div>
+            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <hr class="mt-0 mb-30">
+            </div>
+        </div>
+
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-7 text-center">
+                <h2 class="h4 mb-30 pb-10 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">Research</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">I began by researching both historical and contemporary artists. I used their work as inspiration as well as a reference for technique. I've included some of my favorite pieces below.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30" data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% macro slide_project(name="") %}
+                <div class="swiper-slide">
+                    {{ image_portfolio_init(name, 'gallery-item-md') }}
+                </div>
+                {% endmacro %}
+                {{ slide_project('laundry') }}
+                {{ slide_project('crossword') }}
+                {{ slide_project('conversations') }}
+                {{ slide_project('getting-up') }}
+                {{ slide_project('kitchen') }}
+                {{ slide_project('radiator') }}
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div class="container mt-160">
+    <div class="page-navigation">
+        <a href="portfolio-single-style-4.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="portfolio-col-4-style-3.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="portfolio-single-style-6.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+</div>
+{% endblock %}

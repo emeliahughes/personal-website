@@ -60,6 +60,9 @@
         "art-portfolio.html": {
             "name": "painting"
         },
+        "resume.html": {
+            "name": "resume"
+        },
         "about-me.html": {
             "name": "about me"
         }
@@ -97,7 +100,7 @@
             "title": "#SaveTheChildren - QAnon on Instagram",
             "category": ["research", "#"],
             "image": {
-                "sm": "assets/images/portfolio/way-home-cover-740-540.png"
+                "sm": "assets/images/portfolio/qanon-photos/stc-1.png"
             }
         },
         "adobe-project": {
@@ -152,6 +155,32 @@
         "button": "view project",
         "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
 
+    },
+    "art-research": {
+        "kitchen": {
+            "artist": "Zoey Frank",
+            "image": "assets/images/portfolio/art-thesis-photos/research/zoey-frank-kitchen.jpg"
+        },
+        "conversations": {
+            "artist": "Zoey Frank",
+            "image": "assets/images/portfolio/art-thesis-photos/research/zoey-frank-conversations.jpg"
+        },
+        "laundry": {
+            "artist": "Zoey Frank",
+            "image": "assets/images/portfolio/art-thesis-photos/research/zoey-frank-laundryroomwindow.jpeg"
+        },
+        "radiator": {
+            "artist": "Zoey Frank",
+            "image": "assets/images/portfolio/art-thesis-photos/research/zoey-frank-radiator.jpeg"
+        },
+        "crossword": {
+            "artist": "Eve Mansdorf",
+            "image": "assets/images/portfolio/art-thesis-photos/research/mansdorf-crossword-puzzle.jpg"
+        },
+        "getting-up": {
+            "artist": "Eve Mansdorf",
+            "image": "assets/images/portfolio/art-thesis-photos/research/mansdorf-getting-up.jpg"
+        }
     },
     "art_portfolio": {
         "duck-still-life": {
