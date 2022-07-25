@@ -1,0 +1,123 @@
+{% set page_title = 'Painting Thesis' %}
+{% set navbar_fixed = false %}
+{% set navbar_expand = false %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+<a href="{{ src.image }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade" data-cursor-style="cursor-text" data-cursor-text="{{ src.artist }}">
+    <img src="{{ src.image }}" alt="">
+</a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(art_research[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+
+{% block content %}
+<div class="pt-80 mt-100 shape-parent overflow-hidden">
+    <div class="container text-center">
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-10 text-center">
+                <div class="subtitle show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">US Patent Pending</div>
+                <h1 class="h2 mb-40 show-on-scroll" data-show-duration="700" data-show-distance="10" style="color: #a32121">Multimodal Canvas Landmarks for Accessible Digital Painting</h1>
+            </div>
+        </div>
+        
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-7 text-center">
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">About project</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Through the Women In Technology Scholarship program at Adobe, I had the incredible opportunity to intern at Adobe Research. While there, I worked with and was mentored by Jose Echevarria and JinJin Sun. My project focused on researching and designing a way for visually impaired artists to create digital art.</p>
+            </div>
+            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <hr class="mt-0 mb-30">
+            </div>
+        </div>
+
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                <div class="row justify-content-around gh-1">
+                    <div class="col-auto mb-8">
+                        <span class="fw-medium me-8">Date:</span> Summer 2021
+                    </div>
+                    <div class="col-auto mb-8">
+                        <span class="fw-medium me-8">Duration:</span> 3 months
+                    </div>
+                    <div class="col-auto mb-8">
+                        <span class="fw-medium me-8">Role:</span> Adobe Research Intern
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-7">
+                <h2 class="h4 mb-10 pb-10 mt-40 show-on-scroll" data-show-duration="500" data-show-distance="10">Background</h2>
+                <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">If you've ever interacted with a screen reader, you probably realize how difficult interacting with technology can be for someone with visual impairments. Currently, attempting to use a screen reader with a canvas based app (i.e. Adobe Fresco or Procreate) is nearly impossible. If you get through the difficulties of navigating the apps with a screen reader,  you are then presented with the challenge of figuring out what you have drawn on the canvas.</p>
+                <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">I started by researching what visually impaired artists using tradional media did to make their artistic  practice accessible to them. While each artist used a slightly different technique, the overall takeaway I had was that they were relying on feedback from their canvas. One artist used sewing pins, while another artist used varying sizes of blue-tac to figure out where on the canvas he was painting.</p>
+                <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">I have included some examples of visually impaired artists' work below.</p>
+            </div>
+        </div>
+    
+        <div class="row gv-3 justify-content-center">
+            <div class="col-5 m-20 text-center">
+                <a href="assets/images/portfolio/adobe/adobe-3.jpg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">    
+                    <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/adobe/adobe-3.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-5 m-20 text-center">
+                <a href="assets/images/portfolio/adobe/adobe-4.jpg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                    <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/adobe/adobe-4.jpg" alt=""> 
+                </a>
+            </div>
+            <div class="col-5 m-20 text-center">
+                <a href="assets/images/portfolio/adobe/adobe-5.jpg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">    
+                    <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/adobe/adobe-5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-5 m-20 text-center">
+                <a href="assets/images/portfolio/adobe/adobe-6.jpg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                    <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/adobe/adobe-6.jpg" alt=""> 
+                </a>
+            </div>
+        </div>
+
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-7 text-center">
+                <h2 class="h4 mb-10 pb-10 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">Solution</h2>
+                <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">The solution that I came to focused on two main factors. First, the artist had to know where they were on the canvas. Second, they had to know what had already been drawn on the canvas. The result of this was using auditory feedback as a substitution for the physical feedback tradional-media artists are already using. As technology changes, the solution can adapt to other types of feedback depending on what is widely available to the general consumer.</p>
+            </div>
+        </div>
+    
+        <div class="row gv-3 justify-content-center">
+            <div class="col-4 m-20 text-center">
+                <a href="assets/images/portfolio/adobe/adobe-1.png" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                    <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/adobe/adobe-1.png" alt=""> 
+                </a>
+            </div>
+            <div class="col-7 m-20 text-center">
+                <a href="assets/images/portfolio/adobe/adobe-2.png" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">    
+                    <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/adobe/adobe-2.png" alt="">
+                </a>
+            </div>
+        </div>
+    
+        <div class="row gv-3 justify-content-center mb-30">
+            <div class="col-12 col-lg-7 text-center">
+                <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">My work from this internship is currently in the US Patent application process. Thank you so much to my amazing mentors, Jose Echevarria and JinJin Sun.</p>
+            </div>
+        </div>
+
+    
+        <div class="page-navigation">
+            <a href="portfolio-single-style-4.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+            <a href="portfolio-col-4-style-3.html" class="btn btn-light btn-circle btn-xs">all</a>
+            <a href="portfolio-single-style-6.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -46,16 +46,18 @@
         <div class="pt-30">
             {% macro portfolio_grid(name="", filter="", href="#") %}
             <div class="col-12 col-sm-6 col-sm-6 col-lg-4 isotope-item" data-filters="{{ filter }}">
-                <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                <a href="{{ href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
                     <img class="mw-100" src="{{ portfolio[name].image.sm }}" alt="">
+                    <h5 class="text-decoration-none m-10 text-center">{{ portfolio[name].title }}</h5>
                 </a>
             </div>
             {% endmacro %}
     
             {% macro portfolio_grid_vertical(name="", filter="", href="#") %}
             <div class="col-12 col-sm-6 col-lg-4 isotope-item" data-filters="{{ filter }}">
-                <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                <a href="{{ href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
                     <img class="mw-100" src="{{ portfolio[name].image.sm_vertical }}" alt="">
+                    <h5 class="text-decoration-none m-10 text-center">{{ portfolio[name].title }}</h5>
                 </a>
             </div>
             {% endmacro %}
@@ -63,9 +65,9 @@
             <div class="row align-items-end gh-1 gv-1 isotope-grid">
                 {{ portfolio_grid('viblio-project', 'research', 'viblio-project.html') }}
                 {{ portfolio_grid('qanon-project', 'research', 'qanon-project.html') }}
-                {{ portfolio_grid('adobe-project', 'research', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('adobe-project', 'research', 'adobe-project.html') }}
                 {{ portfolio_grid('robot-project', 'design', 'portfolio-single-style-1.html') }}
-                {{ portfolio_grid('art-thesis-project', 'design', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('art-thesis-project', 'design', 'art-thesis-project.html') }}
             </div>
 
             <a href="portfolio-col-2-style-3.html" class="btn btn-circle btn-light btn-lg mt-100">more</a>

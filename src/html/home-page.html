@@ -1,0 +1,87 @@
+{% set page_title = 'Emelia Hughes Portfolio' %}
+{% set navbar_expand = false %}
+{% set navbar_mobile = 'style-3' %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="pt-60 pb-130 mt-30">
+        <div class="row gh-1 gv-5 align-items-center justify-content-center text-center text-lg-start">
+            <div class="col-auto order-1 order-lg-3 show-on-scroll" data-show-delay="200" data-show-duration="600">
+                <div class="shape-parent lines-style-2">
+                    <div class="line text-dark"></div>
+
+                    <div class="shape mt-n30 ms-n30 me-100 me-lg-0 d-block">
+                        <svg data-rellax-speed="-1" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="45" cy="45" r="45" fill="#a32121"/>
+                        </svg>
+                    </div>
+
+                    <img class="position-relative rounded-circle" width="180" src="assets/images/headshot-v2.jpg" alt="" data-cursor-style="cursor-text" data-cursor-text="yes, that is me :)">
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block col order-lg-2"></div>
+
+            <div class="col-12 col-lg-6 order-3 order-lg-1">
+                <!--<p class="subtitle show-on-scroll" data-show-duration="600" data-show-delay="250">Brian Newton</p>-->
+                <h1 class="h2 show-on-scroll" data-show-duration="500" data-show-distance="15">I’m freelance product designer based in LA.</h1>
+                <a href="contact-1.html" class="btn btn-light btn-with-ball mt-5 show-on-scroll" data-show-duration="400" data-show-delay="100" data-show-distance="15" >let’s work</a>
+            </div>
+
+            <div class="col-12 col-lg-1 text-center text-lg-end order-2 order-lg-4 mt-n60 mt-lg-0">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="pb-160 isotope text-center">
+        <ul class="nav justify-content-center isotope-options mb-60 pb-30">
+            <li class="nav-item active show-on-scroll" data-show-delay="50" data-show-duration="400" data-show-distance="10">
+                <a href="#" data-filter="all" class="nav-link"><span class="nav-link-name">all projects</span></a>
+            </li>
+            <li class="nav-item show-on-scroll" data-show-delay="100" data-show-duration="400" data-show-distance="10">
+                <a href="#" data-filter="research" class="nav-link"><span class="nav-link-name">research</span></a>
+            </li>
+            <li class="nav-item show-on-scroll" data-show-delay="150" data-show-duration="400" data-show-distance="10">
+                <a href="#" data-filter="design" class="nav-link"><span class="nav-link-name">design</span></a>
+            </li>
+        </ul>
+
+        <div class="pt-30">
+            {% macro portfolio_grid(name="", filter="", href="#") %}
+            <div class="col-12 col-sm-6 col-sm-6 col-lg-4 isotope-item" data-filters="{{ filter }}">
+                <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                    <img class="mw-100" src="{{ portfolio[name].image.sm }}" alt="">
+                </a>
+            </div>
+            {% endmacro %}
+    
+            {% macro portfolio_grid_vertical(name="", filter="", href="#") %}
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item" data-filters="{{ filter }}">
+                <a href="{{ href }}" class="d-block show-on-scroll" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].title }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                    <img class="mw-100" src="{{ portfolio[name].image.sm_vertical }}" alt="">
+                </a>
+            </div>
+            {% endmacro %}
+            
+            <div class="row align-items-end gh-1 gv-1 isotope-grid">
+                {{ portfolio_grid('viblio-project', 'research', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('qanon-project', 'research', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('adobe-project', 'research', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('tiktok-project', 'research', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('pimple-kit-project', 'design', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid_vertical('way-home-project', 'design', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('robot-project', 'design', 'portfolio-single-style-1.html') }}
+                {{ portfolio_grid('art-thesis-project', 'design', 'portfolio-single-style-1.html') }}
+            </div>
+        </div>
+
+        <a href="portfolio-col-2-style-3.html" class="btn btn-circle btn-light btn-lg mt-100">more</a>
+    </div>
+</div>
+{% endblock %}

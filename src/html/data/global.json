@@ -90,6 +90,7 @@
         "viblio-project": {
             "href": "viblio-project.html",
             "title": "Viblio - YouTube Citations Project",
+            "cursor": "Social Futures Lab",
             "category": ["research", "#"],
             "image": {
                 "sm": "assets/images/portfolio/viblio-photos/cover.png"
@@ -98,6 +99,7 @@
         "qanon-project": {
             "href": "qanon-project.html",
             "title": "#SaveTheChildren - QAnon on Instagram",
+            "cursor": "Center for An Informed Public",
             "category": ["research", "#"],
             "image": {
                 "sm": "assets/images/portfolio/qanon-photos/stc-1.png"
@@ -105,23 +107,26 @@
         },
         "adobe-project": {
             "href": "portfolio-single-style-1.html",
-            "title": "Adobe Research",
+            "title": "Multimodal Canvas Landmarks for Accessible Digital Painting",
+            "cursor": "Adobe Research",
             "category": ["research", "#"],
             "image": {
-                "sm": "assets/images/portfolio/way-home-cover-740-540.png"
+                "sm": "assets/images/portfolio/adobe/adobe-cover.png"
             }
         },
         "tiktok-project": {
             "href": "portfolio-single-style-1.html",
             "title": "TikTok Literature Collation",
+            "cursor": "Center for an Informed Public",
             "category": ["research", "#"],
             "image": {
-                "sm": "assets/images/portfolio/way-home-cover-740-540.png"
+                "sm": "assets/images/portfolio/way-home-photos/way-home-cover-740-540.png"
             }
         },
         "pimple-kit-project": {
             "href": "portfolio-single-style-1.html",
             "title": "Emergency Pimple Kit",
+            "cursor": "Design",
             "category": ["design", "#"],
             "image": {
                 "sm": "assets/images/portfolio/way-home-cover-740-540.png"
@@ -130,33 +135,36 @@
         "way-home-project": {
             "href": "way-home-project.html",
             "title": "The Way Home",
+            "cursor": "Design",
             "category": ["design", "#"],
             "image": {
                 "sm": "assets/images/portfolio/way-home-cover-740-540.png",
-                "sm_vertical": "assets/images/portfolio/way-home-cover-740-860.png"
+                "sm_vertical": "assets/images/portfolio/way-home-photos/way-home-cover-740-860.png"
             }
         },
         "robot-project": {
             "href": "portfolio-single-style-1.html",
             "title": "Advanced Robotics at UW",
+            "cursor": "ARUW",
             "category": ["design", "#"],
             "image": {
                 "sm": "assets/images/portfolio/way-home-cover-740-540.png"
             }
         },
         "art-thesis-project": {
-            "href": "portfolio-single-style-1.html",
+            "href": "art-thesis-project.html",
             "title": "Honors Art Thesis",
+            "cursor": "Painting",
             "category": ["design", "#"],
             "image": {
-                "sm": "assets/images/portfolio/way-home-cover-740-540.png"
+                "sm": "assets/images/art/living-room-painting.jpg"
             }
         },
         "button": "view project",
         "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
 
     },
-    "art-research": {
+    "art_research": {
         "kitchen": {
             "artist": "Zoey Frank",
             "image": "assets/images/portfolio/art-thesis-photos/research/zoey-frank-kitchen.jpg"
@@ -167,7 +175,7 @@
         },
         "laundry": {
             "artist": "Zoey Frank",
-            "image": "assets/images/portfolio/art-thesis-photos/research/zoey-frank-laundryroomwindow.jpeg"
+            "image": "assets/images/portfolio/art-thesis-photos/research/Zoey-Frank-LandryRoomWindow.jpeg"
         },
         "radiator": {
             "artist": "Zoey Frank",

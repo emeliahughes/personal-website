@@ -14,7 +14,7 @@
 {% endmacro %}
 
 {% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
-    {{ image_portfolio(art-research[name], classes=classes, gallery=gallery) }}
+    {{ image_portfolio(art_research[name], classes=classes, gallery=gallery) }}
 {% endmacro %}
 
 
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30" data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+    <div class="swiper swiper-full-horizontal mt-100 mb-n6" data-swiper-slides="auto" data-swiper-gap="30" data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 {% macro slide_project(name="") %}
@@ -71,6 +71,119 @@
 </div>
 
 <div class="container mt-160">
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h4 mb-10 pb-10 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">Development</h2>
+            <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">To explore different compositions and topics, I spent time doing many quick studies with a limited color palette.</p>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-5 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/solstice-1.jpeg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/solstice-1.jpeg" alt=""> 
+            </a>
+        </div>
+        <div class="col-5 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/solstice-2.jpeg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">    
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/solstice-2.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 col-lg-7 text-center">
+            <p class="mb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">I also had the chance to implement this practice with a live figure model. I did two quick studies, then a (relatively) quick painting.</p>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-5 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/robert-1.jpeg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/robert-1.jpeg" alt="">
+            </a>
+        </div>
+        <div class="col-5 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/robert-2.jpeg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">  
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/robert-2.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-10 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/robert-3.jpeg" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/robert-3.jpeg" alt=""> 
+            </a>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h4 mb-10 pb-10 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">Practice</h2>
+            <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Next, I moved on to iterating on my ideas for my final paintings. I used multiple mediums and compositions to figure out the best direction.</p>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-4 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/livingroom-1.jpeg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/livingroom-1.jpeg" alt=""> 
+            </a>
+        </div>
+        <div class="col-7 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/livingroom-2.jpeg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">    
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/livingroom-2.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h4 mb-10 pb-10 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">Implement</h2>
+            <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Finally, I worked on the following series. The three paintings were completed over a period of about 6 months.</p>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 m-20 text-center">
+            <a href="assets/images/art/living-room-painting.jpg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/art/living-room-painting.jpg" alt=""> 
+            </a>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-8 m-20 text-center">
+            <a href="assets/images/art/kitchen-painting.jpg" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/art/kitchen-painting.jpg" alt=""> 
+            </a>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 m-20 text-center">
+            <a href="assets/images/art/psyche-mirror.png" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/art/psyche-mirror.png" alt=""> 
+            </a>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 col-lg-7 text-center">
+            <h2 class="h4 mb-10 pb-10 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">Bonus: Exhibit!</h2>
+            <p class="mb-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">At the end of the year, I had the wonderful opportunity to exhibit my work alongside other students of the School of Art Honors Cohort at the Jacob Lawrence Gallery.</p>
+        </div>
+    </div>
+
+    <div class="row gv-3 justify-content-center">
+        <div class="col-12 m-20 text-center">
+            <a href="assets/images/portfolio/art-thesis-photos/exhibition.png" class="gallery-item" data-fancybox="gallery" data-animation-effect="fade">
+                <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/art-thesis-photos/exhibition.png" alt=""> 
+            </a>
+        </div>
+    </div>
+
     <div class="page-navigation">
         <a href="portfolio-single-style-4.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
         <a href="portfolio-col-4-style-3.html" class="btn btn-light btn-circle btn-xs">all</a>
