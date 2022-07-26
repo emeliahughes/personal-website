@@ -102,7 +102,7 @@
             "cursor": "Center for An Informed Public",
             "category": ["research", "#"],
             "image": {
-                "sm": "assets/images/portfolio/qanon-photos/stc-1.png"
+                "sm": "assets/images/portfolio/qanon-photos/stc-cover.png"
             }
         },
         "adobe-project": {
@@ -320,6 +320,30 @@
             "urs-photo.png": "assets/images/portfolio/viblio-photos/urs-photo.png",
             "urs-poster.png": "assets/images/portfolio/viblio-photos/urs-poster.png",
             "workshop-poster": "assets/images/portfolio/viblio-photos/workshop-poster.png"
+        },
+        "aruw": {
+            "1v1": "assets/images/portfolio/robotics/1v1.png",
+            "3v3-field": "assets/images/portfolio/robotics/3v3-field.JPG",
+            "2019-team": "assets/images/portfolio/robotics/2019-team.JPG",
+            "2021-group": "assets/images/portfolio/robotics/2021-group.jpg",
+            "2022-group": "assets/images/portfolio/robotics/2022-group.JPG",
+            "2022-team": "assets/images/portfolio/robotics/2022-team.JPEG",
+            "all-team-robots": "assets/images/portfolio/robotics/all-team-robots.JPG",
+            "aruw-grad": "assets/images/portfolio/robotics/aruw-grad.JPEG",
+            "aruw-logo": "assets/images/portfolio/robotics/aruw-logo.png",
+            "canyon-1": "assets/images/portfolio/robotics/canyon-1.JPG",
+            "canyon-2": "assets/images/portfolio/robotics/canyon-2.JPG",
+            "canyon-3": "assets/images/portfolio/robotics/canyon-3.JPG",
+            "china-1": "assets/images/portfolio/robotics/china-1.JPG",
+            "china-2": "assets/images/portfolio/robotics/china-2.JPG",
+            "gold-standard": "assets/images/portfolio/robotics/gold-standard.JPG",
+            "hero-in-field.jpg": "assets/images/portfolio/robotics/hero-in-field.JPG",
+            "pit-crew": "assets/images/portfolio/robotics/pit-crew.JPG",
+            "presenting": "assets/images/portfolio/robotics/presenting.JPG",
+            "sentry": "assets/images/portfolio/robotics/sentry.JPG",
+            "standard-in-field": "assets/images/portfolio/robotics/standard-in-field.JPG",
+            "two-standards": "assets/images/portfolio/robotics/two-standards.JPG",
+            "zebra-standard": "assets/images/portfolio/robotics/zebra-standard.JPG"
         }
     },
     "slider": {

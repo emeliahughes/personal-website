@@ -1,0 +1,126 @@
+{% set page_title = 'ARUW' %}
+{% set navbar_sticky = true %}
+{% set navbar_expand = false %}
+{% set navbar_mobile = 'style-2' %}
+{% set footer = 'default-2' %}
+{% set footer_dark = false %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% macro image_portfolio(src="", classes="", gallery="") %}
+    <a href="{{ src }}" class="d-block show-on-scroll"  data-show-duration="500">
+        <img class="mw-100" src="{{ src }}" alt="">
+    </a>
+{% endmacro %}
+
+{% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
+    {{ image_portfolio(portfolio_project_images.aruw[name], classes=classes, gallery=gallery) }}
+{% endmacro %}
+
+
+{% block content %}
+<div class="container w-100 mt-10 align-items-center">
+    <div class="w-100 row d-flex mb-100 mt-100 mb-lg-0  justify-content-center">
+        <div class="col-lg-4 col-6 justify-content-center">{{ image_portfolio_init('aruw-logo', 'w-100', 'gallery') }}</div>
+
+        <div class="d-none d-lg-block col-1 me-xl-10"></div>
+
+        <div class="d-flex align-items-center col-lg-6 col-10 ms-xl-5 me-xl-10">
+            <div class="row justify-content-center">
+                <div class="text-center">
+                    <h1 class="show-on-scroll" data-show-duration="700" data-show-distance="10">ARUW</h1>
+                    <h2 class="h3 mb-30 mt-10 show-on-scroll" data-show-duration="500" data-show-distance="10">Advanced Robotics at the University of Washington</h2>
+                    <p class="mb-0 pt-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">One of the flagstone experiences of my time while at UW was being a part of ARUW. I joined the team in my freshman year, then led as Vice President for two years before becoming the President in my final year. So much happened over this period that I can't fit it into one page, however I want to highlight some of the achievements my team and I made.</p>
+                </div>
+                <div class="w-100 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+                    <hr class="mt-30 mb-30">
+                    <div class="row justify-content-around gh-1">
+                        <div class="col-auto mb-8">
+                            <span class="fw-medium me-8">President:</span> 2021-2022
+                        </div>
+                        <div class="col-auto mb-8">
+                            <span class="fw-medium me-8">Vice President:</span> 2020-2021, 2019-2020
+                        </div>
+                        <div class="col-auto mb-8">
+                            <span class="fw-medium me-8">Member:</span> 2018-2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="row gh-1 gv-1 p-20 justify-content-center">
+    <div class="col-12 gh-1 gv-1">
+        <div class="row gh-1 gv-1 pt-30 pb-30 justify-content-center">
+            <div class="col-auto">{{ image_portfolio_init('aruw-grad', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-auto">{{ image_portfolio_init('2022-team', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-auto">{{ image_portfolio_init('2022-group', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-">{{ image_portfolio_init('2021-group', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('2019-team', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('3v3-field', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('1v1', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('all-team-robots', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('canyon-1', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('canyon-2', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('canyon-3', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('gold-standard', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('pit-crew', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('hero-in-field', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('presenting', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('sentry', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('standard-in-field', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('china-1', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('china-2', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('zebra-standard', 'gallery-item-lg', 'gallery') }}</div>
+            <div class="col-3">{{ image_portfolio_init('two-standards', 'gallery-item-lg', 'gallery') }}</div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center mb-80 mt-50">
+    <div class="col-12 col-lg-7 text-center">
+        <h2 class="h3 mb-20 mt-20 show-on-scroll m-20" data-show-duration="500" data-show-distance="10">Refining Ideas</h2>
+    </div>
+</div>
+
+<div class="row gh-1 gv-1 justify-content-center mt-10">
+    <div class="d-none d-sm-block col-1 me-xl-10"></div>
+    <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r2-2', 'gallery-item-lg', 'gallery') }}</div>
+    <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r2-1', 'gallery-item-lg', 'gallery') }}</div>
+    <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r2-3', 'gallery-item-lg', 'gallery') }}</div>
+    <div class="d-none d-sm-block col-1 me-xl-10"></div>
+</div>
+
+<div class="row gv-3 justify-content-center mb-80 mt-100">
+    <div class="col-12 col-lg-7 text-center">
+        <h2 class="h3 mb-20 mt-20 show-on-scroll m-20" data-show-duration="500" data-show-distance="10">Final Iterations</h2>
+    </div>
+</div>
+
+<div class="row justify-content-center gh-1 gv-1 mt-10">
+    <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r3-1', 'gallery-item-lg', 'gallery') }}</div>
+    <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r3-2', 'gallery-item-lg', 'gallery') }}</div>
+    <div class="col-12 col-md-3 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('r3-3', 'gallery-item-lg', 'gallery') }}</div>
+</div>
+
+<div class="row gv-3 justify-content-center  mb-80 mt-100">
+    <div class="col-12 col-lg-7 text-center m-20">
+        <h2 class="h3 mb-20 mt-20 show-on-scroll" data-show-duration="500" data-show-distance="10">Final Result</h2>
+    </div>
+</div>
+
+<div class="row justify-content-center gh-1 gv-1 mt-10">
+    <div class="col-6 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">{{ image_portfolio_init('final-cover', 'gallery-item-lg', 'gallery') }}</div>
+</div>
+
+<div class="container w-100 mt-10 align-items-center">
+    <div class="page-navigation mt-160">
+        <a href="portfolio-single-style-5.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> project</span></a>
+        <a href="portfolio-col-1-style-2.html" class="btn btn-light btn-circle btn-xs">all</a>
+        <a href="portfolio-single-style-1.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> project</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
+</div>
+{% endblock %}
