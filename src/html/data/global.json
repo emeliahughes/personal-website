@@ -22,40 +22,8 @@
         "index.html": {
             "name": "home"
         },
-        "portfolio-col-1-style-1.html": {
-            "name": "projects",
-            "sub": {
-                "portfolio-col-2-style-6.html": {
-                    "name": "Research"
-                },
-                "portfolio-col-2-style-2.html": {
-                    "name": "Design"
-                },
-                
-                "portfolio-single-style-1.html": {
-                    "name": "Single Works",
-                    "sub": {
-                        "portfolio-single-style-1.html": {
-                            "name": "Style 1"
-                        },
-                        "portfolio-single-style-2.html": {
-                            "name": "Style 2"
-                        },
-                        "portfolio-single-style-3.html": {
-                            "name": "Style 3"
-                        },
-                        "portfolio-single-style-4.html": {
-                            "name": "Style 4"
-                        },
-                        "portfolio-single-style-5.html": {
-                            "name": "Style 5"
-                        },
-                        "portfolio-single-style-6.html": {
-                            "name": "Style 6"
-                        }
-                    }
-                }
-            }
+        "projects.html": {
+            "name": "projects"
         },
         "art-portfolio.html": {
             "name": "painting"
@@ -138,17 +106,17 @@
             "cursor": "Design",
             "category": ["design", "#"],
             "image": {
-                "sm": "assets/images/portfolio/way-home-cover-740-540.png",
+                "sm": "assets/images/portfolio/way-home-photos/way-home-cover-740-540.png",
                 "sm_vertical": "assets/images/portfolio/way-home-photos/way-home-cover-740-860.png"
             }
         },
         "robot-project": {
-            "href": "portfolio-single-style-1.html",
+            "href": "robot-project.html",
             "title": "Advanced Robotics at UW",
             "cursor": "ARUW",
             "category": ["design", "#"],
             "image": {
-                "sm": "assets/images/portfolio/way-home-cover-740-540.png"
+                "sm": "assets/images/portfolio/robotics/gold-standard.JPG"
             }
         },
         "art-thesis-project": {
@@ -337,7 +305,7 @@
             "china-1": "assets/images/portfolio/robotics/china-1.JPG",
             "china-2": "assets/images/portfolio/robotics/china-2.JPG",
             "gold-standard": "assets/images/portfolio/robotics/gold-standard.JPG",
-            "hero-in-field.jpg": "assets/images/portfolio/robotics/hero-in-field.JPG",
+            "hero-in-field": "assets/images/portfolio/robotics/hero-in-field.JPG",
             "pit-crew": "assets/images/portfolio/robotics/pit-crew.JPG",
             "presenting": "assets/images/portfolio/robotics/presenting.JPG",
             "sentry": "assets/images/portfolio/robotics/sentry.JPG",
