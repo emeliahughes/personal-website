@@ -1,0 +1,27 @@
+name: Publish site
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  publish:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+        cache: 'npm'
+    - run: npm install
+    - run: gulp production
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        external_repository: emeliahughes/emeliahughes.github.io
+        publish_branch: main
+        publish_dir: ./dist
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}

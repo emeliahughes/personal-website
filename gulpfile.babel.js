@@ -215,7 +215,8 @@ gulp.task( 'default', ( cb ) => {
  */
 gulp.task( 'production', ( cb ) => {
     process.env.NODE_ENV = process.env.NODE_ENV || 'production';
-    gulp.series( 'clean', 'html', 'css', 'js', 'static', 'images_min' )( cb );
+    // TODO: "images_min" disabled due to unsupported JPEG color space conversion
+    gulp.series( 'clean', 'html', 'css', 'js', 'static', 'images' )( cb );
 } );
 
 
