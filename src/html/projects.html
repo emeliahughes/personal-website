@@ -1,7 +1,7 @@
 {% set page_title = 'Projects' %}
-{% set navbar_fixed = true %}
-{% set navbar_expand = false %}
-{% set navbar_mobile = 'style-2' %}
+{% set navbar_mobile = 'style-3' %}
+{% set navbar_fixed = false %}
+{% set navbar_expand = false %}\
 {% set footer = 'default-2' %}
 {% set footer_dark = true %}
 
@@ -34,7 +34,7 @@
     <div class="pt-30 show-on-scroll" data-show-duration="800">
         {% macro portfolio_grid(name="", filter="") %}
         <div class="col-12 col-sm-6 col-md-4 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}">
-            <a href="{{ href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+            <a href="{{ portfolio[name].href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
                 <img class="mw-100" src="{{ portfolio[name].image.sm }}" alt="">
                 <h5 class="text-decoration-none m-10 text-center">{{ portfolio[name].title }}</h5>
             </a>
@@ -42,7 +42,7 @@
         {% endmacro %}
         {% macro portfolio_grid_vertical(name="", filter="") %}
         <div class="col-12 col-sm-6 col-md-4 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}">
-            <a href="{{ href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+            <a href="{{ portfolio[name].href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
                 <img class="mw-100" src="{{ portfolio[name].image.sm_vertical }}" alt="">
                 <h5 class="text-decoration-none m-10 text-center">{{ portfolio[name].title }}</h5>
             </a>
