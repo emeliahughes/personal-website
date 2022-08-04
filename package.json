@@ -35,6 +35,10 @@
                 "to": "{dist}"
             },
             {
+                "from": "{src}/CNAME",
+                "to": "{dist}"
+            },
+            {
                 "from": [
                     "node_modules/*bootstrap/dist/js/bootstrap.min.js",
                     "node_modules/*bootstrap/dist/js/bootstrap.min.js.map",
@@ -86,10 +90,6 @@
                 "hideComments": false,
                 "indent": true
             }
-        },
-        "cname": {
-            "from": "{src}/CNAME",
-            "to": "{dist}"
         },
         "images": {
             "from": "{src}/images/**/*.{jpg,jpeg,png,gif,svg}",
