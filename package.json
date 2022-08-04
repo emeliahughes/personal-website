@@ -87,6 +87,10 @@
                 "indent": true
             }
         },
+        "cname": {
+            "from": "{src}/CNAME",
+            "to": "{dist}"
+        },
         "images": {
             "from": "{src}/images/**/*.{jpg,jpeg,png,gif,svg}",
             "to": "{dist}/assets/images"
