@@ -10,35 +10,102 @@
 
 {% block content %}
 <div class="container">
-    <div class="row justify-content-center text-center pt-60 pb-130 mt-30">
-        <div class="col-12 col-lg-8">
-            <div class="subtitle show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">project in progress</div>
-            <h1 class="h2 mb-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Viblio: Credibility Signals and Citations on YouTube</h1>
+    <div class="row justify-content-center gh-1 mb-50">
+        <div mv-bar="no-login" mv-app="publications"  mv-plugins="tinymce markdown" id="viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms" mv-permissions="read logout delete add edit save" mv-storage="https://github.com/emeliahughes/research-website/src/html/data">
+
+            <meta property="selectedPub" mv-value="url('id')" />
+
+
+            <article class="row justify-content-center" property="paper" mv-multiple mv-multiple-path="id=viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms">
+
+                <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3">
+                    <img class="px-20 img-responsive center-block" property="picture" src="null" alt="img alt" / style="margin-top: 6px; max-width:100%; padding-top: 75px;">
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pubbody" style="margin-left: 10px; padding-top: 75px; padding-bottom: 75px;">
+
+                    <B><span class="mini-header2 h3" property="title">Paper Title</span></B><BR>
+
+                    <span property="author" mv-multiple>
+                            <meta property="authorData" mv-value="get(people.member, 'id=' & author_name)" />
+                            <img src="[authorData.image]" alt="" mv-if="authorData != ''">
+                            <span property="author_name" mv-edit-list="memberList">Author Name</span></span>
+                    <BR>
+                        <i><span style="color: gray;" property="conference_full_name">Full Conference Name</span></i><BR>
+
+                        <a href="null" property="conference url">
+                            <span property="conference">Conference</span>
+                            <span property="year">Year</span>
+                        </a>
+
+
+                        <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
+
+
+
+                        <BR>
+                    <span property="links">
+                        <a href="null" property="pdf_url" class="button">
+                            <img src="assets/images/icons/pdf.png"><span>PDF</span>
+                        </a>
+
+                        <a href="null" property="website_url" class="button">
+                            <img src="assets/images/icons/link.png"><span> Website</span>
+                        </a>
+
+                        <a href="null" property="code_url" class="button">
+                            <img src="assets/images/icons/code.png"><span> Code</span>
+                        </a>
+
+                        <a href="null" property="data_url" class="button">
+                            <img src="assets/images/icons/database.png"><span> Data</span>
+                        </a>
+
+                        <a href="null" property="slides_url" class="button">
+                            <img src="assets/images/icons/slides.png"><span>Slides</span>
+                        </a>
+
+                        <a href="null" property="video_url" class="button">
+                            <img src="assets/images/icons/video.png"><span> Video</span>
+                        </a>
+
+                        <a href="null" property="talk_url" class="button">
+                            <img src="assets/images/icons/video.png"><span> Talk</span>
+                        </a>
+
+                    </span>
+
+                    <div class="hide-on-read" property="short_abstract" class="tinymce" mv-default="1-2 sentence summary">1-2 sentence summary</div>
+
+
+                        <BR>
+                            <B>Abstract:</B><BR>
+                        <span property="abstract" class="tinymce">Abstract</span>
+                    <BR>
+                        <BR>
+                            <B>Bibtex:</B><BR>
+
+                        <div style="font-family: Courier;" property="bibtex" class="markdown">Bibtex</div>
+
+
+                </article>
+            </div>
+            </div>
         </div>
     </div>
 
-    <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/viblio-photos/cover.png" alt="" data-show-duration="800">
-
-    <div class="row justify-content-center gh-1 mb-100">
-        <div class="col-lg-8 post-content">
-            <p>As more and more people turn to social media, news aggregators, and search engines as their main source of information, it can become difficult to determine the credibility of the content they see. Media manipulators have learned how to capitalize on the weaknesses of missing information and the current systems in place, driving searchers into primed zones of misinformation and conspiracies. Manipulators do not need to be able to hack into the search engine or change the way the search algorithm works to do this; they simply need to alter the information landscape.</p>
-            <p>It has been shown that searchers implicitly trust Google’s search algorithm more than their own judgment (In Google We Trust). The implications of this can easily be seen; an unaware user searches the wrong search terms or clicks on a recommended video and ends up in a new world of misinformation. Currently, credibility signals get lost in the inconsistent formatting of social media and search engines. This leads us to the question: </p>
-            <p class="lead fw-medium">How can we design and alter information sources so users can easily identify the credibility of a source?</p>
+    <div class="row justify-content-center gh-1 gv-1 mb-100 w-100">
+        <div class="col-4 show-on-scroll" data-show-duration="500" data-show-delay="50" style="padding-left: 0;">
+            <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/viblio-photos/timeline-view.png" alt="">
         </div>
-    </div>
-
-    <div class="row justify-content-center gh-1 mb-100">
-        <a class="h5 col-5 p-20 m-20 btn btn-dark text-white btn-with-ball" href="https://social.cs.washington.edu/papers/IntroductingCredibilitySignalsYouTube.pdf">View Workshop Paper</a>
-        <a class="h5 col-5 p-20 m-20 btn btn-dark text-white btn-with-ball" href="https://misinfocon.com/wikiux-introducing-credibility-signals-and-citations-into-online-search-and-social-platforms-7e0adddc1e08">View Background Article</a>
-    </div>
-
-    <div class="row gh-1 gv-1 mb-50">
-        <div class="col-12 show-on-scroll" data-show-duration="500" data-show-delay="50">
-            <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/viblio-photos/mockup-timeline.png" alt="">
+        <div class="col-4 show-on-scroll" data-show-duration="500" data-show-delay="50" style="padding-left: 0;">
+            <img class="w-100 mb-100 show-on-scroll" src="assets/images/portfolio/viblio-photos/list-view.png" alt="">
         </div>
+        <a class="h5 col-4 p-20 m-20 btn btn-dark text-white btn-with-ball" href="https://social.cs.washington.edu/papers/IntroductingCredibilitySignalsYouTube.pdf">View Workshop Paper</a>
+        <a class="h5 col-4 p-20 m-20 btn btn-dark text-white btn-with-ball" href="https://misinfocon.com/wikiux-introducing-credibility-signals-and-citations-into-online-search-and-social-platforms-7e0adddc1e08">View Background Article</a>
     </div>
 
-    <h2 class="text-center mt-80 pb-30 mb-60">Related News</h2>
+    <!-- <h2 class="text-center mt-80 pb-30 mb-60">Related News</h2>
     <div class="row gh-1 gv-1 mb-n8">
         {% macro card_blog_column(name="", filter="", delay="") %}
             <div class="col-12 col-md-6 col-lg-4 show-on-scroll" data-show-duration="600" data-show-distance="20" data-show-delay="{{ delay }}">
@@ -55,6 +122,6 @@
     <div class="page-navigation mt-160">
         <a href="projects.html" class="btn btn-light btn-circle btn-xs">all</a>
         <a href="adobe-project.html" class="btn btn-clean">next<span class="d-none d-sm-inline"> post</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
-    </div>
+    </div> -->
 </div>
 {% endblock %}

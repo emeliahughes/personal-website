@@ -9,13 +9,57 @@
 
 
 {% block content %}
-<div class="container">
+<div class="container w-100 mt-10 mb-100 align-items-center">
+    <div class="m-60"></div>
+    <div mv-app="resume" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/research-website/src/html/data">
+        <ul mv-list>
+            <span class="card card-blog card-horizontal card-md row" property="resume-category" mv-list-item>
+                <h2 class="col-12" property="category">Category</h2>
+                
+                <!-- experience -->
+                <span class="card-body col-12 [if(!item-heading, 'hide-on-read')]" mv-list>
+                    <div class="category-item row" mv-list-item>
+                        <div class="col-10">
+                            <h4 property="item-heading">Main Title</h4>
+                            <h5 class-name="item-role" property="item-role">Role/sub-text</h5>
+                            <ul mv-list>
+                                <li mv-list-item property="item-description">Role description</li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <p class="item-date" property="item-date">Date</p>
+                        </div>
+                    </div>
+                </span>
 
-    <img class="w-100 mb-75 show-on-scroll" src="assets/images/resume.png" alt="" data-show-duration="800">
+                <!-- publication -->
+                <span class="card-body col-12 [if(!publication-item-heading, 'hide-on-read')]" mv-list>
+                    <div class="category-item row" mv-list-item>
+                        <h4 property="publication-item-heading">Publication Type</h4>
+                        <ol reversed mv-list property="publication-list">
+                            <li mv-list-item property="citation">Citation</li>
+                        </ol>
+                    </div>
+                </span>
 
-    <div class="row justify-content-center gh-1 mb-100">
-        <a class="h5 col-5 p-20 m-20 btn btn-dark text-white btn-with-ball" href="https://drive.google.com/file/d/12vscvfoeQXBAP37XbI5LJzq4FfwH3Ff4/view?usp=sharing">Download (Google Drive)</a>
+                <!-- dated-list -->
+                <span class="card-body col-12 [if(!date-list, 'hide-on-read')]" mv-list>
+                    <div class="category-item row" mv-list-item>
+                        <div class="col-2">
+                            <h4 class="item-date" property="date-list">Year/Range</h4>
+                        </div>
+
+                        <div class="col-10">
+                            <ul mv-list>
+                                <li mv-list-item property="item-description">List Item</li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+
+            </span>
+        </ul>
     </div>
-
+    <div class="mt-50"></div>
 </div>
 {% endblock %}

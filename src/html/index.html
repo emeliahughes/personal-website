@@ -9,6 +9,7 @@
 
 {% block content %}
 <div class="container">
+    <!-- Intro top bar -->
     <div class="pt-60 pb-130 mt-30">
         <div class="row gh-1 gv-5 align-items-center justify-content-center text-center text-lg-start">
             <div class="col-auto order-1 order-lg-3 show-on-scroll" data-show-delay="200" data-show-duration="600">
@@ -38,57 +39,159 @@
             </div>
         </div>
     </div>
-
-    <div class="pb-160 isotope text-center">
-        <hr class="mt-50 mb-50">
-        <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Selected Work</h2>
-
-        <div class="pt-30">
-            {% macro portfolio_grid(name="", filter="", href="#") %}
-            <div class="col-12 col-sm-6 col-sm-6 col-lg-4 isotope-item" data-filters="{{ filter }}">
-                <a href="{{ href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                    <img class="mw-100" src="{{ portfolio[name].image.sm }}" alt="">
-                    <h5 class="text-decoration-none m-10 text-center">{{ portfolio[name].title }}</h5>
-                </a>
-            </div>
-            {% endmacro %}
     
-            {% macro portfolio_grid_vertical(name="", filter="", href="#") %}
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item" data-filters="{{ filter }}">
-                <a href="{{ href }}" class="d-block show-on-scroll text-decoration-none" data-cursor-style="cursor-text" data-cursor-text="{{ portfolio[name].cursor }}" data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                    <img class="mw-100" src="{{ portfolio[name].image.sm_vertical }}" alt="">
-                    <h5 class="text-decoration-none m-10 text-center">{{ portfolio[name].title }}</h5>
-                </a>
-            </div>
-            {% endmacro %}
-            
-            <div class="row align-items-end gh-1 gv-1 isotope-grid">
-                {{ portfolio_grid('viblio-project', 'research', 'viblio-project.html') }}
-                {{ portfolio_grid('adobe-project', 'research', 'adobe-project.html') }}
-                {{ portfolio_grid('qanon-project', 'research', 'qanon-project.html') }}
-                {{ portfolio_grid('art-thesis-project', 'design', 'art-thesis-project.html') }}
-                {{ portfolio_grid('robot-project', 'design', 'robot-project.html') }}
-            </div>
 
-            <a href="projects.html" class="btn btn-circle btn-light btn-lg mt-100">more</a>
-        </div>
+    <!-- main body -->
+    <div class="pb-60 row">
+        <hr class="mt-50 mb-50 my-50">
+        <!-- Left Column -->
+        <div class="col-8">
+            <!-- Publications -->
+            <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Publications</h2>
 
-        <hr class="mt-100 mb-50">
-        <h2 class="h3 text-center mt-80 pb-30 mb-60" style="color: #a32121">What I've been up to</h2>
-        <div class="row gh-1 gv-1 mb-n8">
-            {% macro card_blog_column(name="", filter="", delay="") %}
-                <div class="col-12 col-md-6 col-lg-4 show-on-scroll" data-show-duration="600" data-show-distance="20" data-show-delay="{{ delay }}">
-                    {{ card_blog_global(name) }}
-                </div>
-            {% endmacro %}
-            {{ card_blog_column('urs-22', 'viblio', '25') }}
-            {{ card_blog_column('icwsm', 'viblio', '50') }}
-            {{ card_blog_column('urs-21', 'viblio', '75') }}
-            {{ card_blog_column('mozfest', 'viblio', '100') }}
-            {{ card_blog_column('misinfocon', 'viblio', '125') }}
-        </div>
+            <div  mv-app="publications" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/research-website/src/html/data">
 
+                <div class="mv-bar mv-ui"></div>
         
+                <article class="row float-left" property="paper" mv-multiple mv-order="desc">
+        
+                    <!-- Article Picture -->
+                    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%;">
+                    </div>
+        
+                    <!-- Article Info -->
+                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
+                        <B>
+                            <a href="pub-details.html?id=[id]">
+                                <span class="mini-header2" property="title">Paper Title</span>
+                            </a>
+                        </B>
+
+                        <BR>
+                        <p class="hide-on-read">
+                            URL id: /publications/<span property="id" mv-default="[idify(title)]"></span>
+                        </p>
+        
+                        <span property="author" mv-multiple style="font-size: 14px;">
+                            <span property="author_name" mv-edit-list="memberList">Author Name</span>
+                        </span>
+                        <BR>
+        
+                        <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
+        
+                        <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;">
+                            <span property="conference">Conference</span>
+                            <span property="year">Year</span>
+                        </a>
+        
+                        <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
+        
+                        <BR>
+                        <div property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary">1-2 sentence summary</div>
+        
+                        <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
+        
+                        <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
+        
+                        <!-- Article Links -->
+                        <span property="links">
+                            <a href="null" property="pdf_url" class="button">
+                                <img src="assets/images/icons/pdf.png"><span>PDF</span>
+                            </a>
+            
+                            <a href="null" property="website_url" class="button">
+                                <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
+                            </a>
+            
+                            <a href="null" property="code_url" class="button">
+                                <img src="assets/images/icons/code.png"><span> Code</span>
+                            </a>
+            
+                            <a href="null" property="data_url" class="button">
+                                <img src="assets/images/icons/database.png"><span> Data</span>
+                            </a>
+            
+                            <a href="null" property="slides_url" class="button">
+                                <img src="assets/images/icons/slides.png"><span>Slides</span>
+                            </a>
+            
+                            <a href="null" property="video_url" class="button">
+                                <img src="assets/images/icons/video.png"><span> Video</span>
+                            </a>
+            
+                            <a href="null" property="talk_url" class="button">
+                                <img src="assets/images/icons/video.png"><span> Talk</span>
+                            </a>
+                            <BR><BR>
+                        </span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Projects -->
+            <div class="index-projects">
+                <h2 class="h3 text-center mt-70 pb-20 mb-10" style="color: #a32121">Selected Work</h2>
+                
+                <div class="pt-30">
+                    <div class="row align-items-start gh-1 gv-1" mv-app="project-nav" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/research-website/src/html/data">
+                        
+                        <div class="d-block col-sm-6 col-12 col-lg-4 pt-15 px-15" property="nav-item" mv-multiple mv-order="desc"  data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                            <a href="null" property="href" class="d-block show-on-scroll text-decoration-none" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                                <img class="mw-100 object-fit-contain" property="image" alt="" style="height: 250px; object-fit: contain; object-position: center;">
+                                <h5 class="text-decoration-none m-10 text-center" property="title" mv-default="Project Title"></h5>
+                            </a>
+                        </div>
+                        
+                        <div class="d-block col-sm-6 col-12 col-lg-4 pt-15 px-15" property="nav-item" mv-multiple mv-order="desc"  data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                            <a href="null" property="href" class="d-block show-on-scroll text-decoration-none" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                                <img class="mw-100 object-fit-contain" property="image" alt="" style="height: 250px; object-fit: contain; object-position: center;">
+                                <h5 class="text-decoration-none m-10 text-center" property="title" mv-default="Project Title"></h5>
+                            </a>
+                        </div>
+
+                        <div class="d-block col-sm-6 col-12 col-lg-4 pt-15 px-15" property="nav-item" mv-multiple mv-order="desc"  data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                            <a href="null" property="href" class="d-block show-on-scroll text-decoration-none" data-show-delay="50" data-show-distance="5" data-show-duration="500">
+                                <img class="mw-100 object-fit-contain" property="image" alt="" style="height: 250px; object-fit: contain; object-position: center;">
+                                <h5 class="text-decoration-none m-10 text-center" property="title" mv-default="Project Title"></h5>
+                            </a>
+                        </div>
+
+                        <!-- <div class="w-100 align-items-center mt-60 justify-content-center container d-flex">
+                            <div class="col"></div>
+                            <a href="projects.html" class="col-2 btn btn-circle btn-light btn-lg">more</a>
+                            <div class="col"></div>
+                        </div> -->
+
+                        
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <!-- right column -->
+        <div class="col-4">
+            <!-- news -->
+            <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recently</h2>
+            <div mv-app="news" mv-bar="none" mv-storage="https://github.com/emeliahughes/research-website/src/html/data">
+                <ul mv-list>
+                    <span property="news-item" mv-list-item  mv-order="asc"  mv-if="$index < 5">
+                        <div class="card">
+                            <div class="card-body px-20 pb-40 pt-0 text-start d-flex flex-column justify-content-center">
+                                <h5><span class="card-date inline text-em" property="date"></span>: 
+                                <span class="card-title inline" property="title"></span></h5>
+                                <p class="mb-0"><span class="card-text m-0" property="text"></span>
+                                <span class="btn p-0 text-center"  href="[href]">&rightarrow;</span></p>
+                            </div>
+                        </div>
+                    </span>
+        
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

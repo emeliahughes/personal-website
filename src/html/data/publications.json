@@ -1,0 +1,41 @@
+{
+	"paper": [
+		{
+			"title": "Viblio: Introducing Credibility Signals and Citations to Video-Sharing Platforms",
+			"id": "viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms",
+			"author": [
+				{
+					"author_name": "Emelia Hughes"
+				},
+				{
+					"author_name": "Renee Wang"
+				},
+				{
+					"author_name": "Prerna Juneja"
+				},
+				{
+					"author_name": "Tony Li"
+				},
+				{
+					"author_name": "Tanu Mitra"
+				},
+				{
+					"author_name": "Amy Zhang"
+				}
+			],
+			"conference_full_name": "ACM Conference on Human Factors in Computing Systems",
+			"conference url": "https://chi2024.acm.org/",
+			"conference": "CHI",
+			"year": "2024",
+			"short_abstract": "Viblio is a system designed to allow YouTube users to add and view citations for information within the video they are watching.",
+			"abstract": "As more users turn to video-sharing platforms like YouTube as an information source, they may consume misinformation despite their best efforts. In this work, we investigate ways that users can better assess the credibility of videos by first exploring how users currently determine credibility using existing signals on platforms and then by introducing and evaluating new credibility-based signals. We conducted 12 contextual inquiry interviews with YouTube users, determining that participants used a combination of existing signals, such as the channel name, the production quality, and prior knowledge, to evaluate credibility, yet sometimes stumbled in their efforts to do so. We then developed Viblio, a prototype system that enables YouTube users to view and add citations and related information while watching a video based on our participants' needs. From an evaluation with 12 people, all participants found Viblio to be intuitive and useful in the process of evaluating a video's credibility and could see themselves using Viblio in the future.",
+			"bibtex": "@inproceedings{10.1145/3613904.3642490,\nauthor = {Hughes, Emelia May and Wang, Renee and Juneja, Prerna and Li, Tony W and Mitra, Tanushree and Zhang, Amy X.},\ntitle = {Viblio: Introducing Credibility Signals and Citations to Video-Sharing Platforms},\nyear = {2024},\nisbn = {9798400703300},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3613904.3642490},\ndoi = {10.1145/3613904.3642490},\nabstract = {As more users turn to video-sharing platforms like YouTube as an information source, they may consume misinformation despite their best efforts. In this work, we investigate ways that users can better assess the credibility of videos by first exploring how users currently determine credibility using existing signals on platforms and then by introducing and evaluating new credibility-based signals. We conducted 12 contextual inquiry interviews with YouTube users, determining that participants used a combination of existing signals, such as the channel name, the production quality, and prior knowledge, to evaluate credibility, yet sometimes stumbled in their efforts to do so. We then developed Viblio, a prototype system that enables YouTube users to view and add citations and related information while watching a video based on our participants’ needs. From an evaluation with 12 people, all participants found Viblio to be intuitive and useful in the process of evaluating a video’s credibility and could see themselves using Viblio in the future.},\nbooktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},\narticleno = {807},\nnumpages = {20},\nkeywords = {Citations, Contextual Inquiry, Credibility Signals, Misinformation, Semi-Structured Interview, Social Platforms, YouTube},\nlocation = {<conf-loc>, <city>Honolulu</city>, <state>HI</state>, <country>USA</country>, </conf-loc>},\nseries = {CHI '24}\n}",
+			"links": {
+				"website_url": "https://dl.acm.org/doi/10.1145/3613904.3642490",
+				"pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3613904.3642490",
+				"video_url": "https://www.youtube.com/watch?v=VNYnKQ-PV74"
+			},
+			"picture": "https://cdn.jsdelivr.net/gh/emeliahughes/research-website@3e9af9a1b44442ba9ce4699515bed603ab624b6e/src/html/data/images/Viblio%20Logo.png"
+		}
+	]
+}

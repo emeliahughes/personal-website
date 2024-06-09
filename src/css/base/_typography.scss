@@ -4,8 +4,8 @@ body {
 
 // paragraph
 p {
-    margin-bottom: em(52px, 17px);
-    font-size: em(17px);
+    margin-bottom: em(18px, 14px);
+    font-size: em(14px);
 }
 
 // list
@@ -42,9 +42,7 @@ p {
 a {
     color: $dark;
 
-    &:hover {
-        text-decoration: none;
-    }
+    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -128,7 +126,7 @@ h4,
 h5,
 .h5 {
     margin-bottom: em(18px, 20px);
-    font-size: em(20px);
+    font-size: em(18px);
     line-height: 1.5;
 }
 

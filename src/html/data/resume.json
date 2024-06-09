@@ -1,0 +1,195 @@
+{
+	"resume-category": [
+		{
+			"category": "Education",
+			"category-item": [
+				[
+					{
+						"item-heading": "University of Notre Dame",
+						"item-role": "Ph.D. Student",
+						"item-description": [
+							"Ph.D. Student in the Department of Computer Science and Engineering",
+							"Advisor: Dr. Tim Weninger",
+							"Remick Fellow"
+						],
+						"date": "Aug 2024",
+						"item-date": "Aug 2023 - present"
+					},
+					{
+						"item-heading": "University of Washington",
+						"item-role": "Undergraduate Student",
+						"item-description": [
+							"Bachelor of Science in Informatics, Human-Computer Interaction",
+							"Bachelor of Arts in Drawing & Painting with Honors"
+						],
+						"item-date": "Aug 2018 - Jun 2022"
+					}
+				],
+				[],
+				[]
+			]
+		},
+		{
+			"category": "Research Experience",
+			"category-item": [
+				[
+					{
+						"item-heading": "Social Futures Lab",
+						"item-role": "Research Assistant",
+						"item-description": [
+							"Advisor: Dr. Amy Zhang",
+							"Led project funded by WikiCred to develop novel methods of combating misinformation on YouTube",
+							"Conducted contextual-inquiry interviews to evaluate current user wants and needs surrounding credibility",
+							"Developed YouTube extension from design to implementation, employing Adobe XD and React JS"
+						],
+						"item-date": "Aug 2020 - Sep 2023"
+					},
+					{
+						"item-heading": "Center for an Informed Public",
+						"item-role": "Undergraduate Researcher",
+						"item-description": [
+							"Advisor: Dr. Rachel Moran",
+							"Collaborated with cross-disciplinary researchers on a project analyzing the #SaveTheChildren hashtag and movement on Instagram in relation to QAnon",
+							"Developed qualitative code-book to analyze over 2,000 applicable social media posts"
+						],
+						"item-date": "Jan 2021 - Jun 2022"
+					},
+					{
+						"item-heading": "Adobe",
+						"item-role": "Research Intern",
+						"item-description": [
+							"Advisor: Dr. Jose Echevarria",
+							"Developed user experience for artists with visual impairments to navigate canvas-based applications",
+							"Conducted background research to use current working methods to design novel accessibility tool",
+							"Conveyed key findings and results to a wide audience of company stakeholders",
+							"Implemented iPad prototype using Swift"
+						],
+						"item-date": "Jun 2021 - Sep 2021"
+					}
+				],
+				[],
+				[]
+			]
+		},
+		{
+			"category": "Publications",
+			"category-item": [
+				[],
+				[
+					{
+						"publication-item-heading": "Publications",
+						"publication-list": [
+							"Emelia May Hughes, Renee Wang, Prerna Juneja, Tony W Li, Tanushree Mitra, and Amy X. Zhang. 2024. Viblio: Introducing Credibility Signals and Citations to Video-Sharing Platforms. In Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI '24). Association for Computing Machinery, New York, NY, USA, Article 807, 1–20. https://doi.org/10.1145/3613904.3642490",
+							"Moran, R. E., Prochaska, S., Schlegel, I., Hughes, E. M., & Prout, O. (2021). Misinformation Or Activism: Mapping Networked Moral Panic Through An Analysis Of #SaveTheChildren. AoIR Selected Papers of Internet Research, 2021. https://doi.org/10.5210/spir.v2021i0.12212"
+						]
+					},
+					{
+						"publication-item-heading": "Workshop Papers",
+						"publication-list": [
+							"Hughes, E. M., Wang, R., Juneja, P., Mitra, T., & Zhang, A. X. (2021). Introducing Credibility Signals and Citations to Video-Sharing Platforms. CSCW, Information Credibility & Alternative Realities in Troubled Democracies, 2021."
+						]
+					},
+					{
+						"publication-item-heading": "Patents",
+						"publication-list": [
+							"“Multimodal canvas landmarks for accessible digital painting” J. Echevarria, J. Sun, and E. Hughes. Filed 2023."
+						]
+					},
+					{
+						"publication-item-heading": "Posters and Work-in-Progress Papers",
+						"publication-list": [
+							"Hughes, E. M., Wang, R., Huang, A., Juneja, P., Mitra, T., & Zhang, A. X. (2022). Introducing Credibility Signals and Citations to Video-Sharing Platforms. UW Undergraduate Research Symposium 2022.",
+							"Hughes, E. M. (2021). WikiUX: Introducing Credibility Signals and Citations to YouTube. UW Undergraduate Research Symposium 2021."
+						]
+					}
+				],
+				[]
+			]
+		},
+		{
+			"category": "Awards",
+			"category-item": [
+				[],
+				[],
+				[
+					{
+						"date-list": "2022",
+						"item-description": [
+							"RoboMaster North American Champions (3v3)",
+							"RoboMaster North American Champions (1v1)",
+							"Women United Art Prize 2022, Shortlisted Artist",
+							"Priscilla and Melvin Wilson Scholarship, University of Washington School of Art (merit)",
+							"Winter 2022 Dean’s List, University of Washington",
+							"Autumn 2021 Dean’s List, University of Washington"
+						]
+					},
+					{
+						"date-list": "2021",
+						"item-description": [
+							"RoboMaster North American Champions (3v3)",
+							"Adobe Women In Technology 2021 Finalist",
+							"2x Husky 100 nominee, University of Washington",
+							"Autumn 2020 Dean’s List, University of Washington",
+							"Summer 2020 Dean’s List, University of Washington"
+						]
+					},
+					{
+						"date-list": "2020",
+						"item-description": [
+							"Annual Dean’s List 2019-2020, University of Washington",
+							"RoboMaster 2020, Second Prize - Open Source Award"
+						]
+					}
+				]
+			]
+		},
+		{
+			"category": "Public Outreach and DEI",
+			"category-item": [
+				[],
+				[],
+				[
+					{
+						"date-list": "2022",
+						"item-description": [
+							"Volunteer with ARUW, Admitted Student Preview, University of Washington",
+							"Speaker and Volunteer with ARUW, Mechanical Engineering Orientation, University of",
+							"Speaker and Volunteer with ARUW, Electrical Engineering Orientation, University of",
+							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
+							"Event Organizer for ARUW, Dawg Daze 2021, University of Washington"
+						]
+					},
+					{
+						"date-list": "2021",
+						"item-description": [
+							"Student Volunteer, CHI 2021",
+							"Invited Speaker, Humboldt State University Robotics Camp",
+							"Tour guide for local elementary school students around ARUW lab space",
+							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
+							"Event Organizer for ARUW, Dawg Daze 2020, University of Washington"
+						]
+					},
+					{
+						"date-list": "2020",
+						"item-description": [
+							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
+							"Speaker and Volunteer with ARUW, Mechanical Engineering Orientation, University of",
+							"Speaker and Volunteer with ARUW, Electrical Engineering Orientation, University of",
+							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
+							"Event Organizer for ARUW, Dawg Daze 2019, University of Washington"
+						]
+					},
+					{
+						"date-list": "2019",
+						"item-description": [
+							"Volunteer with ARUW, Giving Day, University of Washington",
+							"Volunteer with ARUW, Engineering Discovery Days, University of Washington",
+							"Volunteer with ARUW, Sammamish High School STEM Fair",
+							"Volunteer English Streaming Host, RoboMaster 2019"
+						]
+					}
+				]
+			]
+		}
+	]
+}

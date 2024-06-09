@@ -1,0 +1,54 @@
+{
+	"news-item": [
+		{
+			"style": "horizontal-full",
+			"href": "https://expo.uw.edu/expo/apply/635/proceedings/result?student_name=Emelia+Hughes&commit=Search",
+			"image": "assets/images/news/urs-poster.png",
+			"title": "Undergraduate Research Symposium 2022",
+			"date": "May 2022",
+			"text": "Renee, Anson, and I presented our poster on Viblio at the 2022 URS",
+			"button": "URS Proceedings",
+			"button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+		},
+		{
+			"style": "horizontal-full",
+			"href": "https://zivepstein.github.io/info-credibility-workshop/",
+			"image": "assets/images/news/workshop-poster.png",
+			"title": "Information Credibility & Alternative Realities in Troubled Democracies: an ICWSM 2021 Workshop",
+			"date": "June 2021",
+			"text": "Renee Wang and I presented our workshop paper at ICWSM 2021",
+			"button": "ICWSM Workshop",
+			"button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+		},
+		{
+			"style": "horizontal-full",
+			"href": "https://expo.uw.edu/expo/apply/612/proceedings/offering_session?id=1130",
+			"image": "assets/images/news/urs-logo.jpeg",
+			"title": "Undergraduate Research Symposium 2021",
+			"date": "May 2021",
+			"text": "I presented my work on Viblio so far with in the Usability group at the 2021 URS.",
+			"button": "URS Proceedings",
+			"button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+		},
+		{
+			"style": "horizontal-full",
+			"href": "https://www.mozillafestival.org/en/",
+			"image": "assets/images/news/mozfest-logo.jpg",
+			"title": "Viblio at Mozfest",
+			"date": "March 2021",
+			"text": "I was invited to present my work on Viblio under the WikiUX Grant at Mozilla Festival with the Credibilty Coalition",
+			"button": "MozFest",
+			"button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+		},
+		{
+			"style": "horizontal-full",
+			"href": "https://misinfocon.com/wikiux-introducing-credibility-signals-and-citations-into-online-search-and-social-platforms-7e0adddc1e08",
+			"image": "assets/images/news/urs-cover.png",
+			"title": "MisInfoCon Article",
+			"date": "Jan 2021",
+			"text": "I wrote an article on the background of my project for MisInfoCon",
+			"button": "Article",
+			"button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+		}
+	]
+}
