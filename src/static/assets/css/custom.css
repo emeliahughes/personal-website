@@ -1,0 +1,120 @@
+
+[mv-app]:not([mv-mode=edit]) .hide-on-read {
+	display: none;
+}
+
+[property="author"]:not(:first-of-type)::before {
+    content: ", ";
+    vertical-align: text-bottom;
+}
+
+[property="author2"]:not(:first-of-type)::before {
+    content: ", ";
+}
+
+[property="links"] img {
+    display: inline-block;
+	height: 2.5rem;
+	vertical-align: middle;
+}
+
+[property="links"] span {
+    vertical-align: text-top;
+}
+
+[property="links"] {
+	display: block;
+	margin-top: 10px;
+    text-decoration: none;
+}
+
+
+[property="website_url"] img {
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}
+
+[property="data_url"] img {
+    width: 20px;
+    height: 20px;
+}
+
+[property="video_url"] img {
+    height: 20px;
+}
+
+[property="code_url"] img {
+    height: 20px;
+}
+
+[property="slides_url"] img {
+    height: 20px;
+}
+
+[property="pdf_url"] img {
+    height: 20px;
+}
+
+[property="talk_url"] img {
+    height: 20px;
+}
+
+[property="short-abstract"] > p {
+    padding-bottom: 20px;
+}
+
+[property="nav-item"] > p {
+    padding-top: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 15px;
+        left: 15px;
+    }
+}
+
+/* resume css */
+[property="resume-category"] {
+    margin-top: 0px;
+}
+
+[property="category"] {
+    color: #a32121;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    /* font-size: 30px; */
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+[property="category-item"] {
+    padding-top: 20px;
+}
+
+[property="item-heading"] {
+    margin-bottom: 0px;
+}
+
+[property="item-role"] {
+    margin-bottom: 0px;
+    font-style: italic;
+    font-weight: 200;
+
+}
+
+[property="item-date"] {
+    color: #a32121;
+    font-style: italic;
+    text-align: right;
+}
+
+[property="publication-list"] {
+    padding-left: 25px;
+}
+
+[property="citation"] {
+    padding-left: 25px;
+}
