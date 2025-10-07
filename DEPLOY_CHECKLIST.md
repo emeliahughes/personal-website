@@ -14,27 +14,27 @@ Before deploying to GitHub Pages, complete these steps:
 
 1. **Publications Storage:**
    - Find: `mv-storage="data/publications.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
+   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json"`
 
 2. **Preprints Storage:**
    - Find: `mv-storage="data/preprints.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
+   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json"`
 
 3. **Workshop Papers Storage:**
    - Find: `mv-storage="data/workshop-papers.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
+   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/workshop-papers.json"`
 
 4. **Doctoral Consortium Storage:**
    - Find: `mv-storage="data/doctoral-consortium.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
+   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/doctoral-consortium.json"`
 
 5. **News Storage:**
    - Find: `mv-storage="data/news.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
+   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/news.json"`
 
 6. **Travel Storage:**
    - Find: `mv-storage="data/travel.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
+   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/travel.json"`
 
 3. **Update Comments:**
    - Change `LOCAL (currently active)` to `LOCAL`
@@ -66,7 +66,7 @@ After deployment:
 ## To Switch Back to Local (after deployment):
 
 Just reverse the process:
-1. Find: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
+1. Find: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/FILENAME.json"`
 2. Replace back to local paths:
    - `mv-storage="data/publications.json"`
    - `mv-storage="data/preprints.json"`

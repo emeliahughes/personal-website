@@ -50,8 +50,8 @@
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recent Publications</h2>
 
             <!-- LOCAL: mv-storage="data/publications.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-            <div  mv-app="publications" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json" -->
+            <div  mv-app="publications" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json">
         
                 <article class="row float-left" property="paper" mv-multiple mv-order="year desc" mv-if="$index < 3">
         
@@ -131,8 +131,8 @@
             <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Late Breaking Work & Preprints</h2>
 
             <!-- LOCAL: mv-storage="data/preprints.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-            <div  mv-app="preprints" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json" -->
+            <div  mv-app="preprints" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json">
         
                 <article class="row float-left" property="paper" mv-multiple mv-order="year desc">
         
@@ -215,10 +215,10 @@
             <!-- news -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recently</h2>
             <!-- LOCAL: mv-storage="data/news.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/news.json" -->
+            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/news.json">
                 <ul mv-list class="news-list" style="padding-left: 30px;">
-                    <li property="news-item" mv-list-item mv-order="date desc" style="margin-bottom: 15px; padding-left: 10px;">
+                    <li property="news-item" mv-list-item mv-order="date desc" style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
                         <strong><span property="date"></span>:</strong> <span property="text"></span>
                     </li>
                 </ul>
@@ -227,10 +227,10 @@
             <!-- Upcoming Travel -->
             <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Upcoming Travel</h2>
             <!-- LOCAL: mv-storage="data/travel.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-            <div mv-app="travel" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/travel.json" -->
+            <div mv-app="travel" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/travel.json">
                 <ul mv-list class="news-list" style="padding-left: 30px;">
-                    <li property="travel-item" mv-list-item style="margin-bottom: 15px; padding-left: 10px;">
+                    <li property="travel-item" mv-list-item style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
                         <strong><span property="date"></span>:</strong> <span property="text"></span>
                     </li>
                 </ul>

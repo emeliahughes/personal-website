@@ -45,9 +45,9 @@ The following files contain Mavo apps with configurable storage:
 
 Each file has comments showing both options:
 ```html
-<!-- LOCAL (currently active): mv-storage="data/publications.json" -->
-<!-- PRODUCTION: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-<div mv-app="..." mv-storage="data/publications.json">
+<!-- LOCAL: mv-storage="data/publications.json" -->
+<!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json" -->
+<div mv-app="..." mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json">
 ```
 
 **IMPORTANT:** Before deploying to production, you MUST switch all `mv-storage` attributes to use GitHub URLs!
@@ -67,7 +67,7 @@ Each file has comments showing both options:
 1. In ALL source files with Mavo apps, swap the commented lines:
    ```html
    <!-- Comment out the LOCAL line and uncomment the PRODUCTION line -->
-   <div mv-app="..." mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+   <div mv-app="..." mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/FILENAME.json">
    ```
 2. Files to update:
    - `src/html/index.html` (4 Mavo apps: publications, preprints, news, and travel)

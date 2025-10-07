@@ -163,7 +163,7 @@
             "title": "Still Life of a Duck",
             "category": ["art", "#"],
             "image": {
-                "sm": "assets/images/art/duck-still-life.png"
+                "sm": "assets/images/art/duck-still-life.jpg"
             }
         },
         "family-life": {
@@ -192,7 +192,7 @@
             "title": "Greenhouse",
             "category": ["art", "#"],
             "image": {
-                "sm": "assets/images/art/greenhouse.png"
+                "sm": "assets/images/art/greenhouse.jpg"
             }
         },
         "hampton-court-watercolor": {
@@ -227,14 +227,14 @@
             "title": "Still Life of Plants",
             "category": ["art", "#"],
             "image": {
-                "sm": "assets/images/art/plants-still-life.png"
+                "sm": "assets/images/art/plants-still-life.jpg"
             }
         },
         "psyche-mirror": {
             "title": "Psyche Mirror",
             "category": ["art", "#"],
             "image": {
-                "sm": "assets/images/art/psyche-mirror.png"
+                "sm": "assets/images/art/psyche-mirror.jpg"
             }
         },
         "reflections": {
