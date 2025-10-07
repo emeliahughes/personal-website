@@ -1,0 +1,44 @@
+{
+	"paper": [
+		{
+			"picture": "",
+			"title": "Introducing Credibility Signals and Citations to Video-Sharing Platforms",
+			"id": "introducing-credibility-signals-and-citations-to-video-sharing-platforms",
+			"author": [
+				{
+					"author_name": "Emelia May Hughes"
+				},
+				{
+					"author_name": "Renee Wang"
+				},
+				{
+					"author_name": "Prerna Juneja"
+				},
+				{
+					"author_name": "Tanushree Mitra"
+				},
+				{
+					"author_name": "Amy X Zhang"
+				}
+			],
+			"conference_full_name": "Information Credibility & Alternative Realities in Troubled Democracies",
+			"conference": "CSCW Workshop",
+			"conference url": "https://zivepstein.github.io/info-credibility-workshop/",
+			"year": "2021",
+			"award": "",
+			"short_abstract": "Misinformation is a growing problem in today's online information ecosystem. In particular, on major video-sharing platforms, there are few signals for users to assess the credibility of the videos they encounter, even as more people turn towards them for getting information.",
+			"abstract": "Misinformation is a growing problem in today's online information ecosystem. In particular, on major videosharing platforms, there are few signals for users to assess the credibility of the videos they encounter, even as more people turn towards them for getting information. In this work, we propose a series of designs to indicate credibility on video-sharing platforms, including via signals on video search result pages, as well as citations on video pages, using the major platform YouTube. From an initial interview study on how users perceive YouTube credibility indicators, we found that video intent and context heavily shape how a user would apply credibility signals or citations. Along with an additional planned survey, these results inform design decisions for a browser extension we will build and deploy to test our designs.",
+			"bibtex": "",
+			"links": {
+				"pdf_url": "https://prernajuneja.com/papers/credibility-signals-youtube.pdf",
+				"website_url": "",
+				"code_url": "",
+				"data_url": "",
+				"slides_url": "",
+				"video_url": "",
+				"talk_url": ""
+			}
+		}
+	]
+}
+

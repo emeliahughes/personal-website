@@ -20,10 +20,15 @@ The following files contain Mavo apps with configurable storage:
 
 1. **index.html** (Homepage)
    - Publications app (read-only, shows 3 most recent)
+   - Preprints app (read-only, shows all)
    - News app (editable)
+   - Travel app (editable)
 
 2. **publications.html** (Publications Page)
    - Publications app (full editing)
+   - Preprints app (full editing)
+   - Workshop Papers app (full editing)
+   - Doctoral Consortium app (full editing)
 
 3. **resume.html** (Resume Page)
    - Resume app (already configured for GitHub)
@@ -31,37 +36,63 @@ The following files contain Mavo apps with configurable storage:
 4. **pub-details.html** (Publication Details)
    - Publications app (already configured for GitHub)
 
+5. **preprint-details.html** (Preprint Details)
+   - Preprints app (needs configuration)
+
 ## How to Switch Storage
 
-### Currently Set To: PRODUCTION (GitHub)
+### ⚠️ Currently Set To: LOCAL (for testing)
 
 Each file has comments showing both options:
 ```html
-<!-- For local testing: mv-storage="data/publications.json" -->
-<!-- For production: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-<div mv-app="..." mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+<!-- LOCAL (currently active): mv-storage="data/publications.json" -->
+<!-- PRODUCTION: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
+<div mv-app="..." mv-storage="data/publications.json">
 ```
+
+**IMPORTANT:** Before deploying to production, you MUST switch all `mv-storage` attributes to use GitHub URLs!
 
 ### To Switch to Local Testing:
 1. In the source files (src/html/*.html), change the `mv-storage` attribute to use local paths:
    - `mv-storage="data/publications.json"`
+   - `mv-storage="data/preprints.json"`
+   - `mv-storage="data/workshop-papers.json"`
+   - `mv-storage="data/doctoral-consortium.json"`
    - `mv-storage="data/news.json"`
+   - `mv-storage="data/travel.json"`
    - `mv-storage="data/resume.json"`
 2. Rebuild with `npm run dev`
 
-### To Switch to Production:
-1. In the source files, change the `mv-storage` attribute to use GitHub:
-   - `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"`
-2. Rebuild and deploy
+### To Switch to Production (REQUIRED before deploying):
+1. In ALL source files with Mavo apps, swap the commented lines:
+   ```html
+   <!-- Comment out the LOCAL line and uncomment the PRODUCTION line -->
+   <div mv-app="..." mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+   ```
+2. Files to update:
+   - `src/html/index.html` (4 Mavo apps: publications, preprints, news, and travel)
+   - `src/html/publications.html` (4 Mavo apps: publications, preprints, workshop papers, and doctoral consortium)
+   - `src/html/preprint-details.html` (1 Mavo app: preprints)
+3. Rebuild with `npm run dev` or production build
+4. Deploy to GitHub Pages
+
+**TIP:** Use find/replace to change all instances at once:
+- Find: `mv-storage="data/`
+- Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data"` (then update the filename in the URL)
 
 ## Data Files
 
 All data is stored in JSON format:
 - `src/html/data/publications.json` - Publication entries
+- `src/html/data/preprints.json` - Late breaking work & preprint entries
+- `src/html/data/workshop-papers.json` - Lightly refereed workshop papers
+- `src/html/data/doctoral-consortium.json` - Doctoral consortium papers
 - `src/html/data/news.json` - News items
+- `src/html/data/travel.json` - Upcoming travel items
 - `src/html/data/project-nav.json` - Project navigation items
 - `src/html/data/resume.json` - Resume data
 - `src/html/data/global.json` - Global configuration
+- `src/html/data/pdfs/**` - PDF files for publications
 
 During build, these files are automatically copied to `dist/data/` for local testing.
 

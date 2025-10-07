@@ -45,15 +45,15 @@
     <div class="pb-60 row">
         <hr class="mt-50 mb-50 my-50">
         <!-- Left Column -->
-        <div class="col-8">
+        <div class="col-8 pe-10">
             <!-- Publications -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recent Publications</h2>
 
-            <!-- For local testing: mv-storage="data/publications.json" -->
-            <!-- For production: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-            <div  mv-app="publications" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+            <!-- LOCAL (currently active): mv-storage="data/publications.json" -->
+            <!-- PRODUCTION: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
+            <div  mv-app="publications" mv-bar="none" mv-storage="data/publications.json">
         
-                <article class="row float-left" property="paper" mv-multiple mv-order="desc" mv-if="$index < 3">
+                <article class="row float-left" property="paper" mv-multiple mv-order="year desc" mv-if="$index < 3">
         
                     <!-- Article Picture -->
                     <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
@@ -78,12 +78,12 @@
         
                         <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
         
-                        <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;">
-                            <span property="conference">Conference</span>
-                            <span property="year">Year</span>
-                        </a>
+                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;" target="_blank">
+                    <span property="conference">Conference</span>
+                    <span property="year">Year</span>
+                </a>
         
-                        <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
+                        <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
         
                         <BR>
                         <div property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary">1-2 sentence summary</div>
@@ -94,33 +94,114 @@
         
                         <!-- Article Links -->
                         <span property="links">
-                            <a href="null" property="pdf_url" class="button">
-                                <img src="assets/images/icons/pdf.png"><span>PDF</span>
+                    <a href="null" property="pdf_url" class="button" target="_blank">
+                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
+                    </a>
+    
+                    <a href="null" property="website_url" class="button" target="_blank">
+                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
+                    </a>
+    
+                    <a href="null" property="code_url" class="button" target="_blank">
+                        <img src="assets/images/icons/code.png"><span> Code</span>
+                    </a>
+    
+                    <a href="null" property="data_url" class="button" target="_blank">
+                        <img src="assets/images/icons/database.png"><span> Data</span>
+                    </a>
+    
+                    <a href="null" property="slides_url" class="button" target="_blank">
+                        <img src="assets/images/icons/slides.png"><span>Slides</span>
+                    </a>
+    
+                    <a href="null" property="video_url" class="button" target="_blank">
+                        <img src="assets/images/icons/video.png"><span> Video</span>
+                    </a>
+    
+                    <a href="null" property="talk_url" class="button" target="_blank">
+                        <img src="assets/images/icons/video.png"><span> Talk</span>
+                    </a>
+                            <BR><BR>
+                        </span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Late Breaking Work & Preprints -->
+            <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Late Breaking Work & Preprints</h2>
+
+            <!-- LOCAL (currently active): mv-storage="data/preprints.json" -->
+            <!-- PRODUCTION: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
+            <div  mv-app="preprints" mv-bar="none" mv-storage="data/preprints.json">
+        
+                <article class="row float-left" property="paper" mv-multiple mv-order="year desc">
+        
+                    <!-- Article Picture -->
+                    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%;">
+                    </div>
+        
+                    <!-- Article Info -->
+                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
+                        <B>
+                            <a href="preprint-details.html?id=[id]">
+                                <span class="mini-header2" property="title">Paper Title</span>
                             </a>
-            
-                            <a href="null" property="website_url" class="button">
-                                <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
-                            </a>
-            
-                            <a href="null" property="code_url" class="button">
-                                <img src="assets/images/icons/code.png"><span> Code</span>
-                            </a>
-            
-                            <a href="null" property="data_url" class="button">
-                                <img src="assets/images/icons/database.png"><span> Data</span>
-                            </a>
-            
-                            <a href="null" property="slides_url" class="button">
-                                <img src="assets/images/icons/slides.png"><span>Slides</span>
-                            </a>
-            
-                            <a href="null" property="video_url" class="button">
-                                <img src="assets/images/icons/video.png"><span> Video</span>
-                            </a>
-            
-                            <a href="null" property="talk_url" class="button">
-                                <img src="assets/images/icons/video.png"><span> Talk</span>
-                            </a>
+                        </B>
+
+                        <BR>
+                        <p class="hide-on-read">
+                            URL id: /preprints/<span property="id" mv-default="[idify(title)]"></span>
+                        </p>
+        
+                        <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
+                        <BR>
+        
+                        <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
+        
+                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;" target="_blank">
+                    <span property="conference">Conference</span>
+                    <span property="year">Year</span>
+                </a>
+        
+                        <span class="btn btn-xs [if(!is_preprint, 'hide-on-read')]" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
+                        <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
+        
+                        <div class="hide-on-read" property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary" mv-if="short_abstract">1-2 sentence summary</div>
+        
+                        <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
+        
+                        <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
+        
+                        <!-- Article Links -->
+                        <span property="links">
+                    <a href="null" property="pdf_url" class="button" target="_blank">
+                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
+                    </a>
+    
+                    <a href="null" property="website_url" class="button" target="_blank">
+                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
+                    </a>
+    
+                    <a href="null" property="code_url" class="button" target="_blank">
+                        <img src="assets/images/icons/code.png"><span> Code</span>
+                    </a>
+    
+                    <a href="null" property="data_url" class="button" target="_blank">
+                        <img src="assets/images/icons/database.png"><span> Data</span>
+                    </a>
+    
+                    <a href="null" property="slides_url" class="button" target="_blank">
+                        <img src="assets/images/icons/slides.png"><span>Slides</span>
+                    </a>
+    
+                    <a href="null" property="video_url" class="button" target="_blank">
+                        <img src="assets/images/icons/video.png"><span> Video</span>
+                    </a>
+    
+                    <a href="null" property="talk_url" class="button" target="_blank">
+                        <img src="assets/images/icons/video.png"><span> Talk</span>
+                    </a>
                             <BR><BR>
                         </span>
                     </div>
@@ -130,14 +211,26 @@
         </div>
 
         <!-- right column -->
-        <div class="col-4">
+        <div class="col-4 ps-10">
             <!-- news -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recently</h2>
-            <!-- For local testing: mv-storage="data/news.json" -->
-            <!-- For production: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
-            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+            <!-- LOCAL (currently active): mv-storage="data/news.json" -->
+            <!-- PRODUCTION: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
+            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="data/news.json">
                 <ul mv-list class="news-list" style="padding-left: 30px;">
-                    <li property="news-item" mv-list-item mv-order="desc" style="margin-bottom: 15px; padding-left: 10px;">
+                    <li property="news-item" mv-list-item mv-order="date desc" style="margin-bottom: 15px; padding-left: 10px;">
+                        <strong><span property="date"></span>:</strong> <span property="text"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Upcoming Travel -->
+            <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Upcoming Travel</h2>
+            <!-- LOCAL (currently active): mv-storage="data/travel.json" -->
+            <!-- PRODUCTION: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
+            <div mv-app="travel" class="mv-autoedit" mv-bar='no-login' mv-storage="data/travel.json">
+                <ul mv-list class="news-list" style="padding-left: 30px;">
+                    <li property="travel-item" mv-list-item style="margin-bottom: 15px; padding-left: 10px;">
                         <strong><span property="date"></span>:</strong> <span property="text"></span>
                     </li>
                 </ul>

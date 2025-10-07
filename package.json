@@ -43,6 +43,10 @@
                 "to": "{dist}/data"
             },
             {
+                "from": "{src}/html/data/pdfs/**",
+                "to": "{dist}/data/pdfs"
+            },
+            {
                 "from": [
                     "node_modules/*bootstrap/dist/js/bootstrap.min.js",
                     "node_modules/*bootstrap/dist/js/bootstrap.min.js.map",

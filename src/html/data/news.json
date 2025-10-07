@@ -1,24 +1,48 @@
 {
 	"news-item": [
 		{
+			"date": "August 2025",
+			"text": "Began teaching Current State and Future of Generative AI (ESTEEM 60244-01), a graduate course exploring AI foundations, ethics, and innovation."
+		},
+		{
+			"date": "July 2025",
+			"text": "Named as a part of the Institute for Social Concerns Graduate Justice Fellowship 2025-2026 cohort"
+		},
+		{
+			"date": "November 2024",
+			"text": "Presented Mainstream News Narratives on Youth Online Safety at CSCW 2024 in Costa Rica"
+		},
+		{
+			"date": "October 2024",
+			"text": "Presented early results on algorithmic publics and event-based virality at AoIR 2024 doctoral colloquium."
+		},
+		{
+			"date": "May 2024",
+			"text": "Presented Viblio: Introducing Credibility Signals on YouTube at CHI 2024."
+		},
+		{
+			"date": "April 2024",
+			"text": "Awarded Best Research Pitch, Honorable Mention at the Notre Dame Computer Science and Engineering Poster Fair"
+		},
+		{
+			"date": "August 2023",
+			"text": "Joined the Weninger Lab at the University of Notre Dame as a PhD student in Computer Science & Engineering"
+		},
+		{
+			"date": "May 2023",
+			"text": "Awarded the Jack and Mary Ann Remick Graduate Fellowship in Engineering to study at the University of Notre Dame"
+		},
+		{
+			"date": "June 2022",
+			"text": "Graduated from the University of Washington with a BS in Informatics and a BA in Drawing & Painting"
+		},
+		{
 			"date": "May 2022",
-			"text": "Renee, Anson, and I presented our poster on Viblio at the 2022 URS"
+			"text": "Presented Viblio: Enhancing Credibility Awareness on YouTube at University of Washington's Undergraduate Research Symposium"
 		},
 		{
 			"date": "June 2021",
-			"text": "Renee Wang and I presented our workshop paper at ICWSM 2021"
-		},
-		{
-			"date": "May 2021",
-			"text": "I presented my work on Viblio so far with in the Usability group at the 2021 URS"
-		},
-		{
-			"date": "March 2021",
-			"text": "I was invited to present my work on Viblio under the WikiUX Grant at Mozilla Festival with the Credibilty Coalition"
-		},
-		{
-			"date": "Jan 2021",
-			"text": "I wrote an article on the background of my project for MisInfoCon"
+			"text": "Presented workshop paper on Viblio at ICWSM 2021"
 		}
 	]
 }
