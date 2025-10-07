@@ -49,7 +49,7 @@
             <!-- Publications -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Publications</h2>
 
-            <div  mv-app="publications" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+            <div  mv-app="publications" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="data/publications.json">
 
                 <div class="mv-bar mv-ui"></div>
         
@@ -134,7 +134,7 @@
                 <h2 class="h3 text-center mt-70 pb-20 mb-10" style="color: #a32121">Selected Work</h2>
                 
                 <div class="pt-30">
-                    <div class="row align-items-start gh-1 gv-1" mv-app="project-nav" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
+                    <div class="row align-items-start gh-1 gv-1" mv-app="project-nav" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="data/project-nav.json">
                         
                         <div class="d-block col-sm-6 col-12 col-lg-4 pt-15 px-15" property="nav-item" mv-multiple mv-order="desc"  data-show-delay="50" data-show-distance="5" data-show-duration="500">
                             <a href="null" property="href" class="d-block show-on-scroll text-decoration-none" data-show-delay="50" data-show-distance="5" data-show-duration="500">
@@ -176,19 +176,11 @@
         <div class="col-4">
             <!-- news -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recently</h2>
-            <div mv-app="news" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
-                <ul mv-list>
-                    <span property="news-item" mv-list-item  mv-order="asc"  mv-if="$index < 5">
-                        <div class="card">
-                            <div class="card-body px-20 pb-40 pt-0 text-start d-flex flex-column justify-content-center">
-                                <h5><span class="card-date inline text-em" property="date"></span>: 
-                                <span class="card-title inline" property="title"></span></h5>
-                                <p class="mb-0"><span class="card-text m-0" property="text"></span>
-                                <span class="btn p-0 text-center"  href="[href]">&rightarrow;</span></p>
-                            </div>
-                        </div>
-                    </span>
-        
+            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="data/news.json">
+                <ul mv-list class="news-list" style="padding-left: 30px;">
+                    <li property="news-item" mv-list-item mv-order="desc" style="margin-bottom: 15px; padding-left: 10px;">
+                        <strong><span property="date"></span>:</strong> <span property="text"></span>
+                    </li>
                 </ul>
             </div>
         </div>

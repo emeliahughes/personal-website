@@ -22,9 +22,6 @@
         "index.html": {
             "name": "home"
         },
-        "news.html": {
-            "name": "news"
-        },
         "art-portfolio.html": {
             "name": "painting"
         },

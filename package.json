@@ -39,6 +39,10 @@
                 "to": "{dist}"
             },
             {
+                "from": "{src}/html/data/*.json",
+                "to": "{dist}/data"
+            },
+            {
                 "from": [
                     "node_modules/*bootstrap/dist/js/bootstrap.min.js",
                     "node_modules/*bootstrap/dist/js/bootstrap.min.js.map",

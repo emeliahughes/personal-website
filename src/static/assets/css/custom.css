@@ -118,3 +118,9 @@
 [property="citation"] {
     padding-left: 25px;
 }
+
+/* News list with larger bullets */
+.news-list li::marker {
+    font-size: 1.5em;
+    line-height: 0.8;
+}
