@@ -41,7 +41,7 @@ The following files contain Mavo apps with configurable storage:
 
 ## How to Switch Storage
 
-### ⚠️ Currently Set To: LOCAL (for testing)
+### ⚠️ Currently Set To: PRODUCTION (GitHub storage)
 
 Each file has comments showing both options:
 ```html
