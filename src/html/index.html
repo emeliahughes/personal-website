@@ -47,13 +47,13 @@
         <!-- Left Column -->
         <div class="col-8">
             <!-- Publications -->
-            <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Publications</h2>
+            <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recent Publications</h2>
 
-            <div  mv-app="publications" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="data/publications.json">
-
-                <div class="mv-bar mv-ui"></div>
+            <!-- For local testing: mv-storage="data/publications.json" -->
+            <!-- For production: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
+            <div  mv-app="publications" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
         
-                <article class="row float-left" property="paper" mv-multiple mv-order="desc">
+                <article class="row float-left" property="paper" mv-multiple mv-order="desc" mv-if="$index < 3">
         
                     <!-- Article Picture -->
                     <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
@@ -73,9 +73,7 @@
                             URL id: /publications/<span property="id" mv-default="[idify(title)]"></span>
                         </p>
         
-                        <span property="author" mv-multiple style="font-size: 14px;">
-                            <span property="author_name" mv-edit-list="memberList">Author Name</span>
-                        </span>
+                        <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
                         <BR>
         
                         <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
@@ -129,54 +127,15 @@
                 </article>
             </div>
 
-            <!-- Projects -->
-            <div class="index-projects">
-                <h2 class="h3 text-center mt-70 pb-20 mb-10" style="color: #a32121">Selected Work</h2>
-                
-                <div class="pt-30">
-                    <div class="row align-items-start gh-1 gv-1" mv-app="project-nav" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="data/project-nav.json">
-                        
-                        <div class="d-block col-sm-6 col-12 col-lg-4 pt-15 px-15" property="nav-item" mv-multiple mv-order="desc"  data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                            <a href="null" property="href" class="d-block show-on-scroll text-decoration-none" data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                                <img class="mw-100 object-fit-contain" property="image" alt="" style="height: 250px; object-fit: contain; object-position: center;">
-                                <h5 class="text-decoration-none m-10 text-center" property="title" mv-default="Project Title"></h5>
-                            </a>
-                        </div>
-                        
-                        <div class="d-block col-sm-6 col-12 col-lg-4 pt-15 px-15" property="nav-item" mv-multiple mv-order="desc"  data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                            <a href="null" property="href" class="d-block show-on-scroll text-decoration-none" data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                                <img class="mw-100 object-fit-contain" property="image" alt="" style="height: 250px; object-fit: contain; object-position: center;">
-                                <h5 class="text-decoration-none m-10 text-center" property="title" mv-default="Project Title"></h5>
-                            </a>
-                        </div>
-
-                        <div class="d-block col-sm-6 col-12 col-lg-4 pt-15 px-15" property="nav-item" mv-multiple mv-order="desc"  data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                            <a href="null" property="href" class="d-block show-on-scroll text-decoration-none" data-show-delay="50" data-show-distance="5" data-show-duration="500">
-                                <img class="mw-100 object-fit-contain" property="image" alt="" style="height: 250px; object-fit: contain; object-position: center;">
-                                <h5 class="text-decoration-none m-10 text-center" property="title" mv-default="Project Title"></h5>
-                            </a>
-                        </div>
-
-                        <!-- <div class="w-100 align-items-center mt-60 justify-content-center container d-flex">
-                            <div class="col"></div>
-                            <a href="projects.html" class="col-2 btn btn-circle btn-light btn-lg">more</a>
-                            <div class="col"></div>
-                        </div> -->
-
-                        
-                    </div>
-
-                    
-                </div>
-
-            </div>
         </div>
 
         <!-- right column -->
         <div class="col-4">
             <!-- news -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recently</h2>
-            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="data/news.json">
+            <!-- For local testing: mv-storage="data/news.json" -->
+            <!-- For production: mv-storage="https://github.com/emeliahughes/personal-website/src/html/data" -->
+            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data">
                 <ul mv-list class="news-list" style="padding-left: 30px;">
                     <li property="news-item" mv-list-item mv-order="desc" style="margin-bottom: 15px; padding-left: 10px;">
                         <strong><span property="date"></span>:</strong> <span property="text"></span>

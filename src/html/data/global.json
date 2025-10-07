@@ -22,6 +22,9 @@
         "index.html": {
             "name": "home"
         },
+        "publications.html": {
+            "name": "publications"
+        },
         "art-portfolio.html": {
             "name": "painting"
         },
