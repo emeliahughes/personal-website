@@ -27,10 +27,11 @@
 			"short_abstract": "Misinformation is a growing problem in today's online information ecosystem. In particular, on major video-sharing platforms, there are few signals for users to assess the credibility of the videos they encounter, even as more people turn towards them for getting information.",
 			"abstract": "Misinformation is a growing problem in today's online information ecosystem. In particular, on major videosharing platforms, there are few signals for users to assess the credibility of the videos they encounter, even as more people turn towards them for getting information. In this work, we propose a series of designs to indicate credibility on video-sharing platforms, including via signals on video search result pages, as well as citations on video pages, using the major platform YouTube. From an initial interview study on how users perceive YouTube credibility indicators, we found that video intent and context heavily shape how a user would apply credibility signals or citations. Along with an additional planned survey, these results inform design decisions for a browser extension we will build and deploy to test our designs.",
 			"links": {
-				"pdf_url": "https://prernajuneja.com/papers/credibility-signals-youtube.pdf",
+				"pdf_url": "https://www.zive.info/info-credibility-workshop/papers/IntroductingCredibilitySignalsYouTube.pdf",
 				"website_url": "https://www.zive.info/info-credibility-workshop/"
 			},
-			"is_preprint": false
+			"is_preprint": false,
+			"picture": "https://cdn.jsdelivr.net/gh/emeliahughes/personal-website@b6459daf3d55c8f5b232d2d37c63074c5fb0d05f/src/html/data/images/icwsm%20workshop.png"
 		}
 	]
 }
