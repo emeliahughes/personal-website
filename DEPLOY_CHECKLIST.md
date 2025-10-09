@@ -9,6 +9,8 @@ Before deploying to GitHub Pages, complete these steps:
 - [ ] **src/html/index.html** - Change 4 mv-storage attributes (publications + preprints + news + travel)
 - [ ] **src/html/publications.html** - Change 4 mv-storage attributes (publications + preprints + workshop papers + doctoral consortium)
 - [ ] **src/html/preprint-details.html** - Change 1 mv-storage attribute (preprints)
+- [ ] **src/html/workshop-details.html** - Change 1 mv-storage attribute (workshop papers)
+- [ ] **src/html/doctoral-consortium-details.html** - Change 1 mv-storage attribute (doctoral consortium)
 
 ### Quick Find & Replace:
 

@@ -37,7 +37,13 @@ The following files contain Mavo apps with configurable storage:
    - Publications app (already configured for GitHub)
 
 5. **preprint-details.html** (Preprint Details)
-   - Preprints app (needs configuration)
+   - Preprints app (already configured for GitHub)
+
+6. **workshop-details.html** (Workshop Paper Details)
+   - Workshop Papers app (already configured for GitHub)
+
+7. **doctoral-consortium-details.html** (Doctoral Consortium Details)
+   - Doctoral Consortium app (already configured for GitHub)
 
 ## How to Switch Storage
 
@@ -73,6 +79,8 @@ Each file has comments showing both options:
    - `src/html/index.html` (4 Mavo apps: publications, preprints, news, and travel)
    - `src/html/publications.html` (4 Mavo apps: publications, preprints, workshop papers, and doctoral consortium)
    - `src/html/preprint-details.html` (1 Mavo app: preprints)
+   - `src/html/workshop-details.html` (1 Mavo app: workshop papers)
+   - `src/html/doctoral-consortium-details.html` (1 Mavo app: doctoral consortium)
 3. Rebuild with `npm run dev` or production build
 4. Deploy to GitHub Pages
 
