@@ -13,15 +13,11 @@
 			"conference": "AoIR",
 			"year": "2024",
 			"short_abstract": "",
-			"abstract": "",
-			"bibtex": "",
 			"links": {
-				"website_url": "",
-				"pdf_url": "data/pdfs/AoIR_Doctoral_Colloquium.pdf",
-				"video_url": ""
+				"pdf_url": "data/pdfs/AoIR_Doctoral_Colloquium.pdf"
 			},
-			"picture": ""
+			"picture": "https://cdn.jsdelivr.net/gh/emeliahughes/personal-website@a5496f9a36339079af2ef30a756224f2c5f69495/src/html/data/images/aoir%20doc%20col.png",
+			"is_preprint": false
 		}
 	]
 }
-
