@@ -1,7 +1,7 @@
 {
 	"paper": [
 		{
-			"picture": "",
+			"picture": "https://cdn.jsdelivr.net/gh/emeliahughes/personal-website@0a2211b6c59953a8fb49b10bc64f221f5af59714/src/html/data/images/Trush%20Social%20Figures%20(8.5%20x%208.5%20in).png",
 			"title": "Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse",
 			"id": "echo-chambers-information-brokers-truth-social",
 			"author": [
@@ -16,23 +16,15 @@
 			"conference": "CSCW Companion",
 			"conference url": "https://doi.org/10.1145/3715070.3749241",
 			"year": "2025",
-			"award": "",
 			"is_preprint": true,
 			"short_abstract": "This study examines the structural dynamics of Truth Social, a politically aligned social media platform, during two major political events: the U.S. Supreme Court's overturning of Roe v. Wade and the FBI's search of Mar-a-Lago. Using a large-scale dataset of user interactions based on re-truths, we analyze how the network evolves in relation to fragmentation, polarization, and user influence.",
 			"abstract": "This study examines the structural dynamics of Truth Social, a politically aligned social media platform, during two major political events: the U.S. Supreme Court's overturning of Roe v. Wade and the FBI's search of Mar-a-Lago. Using a large-scale dataset of user interactions based on re-truths (platform-native reposts), we analyze how the network evolves in relation to fragmentation, polarization, and user influence. Our findings reveal a segmented and ideologically homogenous structure dominated by a small number of central figures. Political events prompt temporary consolidation around shared narratives, followed by rapid returns to fragmented, echo-chambered clusters. Centrality metrics highlight the disproportionate role of key influencers, particularly @realDonaldTrump, in shaping visibility and directing discourse. These results contribute to research on alternative platforms, political communication, and online network behavior, demonstrating how infrastructure and community dynamics together reinforce ideological boundaries and limit cross-cutting engagement.",
 			"bibtex": "@misc{hughes2025echochambers,\n      title={Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse}, \n      author={Emelia May Hughes and Tim Weninger},\n      year={2025},\n      eprint={2509.08676},\n      archivePrefix={arXiv},\n      primaryClass={cs.SI},\n      url={https://arxiv.org/abs/2509.08676},\n      doi={10.48550/arXiv.2509.08676},\n      note={arXiv:2509.08676 [cs.SI]}\n}",
 			"links": {
-				"pdf_url": "https://arxiv.org/pdf/2509.08676",
-				"website_url": "",
-				"code_url": "",
-				"data_url": "",
-				"slides_url": "",
-				"video_url": "",
-				"talk_url": ""
+				"pdf_url": "https://arxiv.org/pdf/2509.08676"
 			}
 		},
 		{
-			"picture": "",
 			"title": "Examining Mainstream News Media Narratives on Youth Online Safety",
 			"id": "examining-mainstream-news-media-narratives-youth-online-safety",
 			"author": [
@@ -53,22 +45,15 @@
 			"conference": "CSCW Companion",
 			"conference url": "https://doi.org/10.1145/3678884.3681874",
 			"year": "2024",
-			"award": "",
 			"short_abstract": "Despite the growing literature on adolescent online safety, mainstream news media continues to be a large influence in shaping public perceptions of online safety. This paper investigates the narratives surrounding youth online safety as depicted in mainstream news media through a systematic review of 157 news articles.",
 			"abstract": "People form their perspectives and opinions from their experiences and exposure to different information. Despite the growing literature on adolescent online safety, mainstream news media continues to be a large influence in shaping public perceptions of online safety. Understanding these narratives is essential for developing effective strategies to protect young internet users. This paper investigates the narratives surrounding youth online safety as depicted in mainstream news media. Through a systematic review of 157 news articles, we found three prevalent narratives: 1) a focus on negative youth risk experiences and heightened concerns regarding mental health issues, 2) an emphasis on restrictive practices as a primary intervention strategy, and 3) a lack of youth perspectives in online safety narratives. Our work highlights significant trends and discrepancies compared to current academic research on youth online safety. The insights from our findings offer important implications for media representation and the development of effective online safety strategies for youth. Content Warning: This paper discusses sensitive topics, such as emotional trauma, sexual exploitation, self-harm, and other adverse life events of children, which may be triggering. Reader discretion is advised.",
 			"bibtex": "@inproceedings{10.1145/3678884.3681874,\nauthor = {Oguine, Ozioma Collins and Anuyah, Oghenemaro and Hughes, Emelia M. and Badillo-Urquiola, Karla},\ntitle = {Examining Mainstream News Media Narratives on Youth Online Safety},\nyear = {2024},\nisbn = {9798400711145},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3678884.3681874},\ndoi = {10.1145/3678884.3681874},\nabstract = {People form their perspectives and opinions from their experiences and exposure to different information. Despite the growing literature on adolescent online safety, mainstream news media continues to be a large influence in shaping public perceptions of online safety. Understanding these narratives is essential for developing effective strategies to protect young internet users. This paper investigates the narratives surrounding youth online safety as depicted in mainstream news media. Through a systematic review of 157 news articles, we found three prevalent narratives: 1) a focus on negative youth risk experiences and heightened concerns regarding mental health issues, 2) an emphasis on restrictive practices as a primary intervention strategy, and 3) a lack of youth perspectives in online safety narratives. Our work highlights significant trends and discrepancies compared to current academic research on youth online safety. The insights from our findings offer important implications for media representation and the development of effective online safety strategies for youth. Content Warning: This paper discusses sensitive topics, such as emotional trauma, sexual exploitation, self-harm, and other adverse life events of children, which may be triggering. Reader discretion is advised.},\nbooktitle = {Companion Publication of the 2024 Conference on Computer-Supported Cooperative Work and Social Computing},\npages = {349–354},\nnumpages = {6},\nkeywords = {adolescent online safety, kids online safety act, kosa, mainstream news media, mental health, social media, youth online safety},\nlocation = {San Jose, Costa Rica},\nseries = {CSCW Companion '24}\n}",
 			"links": {
-				"pdf_url": "https://doi.org/10.1145/3678884.3681874",
-				"website_url": "",
-				"code_url": "",
-				"data_url": "",
-				"slides_url": "",
-				"video_url": "",
-				"talk_url": ""
-			}
+				"pdf_url": "https://doi.org/10.1145/3678884.3681874"
+			},
+			"is_preprint": false
 		},
 		{
-			"picture": "",
 			"title": "Misinformation or Activism: Mapping Networked Moral Panic Through an Analysis of #SaveTheChildren",
 			"id": "misinformation-or-activism-mapping-networked-moral-panic-savethechildren",
 			"author": [
@@ -92,19 +77,13 @@
 			"conference": "AoIR SPIR",
 			"conference url": "https://doi.org/10.5210/spir.v2021i0.12212",
 			"year": "2021",
-			"award": "",
 			"short_abstract": "QAnon's co-optation of the #SaveTheChildren movement exemplifies networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories.",
 			"abstract": "When looking at the recent social-political history of America it is difficult to avoid references to QAnon, a widespread, conservative-leaning conspiracy that amalgamates numerous conspiracies into a single movement. Central to the movement's growth has been a moral panic around child sex trafficking that has served as a gateway for new adherents to become exposed to broader QAnon rhetoric. QAnon's co-optation of the #SaveTheChildren (#STC) movement exemplifies this networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram—paying particular attention to their motivations, tactics and desired outcomes—in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories. Research is drawn from an inductive thematic analysis of 1,400 Instagram posts related to the #SaveTheChildren movement across 2020. Analysis illuminates how the #SaveTheChildren movement is defined more as an identity based, social-political movement rooted in moral panic— rather than one focused on truly supporting human rights. Our analysis illuminates how networked moral panics— facilitated by the affordances and tactics of social media —can bring together disparate communities to spread misinformation under the guise of activism.",
 			"bibtex": "@article{Moran_Prochaska_Schlegel_Hughes_Prout_2021, title={MISINFORMATION OR ACTIVISM: MAPPING NETWORKED MORAL PANIC THROUGH AN ANALYSIS OF #SAVETHECHILDREN}, volume={2021}, url={https://spir.aoir.org/ojs/index.php/spir/article/view/12212}, DOI={10.5210/spir.v2021i0.12212}, abstractNote={When looking at the recent social-political history of America it is difficult to avoid references to QAnon, a widespread, conservative-leaning conspiracy that amalgamates numerous conspiracies into a single movement. Central to the movement's growth has been a moral panic around child sex trafficking that has served as a gateway for new adherents to become exposed to broader QAnon rhetoric. QAnon's co-optation of the #SaveTheChildren (#STC) movement exemplifies this networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram—paying particular attention to their motivations, tactics and desired outcomes—in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories. Research is drawn from an inductive thematic analysis of 1,400 Instagram posts related to the #SaveTheChildren movement across 2020. Analysis illuminates how the #SaveTheChildren movement is defined more as an identity based, social-political movement rooted in moral panic— rather than one focused on truly supporting human rights. Our analysis illuminates how networked moral panics— facilitated by the affordances and tactics of social media —can bring together disparate communities to spread misinformation under the guise of activism.}, journal={AoIR Selected Papers of Internet Research}, author={Moran, Rachel Elizabeth and Prochaska, Stephen and Schlegel, Isabelle and Hughes, Emelia May and Prout, Owen}, year={2021}, month={Sep.} }",
 			"links": {
-				"pdf_url": "https://doi.org/10.5210/spir.v2021i0.12212",
-				"website_url": "",
-				"code_url": "",
-				"data_url": "",
-				"slides_url": "",
-				"video_url": "",
-				"talk_url": ""
-			}
+				"pdf_url": "https://doi.org/10.5210/spir.v2021i0.12212"
+			},
+			"is_preprint": false
 		}
 	]
 }
