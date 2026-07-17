@@ -1,0 +1,30 @@
+{
+    "overview": "My teaching centers AI literacy, critical platform thinking, beginner-friendly technical instruction, and project-based learning. I design courses and assignments that help students understand how computational systems work, evaluate their social implications, and build usable prototypes.",
+    "philosophy": "I aim to make technical and theoretical ideas accessible without oversimplifying them. Students should leave my courses able to reason about how platforms work, interrogate their social consequences, and apply that thinking in hands-on projects.",
+    "courses": [
+        {
+            "title": "Generative AI & Product Studio",
+            "institution": "University of Notre Dame — ESTEEM",
+            "role": "Instructor",
+            "term": "2025–present",
+            "description": "Graduate course (ESTEEM 60244) exploring AI foundations, ethics, product thinking, and innovation through project-based learning."
+        },
+        {
+            "title": "Elements of Computing I",
+            "institution": "University of Notre Dame",
+            "role": "Teaching Assistant",
+            "term": "2024–2025",
+            "description": "Introductory programming course covering computational thinking and foundational computing concepts."
+        }
+    ],
+    "interests": [
+        "Social Computing",
+        "Human-Computer Interaction",
+        "Responsible AI / AI & Society",
+        "Online Communities",
+        "Platform Studies",
+        "Research Methods",
+        "Introductory Programming / Computing",
+        "Generative AI Product Studio"
+    ]
+}

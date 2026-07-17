@@ -1,0 +1,116 @@
+{
+    "overview": "My research asks how algorithmic platforms shape social perception: who becomes visible, how audiences are constructed, and how users interpret their own relationship to emerging online communities.",
+    "dissertation": {
+        "title": "Feed-Based Community and Algorithmic Social Perception",
+        "description": "My dissertation examines how users encounter patterns of content, people, and practices through algorithmically curated feeds, come to perceive possible communities around them, and position themselves in relation to those communities without explicit social ties or formal membership. This work develops feed-based community as a way to understand community recognition, belonging, boundaries, misalignment, and refusal in algorithmically mediated environments.",
+        "questions": [
+            "How do users recognize communities through algorithmically curated feeds?",
+            "How do they infer boundaries, norms, audiences, and membership without formal joining?",
+            "How do users position themselves as members, observers, outsiders, adjacent participants, or refusers?",
+            "How do platforms allocate visibility in ways that shape community perception?"
+        ]
+    },
+    "clusters": [
+        {
+            "title": "Algorithmic feeds and community recognition",
+            "projects": [
+                {
+                    "id": "rushtok",
+                    "title": "RushTok",
+                    "summary": "A dissertation anchor case examining how users recognize and position themselves in relation to communities encountered through algorithmically curated TikTok feeds.",
+                    "methods": "Interviews, content analysis, event-based community analysis",
+                    "status": "Doctoral consortium paper (AoIR 2024)",
+                    "link": null,
+                    "publicationId": "rushtok-an-evaluation-of-event-based-communities-on-tiktok"
+                },
+                {
+                    "id": "tokornot",
+                    "title": "TokOrNot",
+                    "summary": "A web-based experimental system examining how users distinguish personal preference, perceived popularity, and realized platform reach on TikTok.",
+                    "methods": "Experiments, system design",
+                    "status": "Research system in development",
+                    "link": null,
+                    "publicationId": null
+                },
+                {
+                    "id": "winter-boots",
+                    "title": "Winter Boots",
+                    "summary": "A TikTok content-analysis project examining how trend participation, platform visibility, and feed-based recognition shape community-like formations around ordinary identity and lifestyle content.",
+                    "methods": "Content analysis, qualitative coding",
+                    "status": "Analysis in progress",
+                    "link": null,
+                    "publicationId": null
+                }
+            ]
+        },
+        {
+            "title": "Platform visibility and networked publics",
+            "projects": [
+                {
+                    "id": "truth-social",
+                    "title": "Truth Social",
+                    "summary": "A network analysis project examining echo chambers, information brokers, and event-driven visibility shifts on Truth Social.",
+                    "methods": "Network analysis, large-scale data collection",
+                    "status": "Preprint (arXiv 2025)",
+                    "link": null,
+                    "publicationId": "echo-chambers-information-brokers-truth-social"
+                },
+                {
+                    "id": "savethechildren",
+                    "title": "#SaveTheChildren",
+                    "summary": "A project examining how networked moral panic, misinformation, and activism became entangled through the #SaveTheChildren movement.",
+                    "methods": "Qualitative coding, content analysis",
+                    "status": "Published (AoIR SPIR 2021)",
+                    "link": "qanon-project.html",
+                    "publicationId": "misinformation-or-activism-mapping-networked-moral-panic-savethechildren"
+                }
+            ]
+        },
+        {
+            "title": "Credibility, misinformation, and interface cues",
+            "projects": [
+                {
+                    "id": "viblio",
+                    "title": "Viblio",
+                    "summary": "A design and evaluation project introducing timeline-based citations and credibility signals for video-sharing platforms.",
+                    "methods": "Contextual inquiry, prototyping, user evaluation",
+                    "status": "Published (CHI 2024)",
+                    "link": "viblio-project.html",
+                    "publicationId": "viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms"
+                },
+                {
+                    "id": "youth-online-safety",
+                    "title": "Youth Online Safety",
+                    "summary": "A project examining mainstream news media narratives around youth online safety and the public framing of risk, responsibility, and platform governance.",
+                    "methods": "Systematic media review, qualitative analysis",
+                    "status": "Published (CSCW Companion 2024)",
+                    "link": null,
+                    "publicationId": "examining-mainstream-news-media-narratives-youth-online-safety"
+                }
+            ]
+        },
+        {
+            "title": "Research infrastructure and tools",
+            "projects": [
+                {
+                    "id": "qual-coder",
+                    "title": "Qual-Coder",
+                    "summary": "A custom qualitative coding platform for video-based social media research, supporting project-based coding, multiple coders, draft saving, submissions, and progress tracking.",
+                    "methods": "Tool-building, research infrastructure",
+                    "status": "Internal research tool",
+                    "link": null,
+                    "publicationId": null
+                },
+                {
+                    "id": "tokornot-system",
+                    "title": "TokOrNot System",
+                    "summary": "Experimental web platform for studying TikTok visibility and user perception of reach versus preference.",
+                    "methods": "System design, experiments",
+                    "status": "Research infrastructure",
+                    "link": null,
+                    "publicationId": null
+                }
+            ]
+        }
+    ]
+}

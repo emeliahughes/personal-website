@@ -1,0 +1,131 @@
+{% macro author_list(authors) %}
+<span class="pub-authors">{% for author in authors %}<span class="author-name">{{ author.author_name }}</span>{% endfor %}</span>
+{% endmacro %}
+
+
+{% macro pub_links(paper) %}
+<span class="pub-links">
+    {% if paper.links %}
+        {% if paper.links.pdf_url %}
+        <a href="{{ paper.links.pdf_url }}" class="button" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icons/pdf.png" alt=""><span>PDF</span>
+        </a>
+        {% endif %}
+        {% if paper.links.website_url %}
+        <a href="{{ paper.links.website_url }}" class="button" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icons/link.png" alt=""><span class="mb-8"> Website</span>
+        </a>
+        {% endif %}
+        {% if paper.links.code_url %}
+        <a href="{{ paper.links.code_url }}" class="button" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icons/code.png" alt=""><span> Code</span>
+        </a>
+        {% endif %}
+        {% if paper.links.data_url %}
+        <a href="{{ paper.links.data_url }}" class="button" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icons/database.png" alt=""><span> Data</span>
+        </a>
+        {% endif %}
+        {% if paper.links.slides_url %}
+        <a href="{{ paper.links.slides_url }}" class="button" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icons/slides.png" alt=""><span>Slides</span>
+        </a>
+        {% endif %}
+        {% if paper.links.video_url %}
+        <a href="{{ paper.links.video_url }}" class="button" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icons/video.png" alt=""><span> Video</span>
+        </a>
+        {% endif %}
+        {% if paper.links.talk_url %}
+        <a href="{{ paper.links.talk_url }}" class="button" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icons/video.png" alt=""><span> Talk</span>
+        </a>
+        {% endif %}
+    {% endif %}
+    <BR><BR>
+</span>
+{% endmacro %}
+
+
+{% macro publication_card(paper, show_preprint_badge=false) %}
+<article class="row float-left">
+    {% if paper.picture %}
+    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
+        <img class="img-responsive center-block" src="{{ paper.picture }}" alt="" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
+    </div>
+    {% endif %}
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
+        <B>
+            <a href="{{ paper | pubDetailUrl }}">
+                <span class="mini-header2">{{ paper.title }}</span>
+            </a>
+        </B>
+        <BR>
+        {{ author_list(paper.author) }}
+        <BR>
+        {% if paper['conference url'] %}
+        <a href="{{ paper['conference url'] }}" style="font-size: 12px; font-weight: 800;" target="_blank" rel="noopener noreferrer">
+            <span>{{ paper.conference }}</span>
+            <span>{{ paper.year }}</span>
+        </a>
+        {% else %}
+        <span style="font-size: 12px; font-weight: 800;">
+            <span>{{ paper.conference }}</span>
+            <span>{{ paper.year }}</span>
+        </span>
+        {% endif %}
+        {% if show_preprint_badge and paper.is_preprint %}
+        <span class="btn btn-xs" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
+        {% endif %}
+        {% if paper.award %}
+        <span class="btn btn-xs btn-warning" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span>{{ paper.award }}</span></span>
+        {% endif %}
+        <BR>
+        {% if paper.short_abstract %}
+        <div class="tinymce" style="font-size: 14px;">{{ paper.short_abstract }}</div>
+        {% endif %}
+        {{ pub_links(paper) }}
+    </div>
+</article>
+{% endmacro %}
+
+
+{% macro publication_detail(paper) %}
+<article class="row justify-content-center">
+    {% if paper.picture %}
+    <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3">
+        <img class="px-20 img-responsive center-block" src="{{ paper.picture }}" alt="" style="margin-top: 6px; max-width:100%; padding-top: 75px; border-radius: 8px; margin-bottom: 10px;">
+    </div>
+    {% endif %}
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pubbody" style="margin-left: 10px; padding-top: 75px; padding-bottom: 75px;">
+        <B><span class="mini-header2">{{ paper.title }}</span></B><BR>
+        {{ author_list(paper.author) }}
+        <BR>
+        <i><span style="color: gray;">{{ paper.conference_full_name }}</span></i><BR>
+        {% if paper['conference url'] %}
+        <a href="{{ paper['conference url'] }}" target="_blank" rel="noopener noreferrer">
+            <span>{{ paper.conference }}</span>
+            <span>{{ paper.year }}</span>
+        </a>
+        {% else %}
+        <span>{{ paper.conference }} {{ paper.year }}</span>
+        {% endif %}
+        {% if paper.award %}
+        <span class="btn btn-xs btn-warning" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span>{{ paper.award }}</span></span>
+        {% endif %}
+        <BR>
+        {{ pub_links(paper) }}
+        {% if paper.short_abstract %}
+        <div class="tinymce" style="font-size: 14px;">{{ paper.short_abstract }}</div>
+        {% endif %}
+        {% if paper.abstract %}
+        <BR><B>Abstract:</B><BR>
+        <span class="tinymce">{{ paper.abstract }}</span>
+        {% endif %}
+        {% if paper.bibtex %}
+        <BR><BR><B>Bibtex:</B><BR>
+        <div style="font-family: Courier;" class="markdown">{{ paper.bibtex }}</div>
+        {% endif %}
+    </div>
+</article>
+{% endmacro %}

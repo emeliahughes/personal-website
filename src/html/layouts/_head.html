@@ -15,10 +15,24 @@
       gtag('config', 'G-CGK80MVJKG');
     </script>
 
-    <title>Emelia Hughes</title>
+    <title>{% if page_title %}{{ page_title }} | {% endif %}{{ site.name }}</title>
 
-    <meta name="description" content="Themebau">
-    <meta name="author" content="RunWebRun">
+    <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ site.homepageMetaDescription }}{% endif %}">
+    <meta name="author" content="{{ site.name }}">
+    {% if canonical_path %}
+    <link rel="canonical" href="{{ site.url }}/{{ canonical_path }}">
+    {% elif canonical_url %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    {% else %}
+    <link rel="canonical" href="{{ site.url }}/">
+    {% endif %}
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:title" content="{% if page_title %}{{ page_title }} | {% endif %}{{ site.name }}">
+    <meta property="og:description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ site.homepageMetaDescription }}{% endif %}">
+    <meta property="og:url" content="{% if canonical_path %}{{ site.url }}/{{ canonical_path }}{% elif canonical_url %}{{ canonical_url }}{% else %}{{ site.url }}/{% endif %}">
+    <meta name="twitter:card" content="summary">
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
@@ -45,8 +59,8 @@
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    {% if canonical_path and 'publications/' in canonical_path %}
+    <base href="/">
+    {% endif %}
     {% block head %}{% endblock %}
-
-    <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
-    <script src="https://get.mavo.io/mavo.js"></script>
 </head>

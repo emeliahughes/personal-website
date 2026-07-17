@@ -1,4 +1,5 @@
-{% set page_title = 'Emelia Hughes Portfolio' %}
+{% set page_title = 'Publication' %}
+{% set meta_description = 'Publication details and links.' %}
 {% set navbar_expand = false %}
 {% set navbar_mobile = 'style-3' %}
 {% set footer = 'default-2' %}
@@ -8,94 +9,25 @@
 
 
 {% block content %}
-<div class="container-fluid justify-content-center">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 line">
-
-
-            <div mv-bar="no-login" mv-app="workshop-papers"  mv-plugins="tinymce markdown" id="[url('id')]" mv-permissions="read logout delete add edit save" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/workshop-papers.json">
-
-                <meta property="selectedPub" mv-value="url('id')" />
-
-
-                <article class="row justify-content-center" property="paper" mv-multiple mv-multiple-path="id=[url('id')]">
-
-                    <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3">
-                        <img class="px-20 img-responsive center-block" property="picture" src="null" alt="img alt" / style="margin-top: 6px; max-width:100%; padding-top: 75px; border-radius: 8px; margin-bottom: 10px;">
-                    </div>
-
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pubbody" style="margin-left: 10px; padding-top: 75px; padding-bottom: 75px;">
-
-                        <B><span class="mini-header2" property="title">Paper Title</span></B><BR>
-
-                        <span property="author" mv-multiple>
-                                <meta property="authorData" mv-value="get(people.member, 'id=' & author_name)" />
-                                <img src="[authorData.image]" alt="" mv-if="authorData != ''">
-                                <span property="author_name" mv-edit-list="memberList">Author Name</span></span>
-                        <BR>
-                            <i><span style="color: gray;" property="conference_full_name">Full Conference Name</span></i><BR>
-
-                            <a href="null" property="conference url" target="_blank">
-                                <span property="conference">Conference</span>
-                                <span property="year">Year</span>
-                            </a>
-
-                            <span class="btn btn-xs [if(!is_preprint, 'hide-on-read')]" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
-                            <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
-
-
-
-                            <BR>
-                        <span property="links">
-                            <a href="null" property="pdf_url" class="button" target="_blank">
-                                <img src="assets/images/icons/pdf.png"><span>PDF</span>
-                            </a>
-
-                            <a href="null" property="website_url" class="button" target="_blank">
-                                <img src="assets/images/icons/link.png"><span> Website</span>
-                            </a>
-
-                            <a href="null" property="code_url" class="button" target="_blank">
-                                <img src="assets/images/icons/code.png"><span> Code</span>
-                            </a>
-
-                            <a href="null" property="data_url" class="button" target="_blank">
-                                <img src="assets/images/icons/database.png"><span> Data</span>
-                            </a>
-
-                            <a href="null" property="slides_url" class="button" target="_blank">
-                                <img src="assets/images/icons/slides.png"><span>Slides</span>
-                            </a>
-
-                            <a href="null" property="video_url" class="button" target="_blank">
-                                <img src="assets/images/icons/video.png"><span> Video</span>
-                            </a>
-
-                            <a href="null" property="talk_url" class="button" target="_blank">
-                                <img src="assets/images/icons/video.png"><span> Talk</span>
-                            </a>
-
-                        </span>
-
-                        <div class="hide-on-read" property="short_abstract" class="tinymce" mv-default="1-2 sentence summary">1-2 sentence summary</div>
-
-
-                            <BR>
-                                <B>Abstract:</B><BR>
-                            <span property="abstract" class="tinymce">Abstract</span>
-                        <BR>
-                            <div mv-if="bibtex">
-                                <BR>
-                                    <B>Bibtex:</B><BR>
-
-                                <div style="font-family: Courier;" property="bibtex" class="markdown">Bibtex</div>
-                            </div>
-
-
-                    </article>
-                </div>
-                </div>
-            </div>
+<div class="container w-100 mt-10 mb-100">
+    <h1 class="h3 mt-100 mb-30">Find a Publication</h1>
+    <p>Publication detail pages have moved. Select a publication below:</p>
+    <ul class="publication-redirect-list">
+        {% for paper in allPapers %}
+        <li class="mb-10"><a href="{{ paper | pubDetailUrl }}">{{ paper.title }}</a> ({{ paper.year }})</li>
+        {% endfor %}
+    </ul>
 </div>
 {% endblock %}
 
+
+{% block javascript %}
+<script>
+(function () {
+    var params = new URLSearchParams(window.location.search);
+    var id = params.get('id');
+    if (!id) return;
+    window.location.replace('publications/' + id + '.html');
+})();
+</script>
+{% endblock %}

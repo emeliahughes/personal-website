@@ -1,0 +1,58 @@
+{% set page_title = 'Research' %}
+{% set navbar_mobile = 'style-3' %}
+{% set navbar_fixed = false %}
+{% set navbar_expand = false %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% block content %}
+<div class="container isotope mt-130 mb-100">
+    <div class="row justify-content-center text-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+            <h1 class="mb-60 show-on-scroll" data-show-duration="500" data-show-distance="20" style="color: #a32121">research ✨</h1>
+            <p class="mb-60">{{ research.overview }}</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gh-1 mb-60">
+        <div class="col-lg-10 post-content text-start">
+            <h2 class="h3 mb-20" style="color: #a32121">{{ research.dissertation.title }}</h2>
+            <p>{{ research.dissertation.description }}</p>
+            <h3 class="h5 mt-40 mb-20">Core research questions</h3>
+            <ul>
+                {% for question in research.dissertation.questions %}
+                <li>{{ question }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    {% for cluster in research.clusters %}
+    <div class="row justify-content-center text-center mb-20">
+        <div class="col-12 col-lg-10">
+            <h2 class="h3 mb-10" style="color: #a32121">{{ cluster.title }}</h2>
+        </div>
+    </div>
+    <div class="row gh-1 gv-1 mb-80">
+        {% for project in cluster.projects %}
+        <div class="col-12 col-sm-6 col-md-6">
+            <div class="p-10 text-start">
+                <h3 class="h5">{{ project.title }}</h3>
+                <p>{{ project.summary }}</p>
+                <p style="font-size: 14px;"><strong>Methods:</strong> {{ project.methods }}</p>
+                {% if project.link or project.publicationId %}
+                <p style="font-size: 14px;">
+                    {% if project.link %}<a href="{{ project.link }}" style="font-weight: 600; text-decoration: none;">Project page</a>{% endif %}
+                    {% if project.publicationId %}{% if project.link %} <span style="font-size: 1.4em; vertical-align: middle;">&middot;</span> {% endif %}<a href="publications/{{ project.publicationId }}.html" style="font-weight: 600; text-decoration: none;">Publication</a>{% endif %}
+                </p>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

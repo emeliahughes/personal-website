@@ -22,17 +22,23 @@
         "index.html": {
             "name": "home"
         },
+        "research.html": {
+            "name": "research"
+        },
         "publications.html": {
             "name": "publications"
         },
-        "art-portfolio.html": {
-            "name": "painting"
+        "teaching.html": {
+            "name": "teaching"
         },
-        "resume.html": {
-            "name": "resume"
+        "cv.html": {
+            "name": "cv"
         },
         "about-me.html": {
             "name": "about me"
+        },
+        "art-portfolio.html": {
+            "name": "art / creative work"
         }
     },
     "icon": {

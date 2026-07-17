@@ -5,349 +5,36 @@
 {% set footer_dark = true %}
 
 {% extends 'layouts/layout-1.html' %}
+{% from 'macros/publications.html' import publication_card %}
 
 
 {% block content %}
 <div class="container w-100 mt-10 mb-100 align-items-center">
     <h2 class="h3 text-center mt-100 pb-20 mb-20" style="color: #a32121">Refereed Conference Articles</h2>
-    
-    <!-- LOCAL: mv-storage="data/publications.json" -->
-    <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json" -->
-    <div  mv-app="publications" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json">
 
-        <div class="mv-bar mv-ui"></div>
-
-        <article class="row float-left" property="paper" mv-multiple mv-order="year desc">
-
-            <!-- Article Picture -->
-            <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
-            </div>
-
-            <!-- Article Info -->
-            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
-                <B>
-                    <a href="pub-details.html?id=[id]">
-                        <span class="mini-header2" property="title">Paper Title</span>
-                    </a>
-                </B>
-
-                <BR>
-                <p class="hide-on-read">
-                    URL id: /publications/<span property="id" mv-default="[idify(title)]"></span>
-                </p>
-
-                <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
-                <BR>
-
-                <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
-
-                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;">
-                    <span property="conference">Conference</span>
-                    <span property="year">Year</span>
-                </a>
-
-                <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
-
-                <BR>
-                <div property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary" mv-if="short_abstract">1-2 sentence summary</div>
-
-                <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
-
-                <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
-
-                <!-- Article Links -->
-                <span property="links">
-                    <a href="null" property="pdf_url" class="button">
-                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
-                    </a>
-    
-                    <a href="null" property="website_url" class="button">
-                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
-                    </a>
-    
-                    <a href="null" property="code_url" class="button">
-                        <img src="assets/images/icons/code.png"><span> Code</span>
-                    </a>
-    
-                    <a href="null" property="data_url" class="button">
-                        <img src="assets/images/icons/database.png"><span> Data</span>
-                    </a>
-    
-                    <a href="null" property="slides_url" class="button">
-                        <img src="assets/images/icons/slides.png"><span>Slides</span>
-                    </a>
-    
-                    <a href="null" property="video_url" class="button">
-                        <img src="assets/images/icons/video.png"><span> Video</span>
-                    </a>
-    
-                    <a href="null" property="talk_url" class="button">
-                        <img src="assets/images/icons/video.png"><span> Talk</span>
-                    </a>
-                    <BR><BR>
-                </span>
-            </div>
-        </article>
-    </div>
+    {% for paper in publications.conference %}
+        {{ publication_card(paper) }}
+    {% endfor %}
 
     <h2 class="h3 text-center mt-60 pb-20 mb-20" style="color: #a32121">Late Breaking Work & Preprints</h2>
-    
-    <!-- LOCAL: mv-storage="data/preprints.json" -->
-    <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json" -->
-    <div  mv-app="preprints-full" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json">
 
-        <div class="mv-bar mv-ui"></div>
-
-        <article class="row float-left" property="paper" mv-multiple mv-order="year desc">
-
-            <!-- Article Picture -->
-            <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
-            </div>
-
-            <!-- Article Info -->
-            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
-                <B>
-                    <a href="preprint-details.html?id=[id]">
-                        <span class="mini-header2" property="title">Paper Title</span>
-                    </a>
-                </B>
-
-                <BR>
-                <p class="hide-on-read">
-                    URL id: /preprints/<span property="id" mv-default="[idify(title)]"></span>
-                </p>
-                
-                <p class="hide-on-read">
-                    Is Preprint? <input type="checkbox" property="is_preprint">
-                </p>
-
-                <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
-                <BR>
-
-                <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
-
-                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;" target="_blank">
-                    <span property="conference">Conference</span>
-                    <span property="year">Year</span>
-                </a>
-
-                <span class="btn btn-xs [if(!is_preprint, 'hide-on-read')]" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
-                <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
-
-                <div property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary" mv-if="short_abstract">1-2 sentence summary</div>
-
-                <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
-
-                <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
-
-                <!-- Article Links -->
-                <span property="links">
-                    <a href="null" property="pdf_url" class="button" target="_blank">
-                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
-                    </a>
-    
-                    <a href="null" property="website_url" class="button" target="_blank">
-                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
-                    </a>
-    
-                    <a href="null" property="code_url" class="button" target="_blank">
-                        <img src="assets/images/icons/code.png"><span> Code</span>
-                    </a>
-    
-                    <a href="null" property="data_url" class="button" target="_blank">
-                        <img src="assets/images/icons/database.png"><span> Data</span>
-                    </a>
-    
-                    <a href="null" property="slides_url" class="button" target="_blank">
-                        <img src="assets/images/icons/slides.png"><span>Slides</span>
-                    </a>
-    
-                    <a href="null" property="video_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Video</span>
-                    </a>
-    
-                    <a href="null" property="talk_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Talk</span>
-                    </a>
-                    <BR><BR>
-                </span>
-            </div>
-        </article>
-    </div>
+    {% for paper in publications.companion %}
+        {{ publication_card(paper, true) }}
+    {% endfor %}
+    {% for paper in publications.preprints %}
+        {{ publication_card(paper, true) }}
+    {% endfor %}
 
     <h2 class="h3 text-center mt-60 pb-20 mb-20" style="color: #a32121">Lightly Refereed Workshop Papers</h2>
-    
-    <!-- LOCAL: mv-storage="data/workshop-papers.json" -->
-    <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/workshop-papers.json" -->
-    <div  mv-app="workshop-papers" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/workshop-papers.json">
 
-        <div class="mv-bar mv-ui"></div>
-
-        <article class="row float-left" property="paper" mv-multiple mv-order="year desc">
-
-            <!-- Article Picture -->
-            <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
-            </div>
-
-            <!-- Article Info -->
-            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
-                <B>
-                    <a href="workshop-details.html?id=[id]">
-                        <span class="mini-header2" property="title">Paper Title</span>
-                    </a>
-                </B>
-
-                <BR>
-                <p class="hide-on-read">
-                    URL id: /publications/<span property="id" mv-default="[idify(title)]"></span>
-                </p>
-                
-                <p class="hide-on-read">
-                    Is Preprint? <input type="checkbox" property="is_preprint">
-                </p>
-
-                <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
-                <BR>
-
-                <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
-
-                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;" target="_blank">
-                    <span property="conference">Conference</span>
-                    <span property="year">Year</span>
-                </a>
-
-                <span class="btn btn-xs [if(!is_preprint, 'hide-on-read')]" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
-                <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
-
-                <div property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary" mv-if="short_abstract">1-2 sentence summary</div>
-
-                <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
-
-                <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
-
-                <!-- Article Links -->
-                <span property="links">
-                    <a href="null" property="pdf_url" class="button" target="_blank">
-                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
-                    </a>
-    
-                    <a href="null" property="website_url" class="button" target="_blank">
-                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
-                    </a>
-    
-                    <a href="null" property="code_url" class="button" target="_blank">
-                        <img src="assets/images/icons/code.png"><span> Code</span>
-                    </a>
-    
-                    <a href="null" property="data_url" class="button" target="_blank">
-                        <img src="assets/images/icons/database.png"><span> Data</span>
-                    </a>
-    
-                    <a href="null" property="slides_url" class="button" target="_blank">
-                        <img src="assets/images/icons/slides.png"><span>Slides</span>
-                    </a>
-    
-                    <a href="null" property="video_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Video</span>
-                    </a>
-    
-                    <a href="null" property="talk_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Talk</span>
-                    </a>
-                    <BR><BR>
-                </span>
-            </div>
-        </article>
-    </div>
+    {% for paper in publications.workshop %}
+        {{ publication_card(paper, true) }}
+    {% endfor %}
 
     <h2 class="h3 text-center mt-60 pb-20 mb-20" style="color: #a32121">Doctoral Consortium Papers</h2>
-    
-    <!-- LOCAL: mv-storage="data/doctoral-consortium.json" -->
-    <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/doctoral-consortium.json" -->
-    <div  mv-app="doctoral-consortium" mv-bar='no-login' mv-permissions="read login edit add delete" mv-plugins="tinymce" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/doctoral-consortium.json">
 
-        <div class="mv-bar mv-ui"></div>
-
-        <article class="row float-left" property="paper" mv-multiple mv-order="year desc">
-
-            <!-- Article Picture -->
-            <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
-            </div>
-
-            <!-- Article Info -->
-            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
-                <B>
-                    <a href="doctoral-consortium-details.html?id=[id]">
-                        <span class="mini-header2" property="title">Paper Title</span>
-                    </a>
-                </B>
-
-                <BR>
-                <p class="hide-on-read">
-                    URL id: /publications/<span property="id" mv-default="[idify(title)]"></span>
-                </p>
-                
-                <p class="hide-on-read">
-                    Is Preprint? <input type="checkbox" property="is_preprint">
-                </p>
-
-                <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
-                <BR>
-
-                <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
-
-                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;" target="_blank">
-                    <span property="conference">Conference</span>
-                    <span property="year">Year</span>
-                </a>
-
-                <span class="btn btn-xs [if(!is_preprint, 'hide-on-read')]" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
-                <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
-
-                <div property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary" mv-if="short_abstract">1-2 sentence summary</div>
-
-                <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
-
-                <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
-
-                <!-- Article Links -->
-                <span property="links">
-                    <a href="null" property="pdf_url" class="button" target="_blank">
-                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
-                    </a>
-    
-                    <a href="null" property="website_url" class="button" target="_blank">
-                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
-                    </a>
-    
-                    <a href="null" property="code_url" class="button" target="_blank">
-                        <img src="assets/images/icons/code.png"><span> Code</span>
-                    </a>
-    
-                    <a href="null" property="data_url" class="button" target="_blank">
-                        <img src="assets/images/icons/database.png"><span> Data</span>
-                    </a>
-    
-                    <a href="null" property="slides_url" class="button" target="_blank">
-                        <img src="assets/images/icons/slides.png"><span>Slides</span>
-                    </a>
-    
-                    <a href="null" property="video_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Video</span>
-                    </a>
-    
-                    <a href="null" property="talk_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Talk</span>
-                    </a>
-                    <BR><BR>
-                </span>
-            </div>
-        </article>
-    </div>
+    {% for paper in publications.doctoral %}
+        {{ publication_card(paper, true) }}
+    {% endfor %}
 </div>
 {% endblock %}
-

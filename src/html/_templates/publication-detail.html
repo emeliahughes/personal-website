@@ -1,0 +1,17 @@
+{% set page_title = paper.title %}
+{% set meta_description = paper.short_abstract or paper.abstract %}
+{% set canonical_path = 'publications/' ~ paper.id ~ '.html' %}
+{% set navbar_expand = false %}
+{% set navbar_mobile = 'style-3' %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+{% from 'macros/publications.html' import publication_detail %}
+
+
+{% block content %}
+<div class="container-fluid justify-content-center pt-60 pb-100">
+    {{ publication_detail(paper) }}
+</div>
+{% endblock %}

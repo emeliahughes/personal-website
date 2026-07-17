@@ -1,4 +1,6 @@
-{% set page_title = 'Drawing & Painting' %}
+{% set page_title = 'Art / Creative Work' %}
+{% set meta_description = 'Art and creative work by Emelia Hughes — painting, drawing, and visual practice informing research on design and technology.' %}
+{% set canonical_path = 'art-portfolio.html' %}
 {% set navbar_mobile = 'style-3' %}
 {% set navbar_fixed = false %}
 {% set navbar_expand = false %}
@@ -28,7 +30,7 @@
         {% macro portfolio_grid(name="", filter="", classes="") %}
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-text" data-cursor-text="{{ art_portfolio[name].title }}">
             <a href="{{ art_portfolio[name].image.sm }}" class="gallery-item" data-cursor-style="cursor-text" data-cursor-text="{{ art_portfolio[name].title }}" data-show-duration="500" data-fancybox="gallery" data-animation-effect="fade">
-                <img class="mw-100" src="{{ art_portfolio[name].image.sm }}" alt="" loading="lazy">
+                <img class="mw-100" src="{{ art_portfolio[name].image.sm }}" alt="{{ art_portfolio[name].title }}" loading="lazy">
             </a>
         </div>
         {% endmacro %}
@@ -36,7 +38,7 @@
         {% macro portfolio_grid_horizontal(name="", filter="", classes="") %}
         <div class="col-12 col-sm-12 col-md-8 col-lg-6 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-text" data-cursor-text="{{ art_portfolio[name].title }}">
             <a href="{{ art_portfolio[name].image.sm }}" class="gallery-item" data-cursor-style="cursor-text" data-cursor-text="{{ art_portfolio[name].title }}" data-show-duration="500" data-fancybox="gallery" data-animation-effect="fade">
-                <img class="mw-100" src="{{ art_portfolio[name].image.sm }}" alt="" loading="lazy">
+                <img class="mw-100" src="{{ art_portfolio[name].image.sm }}" alt="{{ art_portfolio[name].title }}" loading="lazy">
             </a>
         </div>
         {% endmacro %}

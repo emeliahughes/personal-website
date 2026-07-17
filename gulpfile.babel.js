@@ -14,6 +14,7 @@ const sass = require( 'gulp-sass' )( require( 'sass' ) );
 const $ = require( 'gulp-load-plugins' )();
 
 const pkg = require( './package.json' );
+const { loadSiteData, getAllPapers, registerNunjucksFilters, formatAuthors } = require( './scripts/site-data' );
 
 const gulpConfig = ( () => {
     // template variable
@@ -61,49 +62,78 @@ gulp.task( 'browserSyncTask', () => {
 /**
  * HTML Task
  */
-gulp.task( 'html', () => {
-    // get data for nunjucks templates
-    function getData( file ) {
-        const data = JSON.parse( fs.readFileSync( gulpConfig.html.dataFile, 'utf8' ) );
-        data.file = file;
-        data.filename = path.basename( file.path );
+function getTemplateData( file ) {
+    const data = loadSiteData();
+    data.file = file;
+    data.filename = path.basename( file.path );
 
-        // active menu item for menu
-        data.isActiveMenuItem = function ( file, item, filename ) {
-            if ( file === filename || ( item.sub && item.sub[filename] ) ) {
-                return true;
-            }
+    data.isActiveMenuItem = function ( navFile, item, filename ) {
+        if ( navFile === filename || ( item.sub && item.sub[filename] ) ) {
+            return true;
+        }
 
-            if ( item.sub ) {
-                for ( const fileSub in item.sub ) {
-                    const itemSub = item.sub[fileSub];
+        if ( item.sub ) {
+            for ( const fileSub in item.sub ) {
+                const itemSub = item.sub[fileSub];
 
-                    if ( fileSub === filename || ( itemSub.sub && itemSub.sub[filename] ) ) {
-                        return true;
-                    }
+                if ( fileSub === filename || ( itemSub.sub && itemSub.sub[filename] ) ) {
+                    return true;
                 }
             }
+        }
 
-            return false;
-        };
+        return false;
+    };
 
-        return data;
-    }
+    return data;
+}
 
-    return gulp.src( gulpConfig.html.from )
-        .pipe( $.plumber( { errorHandler } ) )
-        .pipe( $.data( getData ) )
-        .pipe( $.nunjucksRender( {
-            path: gulpConfig.html.renderPath,
-            envOptions: {
-                watch: false,
-            },
-        } ) )
-        .pipe( $.prettify( { indent_size: 4, unformatted: ['pre', 'code'] } ) )
-        .pipe( gulp.dest( gulpConfig.html.to ) )
-        .on( 'end', () => {
-            browserSync.reload();
-        } );
+function nunjucksRenderOptions() {
+    return {
+        path: gulpConfig.html.renderPath,
+        envOptions: {
+            watch: false,
+        },
+        manageEnv: ( env ) => {
+            registerNunjucksFilters( env );
+        },
+    };
+}
+
+gulp.task( 'html', () => gulp.src( [
+    gulpConfig.html.from,
+    `!${ gulpConfig.variables.src }/html/_templates/**`,
+] )
+    .pipe( $.plumber( { errorHandler } ) )
+    .pipe( $.data( getTemplateData ) )
+    .pipe( $.nunjucksRender( nunjucksRenderOptions() ) )
+    .pipe( $.prettify( { indent_size: 4, unformatted: ['pre', 'code'] } ) )
+    .pipe( gulp.dest( gulpConfig.html.to ) )
+    .on( 'end', () => {
+        browserSync.reload();
+    } ) );
+
+
+gulp.task( 'publication-pages', ( cb ) => {
+    const papers = getAllPapers();
+    const nunjucks = require( 'nunjucks' );
+    const env = nunjucks.configure( gulpConfig.html.renderPath, { autoescape: true, noCache: true } );
+    registerNunjucksFilters( env );
+
+    const outDir = path.join( gulpConfig.variables.dist, 'publications' );
+    fs.mkdirSync( outDir, { recursive: true } );
+
+    papers.forEach( ( paper ) => {
+        const data = getTemplateData( { path: path.join( outDir, `${ paper.id }.html` ) } );
+        data.paper = paper;
+        data.page_title = paper.title;
+        data.meta_description = paper.short_abstract || paper.abstract || `${ paper.title } — ${ formatAuthors( paper.author ) }`;
+        data.canonical_path = `publications/${ paper.id }.html`;
+        const html = env.render( '_templates/publication-detail.html', data );
+        fs.writeFileSync( path.join( outDir, `${ paper.id }.html` ), html );
+    } );
+
+    cb();
 } );
 
 
@@ -206,7 +236,7 @@ gulp.task( 'images_min', () => gulp.src( gulpConfig.images.from )
  * Default Task
  */
 gulp.task( 'default', ( cb ) => {
-    gulp.series( 'clean', 'images', 'html', 'css', 'js', 'static', 'watch' )( cb );
+    gulp.series( 'clean', 'images', 'html', 'publication-pages', 'css', 'js', 'static', 'watch' )( cb );
 } );
 
 
@@ -216,7 +246,7 @@ gulp.task( 'default', ( cb ) => {
 gulp.task( 'production', ( cb ) => {
     process.env.NODE_ENV = process.env.NODE_ENV || 'production';
     // TODO: "images_min" disabled due to unsupported JPEG color space conversion
-    gulp.series( 'clean', 'html', 'css', 'js', 'static', 'images' )( cb );
+    gulp.series( 'clean', 'html', 'publication-pages', 'css', 'js', 'static', 'images' )( cb );
 } );
 
 

@@ -10,6 +10,7 @@
     "license": "You must have a valid license purchased only from Bootstrap in order to legally use the theme for your project.",
     "scripts": {
         "dev": "gulp",
+        "build": "gulp production",
         "images-min": "gulp images_min",
         "css-lint": "stylelint --syntax scss \"src/css/**/*.scss\"",
         "css-lint-fix": "stylelint --fix --syntax scss \"src/css/**/*.scss\"",

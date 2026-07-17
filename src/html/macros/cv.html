@@ -1,0 +1,70 @@
+{% macro cv_experience_item(item) %}
+<div class="category-item row">
+    <div class="col-10">
+        <h4 class="item-heading">{{ item['item-heading'] }}</h4>
+        {% if item['item-role'] %}<h5 class="item-role">{{ item['item-role'] }}</h5>{% endif %}
+        {% if item['item-description'] %}
+        <ul>
+            {% for desc in item['item-description'] %}
+            <li>{{ desc }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <div class="col-2">
+        <p class="item-date">{{ item['item-date'] }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro cv_publication_group(item) %}
+<div class="category-item row">
+    <h4>{{ item['publication-item-heading'] }}</h4>
+    <ol reversed class="publication-list">
+        {% for citation in item['publication-list'] %}
+        <li class="citation">{{ citation }}</li>
+        {% endfor %}
+    </ol>
+</div>
+{% endmacro %}
+
+
+{% macro cv_dated_group(item) %}
+<div class="category-item row">
+    <div class="col-2">
+        <h4 class="item-date">{{ item['date-list'] }}</h4>
+    </div>
+    <div class="col-10">
+        <ul>
+            {% for desc in item['item-description'] %}
+            <li>{{ desc }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro render_cv_category(category) %}
+<span class="card card-blog card-horizontal card-md row resume-category">
+    <h2 class="col-12 category">{{ category.category }}</h2>
+    {% for column in category['category-item'] %}
+        {% for item in column %}
+            {% if item['item-heading'] %}
+            <span class="card-body col-12">
+                {{ cv_experience_item(item) }}
+            </span>
+            {% elif item['publication-item-heading'] %}
+            <span class="card-body col-12">
+                {{ cv_publication_group(item) }}
+            </span>
+            {% elif item['date-list'] %}
+            <span class="card-body col-12">
+                {{ cv_dated_group(item) }}
+            </span>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</span>
+{% endmacro %}

@@ -1,10 +1,12 @@
 {% set page_title = 'Emelia Hughes Portfolio' %}
+{% set meta_description = site.homepageMetaDescription %}
 {% set navbar_expand = false %}
 {% set navbar_mobile = 'style-3' %}
 {% set footer = 'default-2' %}
 {% set footer_dark = true %}
 
 {% extends 'layouts/layout-1.html' %}
+{% from 'macros/publications.html' import publication_card %}
 
 
 {% block content %}
@@ -29,7 +31,6 @@
             <div class="d-none d-lg-block col order-lg-2"></div>
 
             <div class="col-12 col-lg-6 order-3 order-lg-1">
-                <!--<p class="subtitle show-on-scroll" data-show-duration="600" data-show-delay="250">Brian Newton</p>-->
                 <h1 class="h2 show-on-scroll" data-show-duration="500" data-show-distance="15">Hello! I’m Emelia.</h1>
                 <h1 class="h2 show-on-scroll" data-show-duration="500" data-show-distance="15">Social Computing Researcher & Artist</h1>
             </div>
@@ -46,195 +47,45 @@
         <hr class="mt-50 mb-50 my-50">
         <!-- Left Column -->
         <div class="col-8 pe-10">
-            <!-- Publications -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recent Publications</h2>
 
-            <!-- LOCAL: mv-storage="data/publications.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json" -->
-            <div  mv-app="publications" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json">
-        
-                <article class="row float-left" property="paper" mv-multiple mv-order="year desc" mv-if="$index < 3">
-        
-                    <!-- Article Picture -->
-                    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                        <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
-                    </div>
-        
-                    <!-- Article Info -->
-                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
-                        <B>
-                            <a href="pub-details.html?id=[id]">
-                                <span class="mini-header2" property="title">Paper Title</span>
-                            </a>
-                        </B>
+            {% for paper in publications.conference %}
+            {% if loop.index <= 3 %}
+                {{ publication_card(paper) }}
+            {% endif %}
+            {% endfor %}
 
-                        <BR>
-                        <p class="hide-on-read">
-                            URL id: /publications/<span property="id" mv-default="[idify(title)]"></span>
-                        </p>
-        
-                        <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
-                        <BR>
-        
-                        <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
-        
-                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;" target="_blank">
-                    <span property="conference">Conference</span>
-                    <span property="year">Year</span>
-                </a>
-        
-                        <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
-        
-                        <BR>
-                        <div property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary">1-2 sentence summary</div>
-        
-                        <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
-        
-                        <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
-        
-                        <!-- Article Links -->
-                        <span property="links">
-                    <a href="null" property="pdf_url" class="button" target="_blank">
-                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
-                    </a>
-    
-                    <a href="null" property="website_url" class="button" target="_blank">
-                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
-                    </a>
-    
-                    <a href="null" property="code_url" class="button" target="_blank">
-                        <img src="assets/images/icons/code.png"><span> Code</span>
-                    </a>
-    
-                    <a href="null" property="data_url" class="button" target="_blank">
-                        <img src="assets/images/icons/database.png"><span> Data</span>
-                    </a>
-    
-                    <a href="null" property="slides_url" class="button" target="_blank">
-                        <img src="assets/images/icons/slides.png"><span>Slides</span>
-                    </a>
-    
-                    <a href="null" property="video_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Video</span>
-                    </a>
-    
-                    <a href="null" property="talk_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Talk</span>
-                    </a>
-                            <BR><BR>
-                        </span>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Late Breaking Work & Preprints -->
             <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Late Breaking Work & Preprints</h2>
 
-            <!-- LOCAL: mv-storage="data/preprints.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json" -->
-            <div  mv-app="preprints" mv-bar="none" mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json">
-        
-        <article class="row float-left" property="paper" mv-multiple mv-order="year desc">
-
-            <!-- Article Picture -->
-            <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                <img class="img-responsive center-block" property="picture" alt="img alt" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
-            </div>
-
-            <!-- Article Info -->
-                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
-                        <B>
-                            <a href="preprint-details.html?id=[id]">
-                                <span class="mini-header2" property="title">Paper Title</span>
-                            </a>
-                        </B>
-
-                        <BR>
-                        <p class="hide-on-read">
-                            URL id: /preprints/<span property="id" mv-default="[idify(title)]"></span>
-                        </p>
-        
-                        <span property="author" mv-multiple style="font-size: 14px;"><span property="author_name" mv-edit-list="memberList">Author Name</span></span>
-                        <BR>
-        
-                        <span class="hide-on-read" property="conference_full_name">Full Conference Name</span>
-        
-                <a href="null" property="conference url" style="font-size: 12px; font-weight: 800;" target="_blank">
-                    <span property="conference">Conference</span>
-                    <span property="year">Year</span>
-                </a>
-        
-                        <span class="btn btn-xs [if(!is_preprint, 'hide-on-read')]" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
-                        <span class="btn btn-xs btn-warning [if(!award, 'hide-on-read')]" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span property="award">Award</span></span>
-        
-                        <div class="hide-on-read" property="short_abstract" class="tinymce" style="font-size: 14px;" mv-default="1-2 sentence summary" mv-if="short_abstract">1-2 sentence summary</div>
-        
-                        <div class="hide-on-read" property="abstract" style="font-size: 14px;" class="tinymce">Abstract</div>
-        
-                        <div class="hide-on-read"  property="bibtex" style="font-size: 14px;" class="tinymce">Bibtex</div>
-        
-                        <!-- Article Links -->
-                        <span property="links">
-                    <a href="null" property="pdf_url" class="button" target="_blank">
-                        <img src="assets/images/icons/pdf.png"><span>PDF</span>
-                    </a>
-    
-                    <a href="null" property="website_url" class="button" target="_blank">
-                        <img src="assets/images/icons/link.png"><span class="mb-8"> Website</span>
-                    </a>
-    
-                    <a href="null" property="code_url" class="button" target="_blank">
-                        <img src="assets/images/icons/code.png"><span> Code</span>
-                    </a>
-    
-                    <a href="null" property="data_url" class="button" target="_blank">
-                        <img src="assets/images/icons/database.png"><span> Data</span>
-                    </a>
-    
-                    <a href="null" property="slides_url" class="button" target="_blank">
-                        <img src="assets/images/icons/slides.png"><span>Slides</span>
-                    </a>
-    
-                    <a href="null" property="video_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Video</span>
-                    </a>
-    
-                    <a href="null" property="talk_url" class="button" target="_blank">
-                        <img src="assets/images/icons/video.png"><span> Talk</span>
-                    </a>
-                            <BR><BR>
-                        </span>
-                    </div>
-                </article>
-            </div>
-
+            {% for paper in publications.companion %}
+                {{ publication_card(paper, true) }}
+            {% endfor %}
+            {% for paper in publications.preprints %}
+                {{ publication_card(paper, true) }}
+            {% endfor %}
         </div>
 
         <!-- right column -->
         <div class="col-4 ps-10">
-            <!-- news -->
             <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recently</h2>
-            <!-- LOCAL: mv-storage="data/news.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/news.json" -->
-            <div mv-app="news" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/news.json">
-                <ul mv-list class="news-list" style="padding-left: 30px;">
-                    <li property="news-item" mv-list-item mv-order="date desc" style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
-                        <strong><span property="date"></span>:</strong> <span property="text"></span>
-                    </li>
-                </ul>
-            </div>
+            <ul class="news-list" style="padding-left: 30px;">
+                {% for item in news['news-item'] %}
+                <li style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
+                    <strong>{{ item.date }}:</strong> {{ item.text }}
+                </li>
+                {% endfor %}
+            </ul>
 
-            <!-- Upcoming Travel -->
+            {% if travel['travel-item'] and travel['travel-item'] | length > 0 %}
             <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Upcoming Travel</h2>
-            <!-- LOCAL: mv-storage="data/travel.json" -->
-            <!-- PRODUCTION (currently active): mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/travel.json" -->
-            <div mv-app="travel" class="mv-autoedit" mv-bar='no-login' mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/travel.json">
-                <ul mv-list class="news-list" style="padding-left: 30px;">
-                    <li property="travel-item" mv-list-item style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
-                        <strong><span property="date"></span>:</strong> <span property="text"></span>
-                    </li>
-                </ul>
-            </div>
+            <ul class="news-list" style="padding-left: 30px;">
+                {% for item in travel['travel-item'] %}
+                <li style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
+                    <strong>{{ item.date }}:</strong> {{ item.text }}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
         </div>
     </div>
 </div>

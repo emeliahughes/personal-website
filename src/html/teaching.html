@@ -1,0 +1,43 @@
+{% set page_title = 'Teaching' %}
+{% set navbar_mobile = 'style-3' %}
+{% set navbar_fixed = false %}
+{% set navbar_expand = false %}
+{% set footer = 'default-2' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% block content %}
+<div class="container mt-130 mb-100">
+    <div class="row justify-content-center text-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+            <h1 class="mb-60 show-on-scroll" data-show-duration="500" data-show-distance="20" style="color: #a32121">teaching ✨</h1>
+            <p class="mb-60">{{ teaching.overview }}</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gh-1 mb-60">
+        <div class="col-lg-10 post-content">
+            <h2 class="h3 mb-20" style="color: #a32121">Teaching Philosophy</h2>
+            <p>{{ teaching.philosophy }}</p>
+
+            <h2 class="h3 mt-60 mb-20" style="color: #a32121">Courses Taught</h2>
+            {% for course in teaching.courses %}
+            <div class="mb-40">
+                <h4 class="item-heading">{{ course.title }}</h4>
+                <h5 class="item-role">{{ course.role }}, {{ course.institution }} · {{ course.term }}</h5>
+                <p>{{ course.description }}</p>
+            </div>
+            {% endfor %}
+
+            <h2 class="h3 mt-60 mb-20" style="color: #a32121">Teaching Interests</h2>
+            <ul>
+                {% for interest in teaching.interests %}
+                <li>{{ interest }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
