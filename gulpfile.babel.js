@@ -193,7 +193,7 @@ let staticCount = 0;
 function staticTask( cb ) {
     const staticArr = gulpConfig.static;
     if ( staticArr.length && 'undefined' !== typeof staticArr[staticCount] ) {
-        gulp.src( staticArr[staticCount].from )
+        gulp.src( staticArr[staticCount].from, { encoding: false } )
             .pipe( $.changed( staticArr[staticCount].to ) ) // Ignore unchanged files
             .pipe( gulp.dest( staticArr[staticCount].to ) )
             .on( 'end', () => {
@@ -212,7 +212,7 @@ gulp.task( 'static', staticTask );
 /**
  * Images Task
  */
-gulp.task( 'images', () => gulp.src( gulpConfig.images.from )
+gulp.task( 'images', () => gulp.src( gulpConfig.images.from, { encoding: false } )
     .pipe( $.plumber( { errorHandler } ) )
     .pipe( $.changed( gulpConfig.images.to ) ) // Ignore unchanged files
     .pipe( gulp.dest( gulpConfig.images.to ) )
