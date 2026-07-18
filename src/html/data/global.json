@@ -1,6 +1,6 @@
 {
     "template_name": "themebau",
-    "copyright": "© 2022 | Emelia May Hughes",
+    "copyright": "© 2026 | Emelia May Hughes",
     "navbar": "top",
     "navbar_dark": false,
     "navbar_mobile": "style-2",
@@ -35,10 +35,7 @@
             "name": "cv"
         },
         "about-me.html": {
-            "name": "about me"
-        },
-        "art-portfolio.html": {
-            "name": "art / creative work"
+            "name": "about"
         }
     },
     "icon": {

@@ -103,6 +103,9 @@ function nunjucksRenderOptions() {
 gulp.task( 'html', () => gulp.src( [
     gulpConfig.html.from,
     `!${ gulpConfig.variables.src }/html/_templates/**`,
+    `!${ gulpConfig.variables.src }/html/layouts/**`,
+    `!${ gulpConfig.variables.src }/html/macros/**`,
+    `!${ gulpConfig.variables.src }/html/shared/**`,
 ] )
     .pipe( $.plumber( { errorHandler } ) )
     .pipe( $.data( getTemplateData ) )

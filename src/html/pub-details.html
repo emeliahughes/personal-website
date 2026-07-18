@@ -1,5 +1,6 @@
 {% set page_title = 'Publication' %}
 {% set meta_description = 'Publication details and links.' %}
+{% set canonical_path = filename %}
 {% set navbar_expand = false %}
 {% set navbar_mobile = 'style-3' %}
 {% set footer = 'default-2' %}
@@ -9,7 +10,7 @@
 
 
 {% block content %}
-<div class="container w-100 mt-10 mb-100">
+<main id="main-content" class="container w-100 mt-10 mb-100">
     <h1 class="h3 mt-100 mb-30">Find a Publication</h1>
     <p>Publication detail pages have moved. Select a publication below:</p>
     <ul class="publication-redirect-list">
@@ -17,7 +18,7 @@
         <li class="mb-10"><a href="{{ paper | pubDetailUrl }}">{{ paper.title }}</a> ({{ paper.year }})</li>
         {% endfor %}
     </ul>
-</div>
+</main>
 {% endblock %}
 
 

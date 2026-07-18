@@ -1,5 +1,5 @@
 {% macro author_list(authors) %}
-<span class="pub-authors">{% for author in authors %}<span class="author-name">{{ author.author_name }}</span>{% endfor %}</span>
+<span class="pub-authors">{% for author in authors %}<span class="author-name{% if 'Emelia' in author.author_name and 'Hughes' in author.author_name %} author-emelia{% endif %}">{{ author.author_name }}</span>{% endfor %}</span>
 {% endmacro %}
 
 
@@ -13,17 +13,17 @@
         {% endif %}
         {% if paper.links.website_url %}
         <a href="{{ paper.links.website_url }}" class="button" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/icons/link.png" alt=""><span class="mb-8"> Website</span>
+            <img src="assets/images/icons/link.png" alt=""><span>Website</span>
         </a>
         {% endif %}
         {% if paper.links.code_url %}
         <a href="{{ paper.links.code_url }}" class="button" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/icons/code.png" alt=""><span> Code</span>
+            <img src="assets/images/icons/code.png" alt=""><span>Code</span>
         </a>
         {% endif %}
         {% if paper.links.data_url %}
         <a href="{{ paper.links.data_url }}" class="button" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/icons/database.png" alt=""><span> Data</span>
+            <img src="assets/images/icons/database.png" alt=""><span>Data</span>
         </a>
         {% endif %}
         {% if paper.links.slides_url %}
@@ -33,12 +33,12 @@
         {% endif %}
         {% if paper.links.video_url %}
         <a href="{{ paper.links.video_url }}" class="button" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/icons/video.png" alt=""><span> Video</span>
+            <img src="assets/images/icons/video.png" alt=""><span>Video</span>
         </a>
         {% endif %}
         {% if paper.links.talk_url %}
         <a href="{{ paper.links.talk_url }}" class="button" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/icons/video.png" alt=""><span> Talk</span>
+            <img src="assets/images/icons/video.png" alt=""><span>Talk</span>
         </a>
         {% endif %}
     {% endif %}
@@ -48,10 +48,10 @@
 
 
 {% macro publication_card(paper, show_preprint_badge=false) %}
-<article class="row float-left">
+<article class="row publication-card">
     {% if paper.picture %}
-    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2">
-        <img class="img-responsive center-block" src="{{ paper.picture }}" alt="" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
+    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-2 pub-image-col">
+        <img class="img-responsive center-block" src="{{ paper.picture }}" width="640" height="640" alt="Visual for {{ paper.title }}" loading="lazy" style="margin-top: 6px; max-width:100%; border-radius: 8px; margin-bottom: 10px;">
     </div>
     {% endif %}
     <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 pubbody" style="padding-left: 10px;">
@@ -94,11 +94,11 @@
 <article class="row justify-content-center">
     {% if paper.picture %}
     <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3">
-        <img class="px-20 img-responsive center-block" src="{{ paper.picture }}" alt="" style="margin-top: 6px; max-width:100%; padding-top: 75px; border-radius: 8px; margin-bottom: 10px;">
+        <img class="px-20 img-responsive center-block" src="{{ paper.picture }}" width="640" height="640" alt="Visual for {{ paper.title }}" style="margin-top: 6px; max-width:100%; padding-top: 75px; border-radius: 8px; margin-bottom: 10px;">
     </div>
     {% endif %}
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pubbody" style="margin-left: 10px; padding-top: 75px; padding-bottom: 75px;">
-        <B><span class="mini-header2">{{ paper.title }}</span></B><BR>
+        <h1 class="mini-header2 publication-detail-title">{{ paper.title }}</h1>
         {{ author_list(paper.author) }}
         <BR>
         <i><span style="color: gray;">{{ paper.conference_full_name }}</span></i><BR>

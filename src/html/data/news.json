@@ -1,16 +1,42 @@
 {
 	"news-item": [
 		{
+			"date": "May 2026",
+			"text": "Completed my PhD candidacy exam, presenting a dissertation program on how algorithmically curated platforms shape communities, visibility, and belonging."
+		},
+		{
+			"date": "May 2026",
+			"text": "Selected for the 2026–2027 Notre Dame–IBM Technology Ethics Lab Graduate Fellowship cohort.",
+			"url": "https://ethics.nd.edu/news-and-events/news/new-class-of-graduate-fellows-joins-institute-for-ethics-and-the-common-good/"
+		},
+		{
+			"date": "April 2026",
+			"text": "Presented research on echo chambers and information brokers on Truth Social at the 2026 Cambridge Disinformation Summit.",
+			"url": "https://www.jbs.cam.ac.uk/2026/cambridge-disinformation-summit-focuses-on-downstream-harm/"
+		},
+		{
+			"date": "January 2026",
+			"text": "Began teaching Elements of Computing I (CSE 10101) as instructor of record at the University of Notre Dame.",
+			"url": "https://catalog.nd.edu/undergraduate/courses/cse/"
+		},
+		{
+			"date": "October 2025",
+			"text": "Presented research on echo chambers and information brokers on Truth Social at CSCW 2025 in Bergen, Norway.",
+			"url": "https://doi.org/10.1145/3715070.3749241"
+		},
+		{
 			"date": "August 2025",
 			"text": "Began teaching Current State and Future of Generative AI (ESTEEM 60244-01), a graduate course exploring AI foundations, ethics, and innovation."
 		},
 		{
 			"date": "July 2025",
-			"text": "Named as a part of the Institute for Social Concerns Graduate Justice Fellowship 2025-2026 cohort"
+			"text": "Named as a part of the Institute for Social Concerns Graduate Justice Fellowship 2025-2026 cohort",
+			"url": "https://socialconcerns.nd.edu/education/current-graduate-justice-fellows/"
 		},
 		{
 			"date": "November 2024",
-			"text": "Presented Mainstream News Narratives on Youth Online Safety at CSCW 2024 in Costa Rica"
+			"text": "Presented Mainstream News Narratives on Youth Online Safety at CSCW 2024 in Costa Rica",
+			"url": "https://doi.org/10.1145/3678884.3681874"
 		},
 		{
 			"date": "October 2024",
@@ -18,7 +44,8 @@
 		},
 		{
 			"date": "May 2024",
-			"text": "Presented Viblio: Introducing Credibility Signals on YouTube at CHI 2024."
+			"text": "Presented Viblio: Introducing Credibility Signals on YouTube at CHI 2024.",
+			"url": "https://doi.org/10.1145/3613904.3642490"
 		},
 		{
 			"date": "April 2024",

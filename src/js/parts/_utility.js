@@ -99,7 +99,6 @@ function throttleScroll( callback ) {
  *    bodyOverflow(0);
  */
 let bodyOverflowEnabled;
-let isBodyOverflowing;
 let scrollbarWidth;
 let originalBodyStyle;
 
@@ -113,12 +112,6 @@ function bodyGetScrollbarWidth() {
     return result;
 }
 function bodyCheckScrollbar() {
-    let fullWindowWidth = window.innerWidth;
-    if ( !fullWindowWidth ) {
-        const documentElementRect = document.documentElement.getBoundingClientRect();
-        fullWindowWidth = documentElementRect.right - Math.abs( documentElementRect.left );
-    }
-    isBodyOverflowing = $body[0].clientWidth < fullWindowWidth;
     scrollbarWidth = bodyGetScrollbarWidth();
 }
 

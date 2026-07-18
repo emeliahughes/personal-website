@@ -1,7 +1,7 @@
 {
 	"paper": [
 		{
-			"picture": "https://cdn.jsdelivr.net/gh/emeliahughes/personal-website@0a2211b6c59953a8fb49b10bc64f221f5af59714/src/html/data/images/Trush%20Social%20Figures%20(8.5%20x%208.5%20in).png",
+			"picture": "data/images/Trush Social Figures (8.5 x 8.5 in).png",
 			"title": "Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse",
 			"id": "echo-chambers-information-brokers-truth-social",
 			"author": [
@@ -25,7 +25,7 @@
 			}
 		},
 		{
-			"picture": "https://cdn.jsdelivr.net/gh/emeliahughes/personal-website@e1e624e7b055af189ba9ec55a63ad3ba6b0e6376/src/html/data/images/mainstream%20news%20square.jpeg",
+			"picture": "data/images/mainstream news square.jpeg",
 			"title": "Examining Mainstream News Media Narratives on Youth Online Safety",
 			"id": "examining-mainstream-news-media-narratives-youth-online-safety",
 			"author": [
@@ -55,7 +55,7 @@
 			"is_preprint": false
 		},
 		{
-			"picture": "https://cdn.jsdelivr.net/gh/emeliahughes/personal-website@744835a28a6026e727214f178af15d7dc5188401/src/html/data/images/save%20the%20children%20square.jpg",
+			"picture": "data/images/save the children square.jpg",
 			"title": "Misinformation or Activism: Mapping Networked Moral Panic Through an Analysis of #SaveTheChildren",
 			"id": "misinformation-or-activism-mapping-networked-moral-panic-savethechildren",
 			"author": [

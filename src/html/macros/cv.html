@@ -23,7 +23,7 @@
     <h4>{{ item['publication-item-heading'] }}</h4>
     <ol reversed class="publication-list">
         {% for citation in item['publication-list'] %}
-        <li class="citation">{{ citation }}</li>
+        <li class="citation">{{ citation | safe }}</li>
         {% endfor %}
     </ol>
 </div>

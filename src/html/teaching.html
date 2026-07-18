@@ -1,43 +1,4 @@
-{% set page_title = 'Teaching' %}
-{% set navbar_mobile = 'style-3' %}
-{% set navbar_fixed = false %}
-{% set navbar_expand = false %}
-{% set footer = 'default-2' %}
-{% set footer_dark = true %}
-
-{% extends 'layouts/layout-1.html' %}
-
-
-{% block content %}
-<div class="container mt-130 mb-100">
-    <div class="row justify-content-center text-center">
-        <div class="col-12 col-lg-10 col-xl-8">
-            <h1 class="mb-60 show-on-scroll" data-show-duration="500" data-show-distance="20" style="color: #a32121">teaching ✨</h1>
-            <p class="mb-60">{{ teaching.overview }}</p>
-        </div>
-    </div>
-
-    <div class="row justify-content-center gh-1 mb-60">
-        <div class="col-lg-10 post-content">
-            <h2 class="h3 mb-20" style="color: #a32121">Teaching Philosophy</h2>
-            <p>{{ teaching.philosophy }}</p>
-
-            <h2 class="h3 mt-60 mb-20" style="color: #a32121">Courses Taught</h2>
-            {% for course in teaching.courses %}
-            <div class="mb-40">
-                <h4 class="item-heading">{{ course.title }}</h4>
-                <h5 class="item-role">{{ course.role }}, {{ course.institution }} · {{ course.term }}</h5>
-                <p>{{ course.description }}</p>
-            </div>
-            {% endfor %}
-
-            <h2 class="h3 mt-60 mb-20" style="color: #a32121">Teaching Interests</h2>
-            <ul>
-                {% for interest in teaching.interests %}
-                <li>{{ interest }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</div>
-{% endblock %}
+{% set page_title = 'Teaching' %}{% set meta_description = 'Teaching approach, courses, and teaching interests of Emelia Hughes at the intersection of computing, design, and society.' %}{% set canonical_path = 'teaching.html' %}{% set navbar_mobile = 'style-3' %}{% set navbar_expand = false %}{% set footer = 'default-2' %}{% set footer_dark = true %}{% extends 'layouts/layout-1.html' %}
+{% block content %}<main id="main-content" class="academic-page teaching-page"><header class="container page-intro"><h1>Teaching 🎓</h1></header><section class="teaching-intro"><div class="container content-narrow"><div class="centered-copy"><h2>Teaching approach</h2><p>I aim to make technical and theoretical ideas accessible without oversimplifying them. I connect computing concepts with their social consequences and give students room to build confidence through discussion, experimentation, reflection, and iterative work.</p><p>Students should leave my courses better able to understand how technologies work, ask responsible questions about their effects, and apply that thinking in practical contexts.</p></div></div></section>
+{% if teaching.courses | length %}<section class="teaching-experience-section"><div class="container content-narrow"><div class="section-heading-wrap"><h2>Teaching experience</h2></div><div class="teaching-experience-list">{% for course in teaching.courses %}<article><div><p class="eyebrow">{{ course.term }}</p><h3>{{ course.title }}</h3><p class="course-role">{{ course.role }}</p><p class="course-meta">{{ course.institution }}{% if course.courseCode %}<br>{{ course.courseCode }}{% endif %}</p></div><div>{% if course.instructor %}<p class="course-meta course-instructor">Instructor: {{ course.instructor }}</p>{% endif %}<p>{{ course.description }}</p></div></article>{% endfor %}</div></div></section>{% endif %}
+<section class="teaching-interests-section"><div class="container content-narrow"><div class="section-heading-wrap"><h2>Areas I’m interested in teaching</h2></div><ul class="interest-pills justify-content-center">{% for interest in teaching.interests %}<li>{{ interest }}</li>{% endfor %}</ul></div></section></main>{% endblock %}

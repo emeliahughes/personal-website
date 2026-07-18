@@ -16,7 +16,7 @@ function initPluginRellax() {
     // Only apply Rellax to shapes that are NOT in the footer
     // The footer shape should remain static with its initial transform
     const selector = '.shape svg[data-rellax-speed]:not(.footer .shape svg)';
-    
+
     if ( !$( selector ).length ) {
         return;
     }

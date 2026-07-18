@@ -1,4 +1,4 @@
-import { $, $doc } from './_utility';
+import { $doc } from './_utility';
 
 function initPluginImagesLoaded() {
     $doc.imagesLoaded().done( () => {

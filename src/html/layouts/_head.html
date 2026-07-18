@@ -2,6 +2,9 @@
 {{ headerComment | safe }}
 <html lang="en">
 <head>
+    {% if canonical_path and 'publications/' in canonical_path %}
+    <base href="/">
+    {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -15,7 +18,7 @@
       gtag('config', 'G-CGK80MVJKG');
     </script>
 
-    <title>{% if page_title %}{{ page_title }} | {% endif %}{{ site.name }}</title>
+    <title>{% if full_title %}{{ full_title }}{% else %}{% if page_title %}{{ page_title }} | {% endif %}{{ site.name }}{% endif %}</title>
 
     <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ site.homepageMetaDescription }}{% endif %}">
     <meta name="author" content="{{ site.name }}">
@@ -29,12 +32,14 @@
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ site.name }}">
-    <meta property="og:title" content="{% if page_title %}{{ page_title }} | {% endif %}{{ site.name }}">
+    <meta property="og:title" content="{% if full_title %}{{ full_title }}{% else %}{% if page_title %}{{ page_title }} | {% endif %}{{ site.name }}{% endif %}">
     <meta property="og:description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ site.homepageMetaDescription }}{% endif %}">
     <meta property="og:url" content="{% if canonical_path %}{{ site.url }}/{{ canonical_path }}{% elif canonical_url %}{{ canonical_url }}{% else %}{{ site.url }}/{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.socialPreviewImage }}">
+    <meta property="og:image:alt" content="Portrait of {{ site.name }}">
     <meta name="twitter:card" content="summary">
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -59,8 +64,5 @@
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-    {% if canonical_path and 'publications/' in canonical_path %}
-    <base href="/">
-    {% endif %}
     {% block head %}{% endblock %}
 </head>

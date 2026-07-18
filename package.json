@@ -12,8 +12,8 @@
         "dev": "gulp",
         "build": "gulp production",
         "images-min": "gulp images_min",
-        "css-lint": "stylelint --syntax scss \"src/css/**/*.scss\"",
-        "css-lint-fix": "stylelint --fix --syntax scss \"src/css/**/*.scss\"",
+        "css-lint": "stylelint --custom-syntax postcss-scss \"src/css/**/*.scss\"",
+        "css-lint-fix": "stylelint --fix --custom-syntax postcss-scss \"src/css/**/*.scss\"",
         "js-lint": "eslint src/js/",
         "js-lint-fix": "eslint --fix src/js/"
     },
@@ -46,6 +46,10 @@
             {
                 "from": "{src}/html/data/pdfs/**",
                 "to": "{dist}/data/pdfs"
+            },
+            {
+                "from": "{src}/html/data/images/**",
+                "to": "{dist}/data/images"
             },
             {
                 "from": [

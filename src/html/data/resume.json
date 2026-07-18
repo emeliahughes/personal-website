@@ -1,208 +1,269 @@
 {
-	"resume-category": [
-		{
-			"category": "Education",
-			"category-item": [
-				[
-					{
-						"item-heading": "University of Notre Dame",
-						"item-role": "Ph.D. Student",
-						"item-description": [
-							"Ph.D. Student in the Department of Computer Science and Engineering",
-							"Advisor: Dr. Tim Weninger",
-							"Remick Fellow"
-						],
-						"date": "Aug 2024",
-						"item-date": "Aug 2023 - present"
-					},
-					{
-						"item-heading": "University of Washington",
-						"item-role": "Undergraduate Student",
-						"item-description": [
-							"Bachelor of Science in Informatics, Human-Computer Interaction",
-							"Bachelor of Arts in Drawing & Painting with Honors"
-						],
-						"item-date": "Aug 2018 - Jun 2022"
-					}
-				],
-				[],
-				[]
-			]
-		},
-		{
-			"category": "Research Experience",
-			"category-item": [
-				[
-					{
-						"item-heading": "Social Futures Lab",
-						"item-role": "Research Assistant",
-						"item-description": [
-							"Advisor: Dr. Amy Zhang",
-							"Led project funded by WikiCred to develop novel methods of combating misinformation on YouTube",
-							"Conducted contextual-inquiry interviews to evaluate current user wants and needs surrounding credibility",
-							"Developed YouTube extension from design to implementation, employing Adobe XD and React JS"
-						],
-						"item-date": "Aug 2020 - Sep 2023"
-					},
-					{
-						"item-heading": "Center for an Informed Public",
-						"item-role": "Undergraduate Researcher",
-						"item-description": [
-							"Advisor: Dr. Rachel Moran",
-							"Collaborated with cross-disciplinary researchers on a project analyzing the #SaveTheChildren hashtag and movement on Instagram in relation to QAnon",
-							"Developed qualitative code-book to analyze over 2,000 applicable social media posts"
-						],
-						"item-date": "Jan 2021 - Jun 2022"
-					},
-					{
-						"item-heading": "Adobe",
-						"item-role": "Research Intern",
-						"item-description": [
-							"Advisor: Dr. Jose Echevarria",
-							"Developed user experience for artists with visual impairments to navigate canvas-based applications",
-							"Conducted background research to use current working methods to design novel accessibility tool",
-							"Conveyed key findings and results to a wide audience of company stakeholders",
-							"Implemented iPad prototype using Swift"
-						],
-						"item-date": "Jun 2021 - Sep 2021"
-					}
-				],
-				[],
-				[]
-			]
-		},
-		{
-			"category": "Publications",
-			"category-item": [
-				[],
-				[
-					{
-						"publication-item-heading": "Publications",
-						"publication-list": [
-							"Emelia May Hughes, Renee Wang, Prerna Juneja, Tony W Li, Tanushree Mitra, and Amy X. Zhang. 2024. Viblio: Introducing Credibility Signals and Citations to Video-Sharing Platforms. In Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI '24). Association for Computing Machinery, New York, NY, USA, Article 807, 1–20. https://doi.org/10.1145/3613904.3642490",
-							"Moran, R. E., Prochaska, S., Schlegel, I., Hughes, E. M., & Prout, O. (2021). Misinformation Or Activism: Mapping Networked Moral Panic Through An Analysis Of #SaveTheChildren. AoIR Selected Papers of Internet Research, 2021. https://doi.org/10.5210/spir.v2021i0.12212"
-						]
-					},
-					{
-						"publication-item-heading": "Workshop Papers",
-						"publication-list": [
-							"Hughes, E. M., Wang, R., Juneja, P., Mitra, T., & Zhang, A. X. (2021). Introducing Credibility Signals and Citations to Video-Sharing Platforms. CSCW, Information Credibility & Alternative Realities in Troubled Democracies, 2021."
-						]
-					},
-					{
-						"publication-item-heading": "Patents",
-						"publication-list": [
-							"“Multimodal canvas landmarks for accessible digital painting” J. Echevarria, J. Sun, and E. Hughes. Filed 2023."
-						]
-					},
-					{
-						"publication-item-heading": "Posters and Work-in-Progress Papers",
-						"publication-list": [
-							"Oguine, O.C., Oghenemaro, A., Hughes, E.M., & Badillo-Urquiola, K. (2024). Examining Mainstream News Media Narratives on Youth Online. In Companion of the 2024 Computer-Supported Cooperative Work and Social Computing (CSCW Companion ’24).",
-							"Hughes, E. M., Wang, R., Huang, A., Juneja, P., Mitra, T., & Zhang, A. X. (2022). Introducing Credibility Signals and Citations to Video-Sharing Platforms. UW Undergraduate Research Symposium 2022.",
-							"Hughes, E. M. (2021). WikiUX: Introducing Credibility Signals and Citations to YouTube. UW Undergraduate Research Symposium 2021."
-						]
-					}
-				],
-				[]
-			]
-		},
-		{
-			"category": "Awards",
-			"category-item": [
-				[],
-				[],
-				[
-					{
-						"date-list": "2024",
-						"item-description": [
-							"Notre Dame Computer Science and Engineering Poster Fair, Best Research Pitch, Honorable Mention"
-						]
-					},
-					{
-						"date-list": "2023",
-						"item-description": [
-							"Remick Graduate Fellowship in Engineering, University of Notre Dame"
-						]
-					},
-					{
-						"date-list": "2022",
-						"item-description": [
-							"RoboMaster North American Champions (3v3)",
-							"RoboMaster North American Champions (1v1)",
-							"Women United Art Prize 2022, Shortlisted Artist",
-							"Priscilla and Melvin Wilson Scholarship, University of Washington School of Art (merit)",
-							"Winter 2022 Dean’s List, University of Washington",
-							"Autumn 2021 Dean’s List, University of Washington"
-						]
-					},
-					{
-						"date-list": "2021",
-						"item-description": [
-							"RoboMaster North American Champions (3v3)",
-							"Adobe Women In Technology 2021 Finalist",
-							"2x Husky 100 nominee, University of Washington",
-							"Autumn 2020 Dean’s List, University of Washington",
-							"Summer 2020 Dean’s List, University of Washington"
-						]
-					},
-					{
-						"date-list": "2020",
-						"item-description": [
-							"Annual Dean’s List 2019-2020, University of Washington",
-							"RoboMaster 2020, Second Prize - Open Source Award"
-						]
-					}
-				]
-			]
-		},
-		{
-			"category": "Public Outreach and DEI",
-			"category-item": [
-				[],
-				[],
-				[
-					{
-						"date-list": "2022",
-						"item-description": [
-							"Volunteer with ARUW, Admitted Student Preview, University of Washington",
-							"Speaker and Volunteer with ARUW, Mechanical Engineering Orientation, University of",
-							"Speaker and Volunteer with ARUW, Electrical Engineering Orientation, University of",
-							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
-							"Event Organizer for ARUW, Dawg Daze 2021, University of Washington"
-						]
-					},
-					{
-						"date-list": "2021",
-						"item-description": [
-							"Student Volunteer, CHI 2021",
-							"Invited Speaker, Humboldt State University Robotics Camp",
-							"Tour guide for local elementary school students around ARUW lab space",
-							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
-							"Event Organizer for ARUW, Dawg Daze 2020, University of Washington"
-						]
-					},
-					{
-						"date-list": "2020",
-						"item-description": [
-							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
-							"Speaker and Volunteer with ARUW, Mechanical Engineering Orientation, University of",
-							"Speaker and Volunteer with ARUW, Electrical Engineering Orientation, University of",
-							"Volunteer with ARUW, School of Engineering Kick-off, University of Washington",
-							"Event Organizer for ARUW, Dawg Daze 2019, University of Washington"
-						]
-					},
-					{
-						"date-list": "2019",
-						"item-description": [
-							"Volunteer with ARUW, Giving Day, University of Washington",
-							"Volunteer with ARUW, Engineering Discovery Days, University of Washington",
-							"Volunteer with ARUW, Sammamish High School STEM Fair",
-							"Volunteer English Streaming Host, RoboMaster 2019"
-						]
-					}
-				]
-			]
-		}
-	]
+  "resume-category": [
+    {
+      "category": "Education",
+      "category-item": [[
+        {
+          "item-heading": "University of Notre Dame",
+          "item-role": "Ph.D. Student, Computer Science and Engineering",
+          "item-description": [
+            "Advisor: Dr. Tim Weninger",
+            "Remick Graduate Fellow",
+            "Expected May 2028"
+          ],
+          "item-date": "Aug 2023 - present"
+        },
+        {
+          "item-heading": "University of Washington",
+          "item-role": "B.S. Informatics and B.A. Art",
+          "item-description": [
+            "Bachelor of Science in Informatics, Human-Computer Interaction",
+            "Bachelor of Arts with Honors in Art, Drawing and Painting"
+          ],
+          "item-date": "Aug 2018 - Jun 2022"
+        }
+      ]]
+    },
+    {
+      "category": "Research Experience",
+      "category-item": [[
+        {
+          "item-heading": "Weninger Lab, University of Notre Dame",
+          "item-role": "Graduate Researcher",
+          "item-description": [
+            "Advisor: Dr. Tim Weninger",
+            "Research how algorithmically mediated platforms shape online community formation, visibility, belonging, and public discourse",
+            "Develop dissertation research on feed-based platforms, social inference, and emergent belonging using qualitative, survey, and computational methods",
+            "Study platform communities and information systems including TikTok and Truth Social"
+          ],
+          "item-date": "Aug 2023 - present"
+        },
+        {
+          "item-heading": "Social Futures Lab, University of Washington",
+          "item-role": "Research Assistant",
+          "item-description": [
+            "Advisor: Dr. Amy Zhang",
+            "Led a WikiCred-funded project developing new approaches to credibility and misinformation on YouTube",
+            "Conducted contextual-inquiry interviews about user needs surrounding credibility",
+            "Designed and developed the Viblio browser extension and companion application using Adobe XD and React"
+          ],
+          "item-date": "Aug 2020 - Aug 2023"
+        },
+        {
+          "item-heading": "Center for an Informed Public, University of Washington",
+          "item-role": "Undergraduate Researcher",
+          "item-description": [
+            "Advisor: Dr. Rachel Moran",
+            "Analyzed the #SaveTheChildren movement on Instagram and its relationship to QAnon",
+            "Developed a qualitative codebook used to analyze more than 1,400 social media posts"
+          ],
+          "item-date": "Jan 2021 - Jun 2022"
+        },
+        {
+          "item-heading": "Adobe Research",
+          "item-role": "Research Intern",
+          "item-description": [
+            "Mentor: Dr. Jose Echevarria",
+            "Designed an accessible experience for artists with visual impairments to navigate canvas-based applications",
+            "Conducted background research, communicated findings to company stakeholders, and implemented an iPad prototype in Swift"
+          ],
+          "item-date": "Jun 2021 - Sep 2021"
+        }
+      ]]
+    },
+    {
+      "category": "Publications",
+      "category-item": [[
+        {
+          "publication-item-heading": "Peer-Reviewed Publications",
+          "publication-list": [
+            "<strong>Emelia May Hughes</strong>, Renee Wang, Prerna Juneja, Tony W. Li, Tanushree Mitra, and Amy X. Zhang. 2024. Viblio: Introducing Credibility Signals and Citations to Video-Sharing Platforms. Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI '24), Article 807, 1–20. https://doi.org/10.1145/3613904.3642490",
+            "Moran, R. E., Prochaska, S., Schlegel, I., <strong>Hughes, E. M.</strong>, & Prout, O. (2021). Misinformation or Activism: Mapping Networked Moral Panic Through an Analysis of #SaveTheChildren. AoIR Selected Papers of Internet Research. https://doi.org/10.5210/spir.v2021i0.12212"
+          ]
+        },
+        {
+          "publication-item-heading": "Posters, Companion Papers, and Works in Progress",
+          "publication-list": [
+            "<strong>Hughes, E. M.</strong>, & Weninger, T. (2025). Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse. CSCW Companion '25. https://doi.org/10.1145/3715070.3749241",
+            "Oguine, O. C., Anuyah, O., <strong>Hughes, E. M.</strong>, & Badillo-Urquiola, K. (2024). Examining Mainstream News Media Narratives on Youth Online Safety. CSCW Companion '24, 349–354. https://doi.org/10.1145/3678884.3681874",
+            "<strong>Hughes, E. M.</strong>, Wang, R., Huang, A., Juneja, P., Mitra, T., & Zhang, A. X. (2022). Introducing Credibility Signals and Citations to Video-Sharing Platforms. University of Washington Undergraduate Research Symposium.",
+            "<strong>Hughes, E. M.</strong> (2021). WikiUX: Introducing Credibility Signals and Citations to YouTube. University of Washington Undergraduate Research Symposium."
+          ]
+        },
+        {
+          "publication-item-heading": "Doctoral Consortium and Workshop Papers",
+          "publication-list": [
+            "<strong>Hughes, E. M.</strong> (2024). #RushTok: An Evaluation of Event-Based Communities on TikTok. Association of Internet Researchers Doctoral Colloquium.",
+            "<strong>Hughes, E. M.</strong>, Wang, R., Juneja, P., Mitra, T., & Zhang, A. X. (2021). Introducing Credibility Signals and Citations to Video-Sharing Platforms. CSCW Workshop on Information Credibility & Alternative Realities in Troubled Democracies."
+          ]
+        },
+        {
+          "publication-item-heading": "Patents",
+          "publication-list": [
+            "“Multimodal canvas landmarks for accessible digital painting.” J. Echevarria, J. Sun, and <strong>E. Hughes</strong>. Filed 2023."
+          ]
+        }
+      ]]
+    },
+    {
+      "category": "Fellowships and Awards",
+      "category-item": [[
+        {
+          "date-list": "2026",
+          "item-description": ["Notre Dame–IBM Technology Ethics Fellow"]
+        },
+        {
+          "date-list": "2025",
+          "item-description": ["Graduate Justice Fellowship, Institute for Social Concerns, University of Notre Dame"]
+        },
+        {
+          "date-list": "2024",
+          "item-description": [
+            "Doctoral Colloquium, Association of Internet Researchers",
+            "Notre Dame Computer Science and Engineering Poster Fair, Best Research Pitch, Honorable Mention"
+          ]
+        },
+        {
+          "date-list": "2023",
+          "item-description": ["Remick Graduate Fellowship in Engineering, University of Notre Dame"]
+        },
+        {
+          "date-list": "2022",
+          "item-description": [
+            "RoboMaster North American Champions (3v3 and 1v1)",
+            "Women United Art Prize, Shortlisted Artist",
+            "Priscilla and Melvin Wilson Scholarship, University of Washington School of Art"
+          ]
+        },
+        {
+          "date-list": "2021",
+          "item-description": [
+            "RoboMaster North American Champions (3v3)",
+            "Adobe Women in Technology Finalist"
+          ]
+        },
+        {
+          "date-list": "2020",
+          "item-description": ["RoboMaster Second Prize, Open Source Award"]
+        }
+      ]]
+    },
+    {
+      "category": "Academic and Professional Service",
+      "category-item": [[
+        {
+          "item-heading": "Conference Reviewer",
+          "item-role": "CSCW, CHI, and ICWSM",
+          "item-description": ["CSCW 2025; CHI 2026; ICWSM 2025 and 2026"],
+          "item-date": "2025 - 2026"
+        },
+        {
+          "item-heading": "Notre Dame Graduate Society of Women Engineers",
+          "item-role": "Executive Board Secretary",
+          "item-description": [
+            "Maintain meeting records and organizational documentation while supporting event logistics and programming",
+            "Produce the newsletter and support member communications around professional development, mentorship, and community engagement"
+          ],
+          "item-date": "Spring 2026"
+        },
+        {
+          "item-heading": "501(c)(3) Supporting Advanced Robotics at the University of Washington",
+          "item-role": "President of the Board",
+          "item-description": ["Provide nonprofit governance and organizational support for ARUW"],
+          "item-date": "2023 - present"
+        },
+        {
+          "item-heading": "Advanced Robotics at the University of Washington",
+          "item-role": "President",
+          "item-description": [
+            "Led a 75-person student robotics team to the 2022 North American RoboMaster Championship",
+            "Coordinated team operations, scheduling, competition logistics, and organizational decision-making",
+            "Redesigned recruitment and application processes to broaden participation and improve equity"
+          ],
+          "item-date": "2021 - 2022"
+        },
+        {
+          "item-heading": "Advanced Robotics at the University of Washington",
+          "item-role": "Vice President",
+          "item-description": ["Supported project management, sponsorship, and coordination across design, build, and competition cycles"],
+          "item-date": "2019 - 2021"
+        }
+      ]]
+    },
+    {
+      "category": "Teaching Experience",
+      "category-item": [[
+        {
+          "item-heading": "Current State and Future of Generative AI (ESTM 60244)",
+          "item-role": "Instructor of Record, University of Notre Dame ESTEEM Master's Program",
+          "item-description": [
+            "Designed and developed a graduate course on generative AI, prompt design, ethics, and AI product development",
+            "Created course materials, assignments, readings, discussions, and project structure"
+          ],
+          "item-date": "Fall 2025; Fall 2026"
+        },
+        {
+          "item-heading": "Elements of Computing I (CSE 10101)",
+          "item-role": "Instructor of Record, University of Notre Dame",
+          "item-description": [
+            "Taught introductory programming and computational thinking to non-major undergraduate students",
+            "Designed instruction, assignments, and assessments for students with varied technical backgrounds"
+          ],
+          "item-date": "Spring 2026"
+        },
+        {
+          "item-heading": "Human Computer Interaction (CSE 40424)",
+          "item-role": "Teaching Assistant, University of Notre Dame",
+          "item-description": ["Instructor: Annalisa Szymanski", "Supported grading, office hours, assignment design, and student project mentorship"],
+          "item-date": "Spring 2025"
+        },
+        {
+          "item-heading": "Database Concepts (CSE 30246)",
+          "item-role": "Teaching Assistant, University of Notre Dame",
+          "item-description": ["Instructor: Dr. Tim Weninger", "Supported grading, office hours, and individual student support across two semesters"],
+          "item-date": "Fall 2023; Fall 2024"
+        },
+        {
+          "item-heading": "Forest Ridge School",
+          "item-role": "Long-Term Substitute Teacher",
+          "item-description": ["Taught Calculus II and designed a new Web Development curriculum after taking over both courses mid-year"],
+          "item-date": "Mar 2023 - Jun 2023"
+        },
+        {
+          "item-heading": "St. Catherine of Siena School",
+          "item-role": "Robotics Teacher",
+          "item-description": ["Designed and taught a middle-school robotics elective using LEGO Mindstorms"],
+          "item-date": "Sep 2022 - Jun 2023"
+        }
+      ]]
+    },
+    {
+      "category": "Outreach and Community Engagement",
+      "category-item": [[
+        {
+          "date-list": "2025",
+          "item-description": ["Event volunteer and livestream host, RoboMaster North America Competition, San Diego"]
+        },
+        {
+          "date-list": "2024",
+          "item-description": ["Event volunteer and livestream host, RoboMaster North America Competition, Boulder"]
+        },
+        {
+          "date-list": "2021 - 2022",
+          "item-description": [
+            "Student volunteer, ACM CHI 2021",
+            "Invited speaker, Humboldt State University Robotics Camp",
+            "ARUW volunteer and speaker for admitted-student, engineering orientation, and recruitment events"
+          ]
+        },
+        {
+          "date-list": "2019 - 2021",
+          "item-description": [
+            "Organizer and volunteer for ARUW Dawg Daze, Engineering Discovery Days, Giving Day, and STEM outreach",
+            "Volunteer English streaming host, RoboMaster 2019"
+          ]
+        }
+      ]]
+    }
+  ]
 }

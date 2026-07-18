@@ -1,40 +1,8 @@
-{% set page_title = 'Publications' %}
-{% set navbar_expand = false %}
-{% set navbar_mobile = 'style-3' %}
-{% set footer = 'default-2' %}
-{% set footer_dark = true %}
-
-{% extends 'layouts/layout-1.html' %}
-{% from 'macros/publications.html' import publication_card %}
-
-
-{% block content %}
-<div class="container w-100 mt-10 mb-100 align-items-center">
-    <h2 class="h3 text-center mt-100 pb-20 mb-20" style="color: #a32121">Refereed Conference Articles</h2>
-
-    {% for paper in publications.conference %}
-        {{ publication_card(paper) }}
-    {% endfor %}
-
-    <h2 class="h3 text-center mt-60 pb-20 mb-20" style="color: #a32121">Late Breaking Work & Preprints</h2>
-
-    {% for paper in publications.companion %}
-        {{ publication_card(paper, true) }}
-    {% endfor %}
-    {% for paper in publications.preprints %}
-        {{ publication_card(paper, true) }}
-    {% endfor %}
-
-    <h2 class="h3 text-center mt-60 pb-20 mb-20" style="color: #a32121">Lightly Refereed Workshop Papers</h2>
-
-    {% for paper in publications.workshop %}
-        {{ publication_card(paper, true) }}
-    {% endfor %}
-
-    <h2 class="h3 text-center mt-60 pb-20 mb-20" style="color: #a32121">Doctoral Consortium Papers</h2>
-
-    {% for paper in publications.doctoral %}
-        {{ publication_card(paper, true) }}
-    {% endfor %}
-</div>
-{% endblock %}
+{% set page_title = 'Publications' %}{% set meta_description = 'Peer-reviewed publications, companion papers, workshops, preprints, and doctoral consortium work by Emelia Hughes.' %}{% set canonical_path = 'publications.html' %}{% set navbar_expand = false %}{% set navbar_mobile = 'style-3' %}{% set footer = 'default-2' %}{% set footer_dark = true %}{% extends 'layouts/layout-1.html' %}{% from 'macros/publications.html' import publication_card %}
+{% block content %}<main id="main-content" class="academic-page publications-page"><header class="container page-intro"><h1>Publications 📚</h1><p><a href="{{ site.googleScholar }}" class="cv-download-btn" target="_blank" rel="noopener noreferrer">View Google Scholar</a></p></header><div class="container content-narrow publication-catalog">
+{% if publications.conference | length %}<section class="publication-group"><h2>Peer-Reviewed Publications</h2><div class="publication-stack">{% for paper in publications.conference %}{{ publication_card(paper) }}{% endfor %}</div></section>{% endif %}
+{% if publications.companion | length %}<section class="publication-group"><h2>Posters, Companion Papers, and Extended Abstracts</h2><div class="publication-stack">{% for paper in publications.companion %}{{ publication_card(paper, true) }}{% endfor %}</div></section>{% endif %}
+{% if publications.preprints | length %}<section class="publication-group"><h2>Preprints and Works in Progress</h2><div class="publication-stack">{% for paper in publications.preprints %}{{ publication_card(paper, true) }}{% endfor %}</div></section>{% endif %}
+{% if publications.workshop | length %}<section class="publication-group"><h2>Workshops and Other Publications</h2><div class="publication-stack">{% for paper in publications.workshop %}{{ publication_card(paper, true) }}{% endfor %}</div></section>{% endif %}
+{% if publications.doctoral | length %}<section class="publication-group"><h2>Doctoral Consortium Papers</h2><div class="publication-stack">{% for paper in publications.doctoral %}{{ publication_card(paper, true) }}{% endfor %}</div></section>{% endif %}
+</div></main>{% endblock %}

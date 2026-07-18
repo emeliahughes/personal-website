@@ -3,28 +3,47 @@
     "philosophy": "I aim to make technical and theoretical ideas accessible without oversimplifying them. Students should leave my courses able to reason about how platforms work, interrogate their social consequences, and apply that thinking in hands-on projects.",
     "courses": [
         {
-            "title": "Generative AI & Product Studio",
-            "institution": "University of Notre Dame — ESTEEM",
+            "title": "Current State and Future of Generative AI",
+            "institution": "University of Notre Dame",
             "role": "Instructor",
-            "term": "2025–present",
-            "description": "Graduate course (ESTEEM 60244) exploring AI foundations, ethics, product thinking, and innovation through project-based learning."
+            "term": "Fall 2026 · Fall 2025",
+            "courseCode": "ESTM 60244",
+            "description": "I designed and developed this core course for Notre Dame's ESTEEM master's program in Engineering, Science and Technology Entrepreneurship, which combines technical and business education with a year-long technology-commercialization capstone. The course examines how generative AI systems work, their current capabilities and limitations, practical tools for entrepreneurial and product contexts, emerging trends, and the ethical and legal questions that accompany their use."
         },
         {
             "title": "Elements of Computing I",
             "institution": "University of Notre Dame",
+            "role": "Instructor",
+            "term": "Spring 2026",
+            "courseCode": "CSE 10101",
+            "description": "An introduction to the technical and social dimensions of computing, emphasizing computational thinking, problem-solving, and programming literacy using Python."
+        },
+        {
+            "title": "Human Computer Interaction",
+            "institution": "University of Notre Dame",
             "role": "Teaching Assistant",
-            "term": "2024–2025",
-            "description": "Introductory programming course covering computational thinking and foundational computing concepts."
+            "instructor": "Annalisa Szymanski",
+            "term": "Spring 2025",
+            "courseCode": "CSE 40424",
+            "description": "An in-depth introduction to HCI history, principles, design methods, evaluation techniques, visual design, and emerging areas of interactive technology."
+        },
+        {
+            "title": "Database Concepts",
+            "institution": "University of Notre Dame",
+            "role": "Teaching Assistant",
+            "instructor": "Tim Weninger",
+            "term": "Fall 2024 · Fall 2023",
+            "courseCode": "CSE 30246",
+            "description": "A course on relational database design and implementation, including entity-relationship modeling, querying, normalization, integrity constraints, and database-backed systems."
         }
     ],
     "interests": [
         "Social Computing",
         "Human-Computer Interaction",
-        "Responsible AI / AI & Society",
-        "Online Communities",
-        "Platform Studies",
-        "Research Methods",
-        "Introductory Programming / Computing",
-        "Generative AI Product Studio"
+        "Online Communities and Social Media",
+        "Generative AI and Responsible Technology",
+        "Technology Ethics and Responsible Innovation",
+        "Qualitative and Mixed Methods",
+        "Prototyping and Web Development"
     ]
 }

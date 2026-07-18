@@ -1,92 +1,47 @@
-{% set page_title = 'Emelia Hughes Portfolio' %}
+{% set page_title = 'Social Computing & HCI Researcher' %}
+{% set full_title = 'Emelia May Hughes' %}
 {% set meta_description = site.homepageMetaDescription %}
+{% set canonical_path = '' %}
 {% set navbar_expand = false %}
 {% set navbar_mobile = 'style-3' %}
 {% set footer = 'default-2' %}
 {% set footer_dark = true %}
-
 {% extends 'layouts/layout-1.html' %}
 {% from 'macros/publications.html' import publication_card %}
 
+{% block head %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"{{ site.name }}","url":"{{ site.url }}","image":"{{ site.url }}/{{ site.headshot }}","email":"mailto:{{ site.emailAcademic }}","jobTitle":"PhD Candidate in Computer Science and Engineering","affiliation":{"@type":"CollegeOrUniversity","name":"{{ site.affiliation }}"},"sameAs":["{{ site.googleScholar }}","{{ site.linkedin }}"]}</script>
+{% endblock %}
 
 {% block content %}
-<div class="container">
-    <!-- Intro top bar -->
-    <div class="pt-60 pb-130 mt-30">
-        <div class="row gh-1 gv-5 align-items-center justify-content-center text-center text-lg-start">
-            <div class="col-auto order-1 order-lg-3 show-on-scroll" data-show-delay="200" data-show-duration="600">
-                <div class="shape-parent lines-style-2">
-                    <div class="line text-dark"></div>
-
-                    <div class="shape mt-n30 ms-n30 me-100 me-lg-0 d-block">
-                        <svg data-rellax-speed="-1" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="45" cy="45" r="45" fill="#a32121"/>
-                        </svg>
-                    </div>
-
-                    <img class="position-relative rounded-circle" width="180" src="assets/images/headshot-v2.jpg" alt="" data-cursor-style="cursor-text" data-cursor-text="yes, that is me :)">
-                </div>
-            </div>
-
-            <div class="d-none d-lg-block col order-lg-2"></div>
-
-            <div class="col-12 col-lg-6 order-3 order-lg-1">
-                <h1 class="h2 show-on-scroll" data-show-duration="500" data-show-distance="15">Hello! I’m Emelia.</h1>
-                <h1 class="h2 show-on-scroll" data-show-duration="500" data-show-distance="15">Social Computing Researcher & Artist</h1>
-            </div>
-
-            <div class="col-12 col-lg-1 text-center text-lg-end order-2 order-lg-4 mt-n60 mt-lg-0">
-                
-            </div>
-        </div>
+<main id="main-content">
+<section class="container pt-100 pb-100 academic-hero">
+  <div class="row align-items-center justify-content-between gv-4">
+    <div class="col-12 col-lg-8 order-2 order-lg-1">
+      <p class="eyebrow">social computing + human-computer interaction</p>
+      <h1 class="display-3 mb-30">Hi, I’m Emelia ✨</h1>
+      <p class="lead mb-25">I’m a PhD Candidate in Computer Science and Engineering at the University of Notre Dame. I study how algorithmically curated platforms shape online communities, identity, visibility, and influence.</p>
     </div>
-    
-
-    <!-- main body -->
-    <div class="pb-60 row">
-        <hr class="mt-50 mb-50 my-50">
-        <!-- Left Column -->
-        <div class="col-8 pe-10">
-            <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recent Publications</h2>
-
-            {% for paper in publications.conference %}
-            {% if loop.index <= 3 %}
-                {{ publication_card(paper) }}
-            {% endif %}
-            {% endfor %}
-
-            <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Late Breaking Work & Preprints</h2>
-
-            {% for paper in publications.companion %}
-                {{ publication_card(paper, true) }}
-            {% endfor %}
-            {% for paper in publications.preprints %}
-                {{ publication_card(paper, true) }}
-            {% endfor %}
-        </div>
-
-        <!-- right column -->
-        <div class="col-4 ps-10">
-            <h2 class="h3 text-center mt-80 pb-30 mb-10" style="color: #a32121">Recently</h2>
-            <ul class="news-list" style="padding-left: 30px;">
-                {% for item in news['news-item'] %}
-                <li style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
-                    <strong>{{ item.date }}:</strong> {{ item.text }}
-                </li>
-                {% endfor %}
-            </ul>
-
-            {% if travel['travel-item'] and travel['travel-item'] | length > 0 %}
-            <h2 class="h3 text-center mt-40 pb-30 mb-10" style="color: #a32121">Upcoming Travel</h2>
-            <ul class="news-list" style="padding-left: 30px;">
-                {% for item in travel['travel-item'] %}
-                <li style="margin-bottom: 15px; padding-left: 10px; font-size: 14px;">
-                    <strong>{{ item.date }}:</strong> {{ item.text }}
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </div>
+    <div class="col-10 col-sm-6 col-lg-auto order-1 order-lg-2 shape-parent hero-visual">
+      <div class="hero-dot" aria-hidden="true"></div>
+      <img class="position-relative hero-portrait" src="{{ site.headshot }}" width="640" height="640" alt="Emelia Hughes smiling outdoors">
     </div>
-</div>
+  </div>
+</section>
+
+<section class="section-soft py-90" aria-labelledby="study-heading">
+  <div class="container">
+    <h2 id="study-heading" class="h2 section-title">What I study 🔍</h2>
+    <p class="section-intro">Across my work, I ask how platform design influences what people see, what they believe about the social world around them, and where they understand themselves to belong.</p>
+    <div class="row study-theme-grid mt-35">
+      {% for cluster in research.clusters %}{% if loop.index <= 3 %}
+      <article class="col-12 col-md-4"><div class="friendly-card h-100"><span class="theme-number">0{{ loop.index }}</span><h3 class="h4">{{ cluster.title }}</h3><p>{{ cluster.description }}</p></div></article>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="publications-lately-section py-90" aria-labelledby="publications-heading"><div class="container"><div class="row publications-news-layout"><div class="col-12 col-lg-8"><h2 id="publications-heading" class="h2 section-title mb-40">Selected publications 📚</h2>{% for paper in publications.selected %}{% if loop.index <= 4 %}{{ publication_card(paper, true) }}{% endif %}{% endfor %}</div>{% if news['news-item'] and news['news-item'] | length > 0 %}<aside class="col-12 col-lg-3 offset-lg-1 lately-column" aria-labelledby="lately-heading"><h2 id="lately-heading" class="h2 section-title mb-40">Lately 🌱</h2><ul class="timeline-list compact-timeline lately-current">{% for item in news['news-item'] %}{% if loop.index <= 6 %}<li><time>{{ item.date }}</time><span>{{ item.text }}{% if item.url %}<a class="lately-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">Read more →</a>{% endif %}</span></li>{% endif %}{% endfor %}</ul>{% if news['news-item'] | length > 6 %}<div class="lately-archive-action"><button class="cv-download-btn lately-archive-trigger" type="button" data-lately-open>Earlier updates <span aria-hidden="true">+</span></button></div><dialog class="bio-dialog lately-dialog" data-lately-dialog aria-label="Earlier updates"><div class="bio-dialog-frame"><button class="bio-dialog-close" type="button" data-lately-close aria-label="Close earlier updates"><span aria-hidden="true">×</span></button><div class="bio-dialog-shell"><div class="bio-dialog-content"><p class="eyebrow">earlier updates</p><ul class="timeline-list compact-timeline lately-dialog-list">{% for item in news['news-item'] %}{% if loop.index > 6 %}<li><time>{{ item.date }}</time><span>{{ item.text }}{% if item.url %}<a class="lately-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">Read more →</a>{% endif %}</span></li>{% endif %}{% endfor %}</ul></div></div></div></dialog>{% endif %}</aside>{% endif %}</div></div></section>
+</main>
+<script>document.addEventListener('DOMContentLoaded',function(){var dialog=document.querySelector('[data-lately-dialog]');var openButton=document.querySelector('[data-lately-open]');var closeButton=document.querySelector('[data-lately-close]');if(!dialog||!openButton||!closeButton)return;openButton.addEventListener('click',function(){dialog.showModal();document.documentElement.classList.add('bio-dialog-open');});closeButton.addEventListener('click',function(){dialog.close();});dialog.addEventListener('close',function(){document.documentElement.classList.remove('bio-dialog-open');});});</script>
 {% endblock %}

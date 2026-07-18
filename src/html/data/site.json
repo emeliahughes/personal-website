@@ -1,16 +1,20 @@
 {
     "url": "https://www.emeliahughes.com",
     "name": "Emelia Hughes",
-    "role": "PhD Student in Computer Science and Engineering, University of Notre Dame",
+    "role": "PhD Candidate in Computer Science and Engineering, University of Notre Dame",
     "emailAcademic": "ehughes8@nd.edu",
-    "emailPersonal": "emeliahughes@live.com",
+    "emailPersonal": null,
     "googleScholar": "https://scholar.google.com/citations?hl=en&oi=ao&user=rcTHMuYAAAAJ",
     "linkedin": "https://www.linkedin.com/in/emeliamay",
+    "twitter": "https://twitter.com/Emeliahughes112",
     "github": null,
     "bluesky": null,
     "orcid": null,
-    "instagram": "https://www.instagram.com/emeliadoesart/",
-    "cvPdf": null,
+    "cvPdf": "data/pdfs/Emelia-Hughes-CV.pdf",
+    "cvLastUpdated": "July 2026",
+    "affiliation": "University of Notre Dame",
+    "headshot": "assets/images/headshot-v2.jpg",
+    "socialPreviewImage": "assets/images/headshot-v2.jpg",
     "selectedPublicationIds": [
         "viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms",
         "echo-chambers-information-brokers-truth-social",
@@ -18,5 +22,5 @@
         "rushtok-an-evaluation-of-event-based-communities-on-tiktok",
         "misinformation-or-activism-mapping-networked-moral-panic-savethechildren"
     ],
-    "homepageMetaDescription": "Emelia Hughes is a PhD student in Computer Science and Engineering at the University of Notre Dame studying algorithmic feeds, online communities, platform visibility, identity, belonging, misinformation, and social computing."
+    "homepageMetaDescription": "Emelia Hughes is a PhD Candidate in Computer Science and Engineering at the University of Notre Dame studying algorithmic feeds, online communities, platform visibility, identity, belonging, misinformation, and social computing."
 }
