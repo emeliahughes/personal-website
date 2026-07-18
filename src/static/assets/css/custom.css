@@ -89,6 +89,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f6feb; outline-offs
 .about-beyond { padding: 72px 0; }
 .about-beyond-row { row-gap: 2rem; }
 .about-beyond-row > :last-child { padding-left: clamp(2rem, 4vw, 4rem); }
+.about-robotics-image { display: block; width: 100%; height: auto !important; aspect-ratio: 1 / 1; object-fit: cover; }
 .about-art { padding: 80px 0 96px; }
 .about-art-intro { max-width: 760px; margin-bottom: 38px; }
 .rounded-friendly { border-radius: 24px; }
@@ -96,6 +97,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f6feb; outline-offs
 .publication-card .pub-image-col { display: flex; justify-content: center; align-items: flex-start; }
 .publication-card .pub-image-col img { width: 100%; max-width: 125px !important; height: auto; object-fit: contain; }
 .academic-page .page-intro { max-width: 880px; padding-top: 110px !important; padding-bottom: 80px !important; text-align: center; }
+.academic-page .page-intro h1 { font-size: clamp(2.35rem, 5vw, 4.6rem); }
+.cv-page .page-intro h1 { font-size: clamp(2.2rem, 4.6vw, 4.25rem); }
 .academic-page .page-intro .lead { max-width: 780px; margin: 1.25rem auto 0; }
 .academic-page h2, .academic-page .h2 { color: var(--academic-blue) !important; font-size: clamp(1.65rem, 2.7vw, 2.25rem); }
 .academic-page h3, .academic-page .h3, .academic-page .h4 { color: var(--academic-blue); font-size: clamp(1.2rem, 1.8vw, 1.55rem); }
@@ -195,6 +198,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f6feb; outline-offs
     .publication-card .pub-image-col { display: none !important; }
     .publication-card .pubbody { width: 100%; padding-left: 0 !important; }
     .academic-page .page-intro { padding-top: 72px !important; padding-bottom: 42px !important; }
+    .academic-page .page-intro h1 { font-size: clamp(2.15rem, 9.5vw, 2.8rem) !important; }
+    .cv-page .page-intro h1 { font-size: clamp(1.85rem, 8.4vw, 2.5rem) !important; }
     .page-section, .publication-section { padding-top: 48px; padding-bottom: 48px; }
     .section-heading-wrap { margin-bottom: 28px; }
     .centered-copy { text-align: left; font-size: 1rem; }
