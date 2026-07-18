@@ -14,6 +14,8 @@ const $ = require( 'gulp-load-plugins' )();
 const pkg = require( './package.json' );
 const { loadSiteData, getAllPapers, registerNunjucksFilters, formatAuthors } = require( './scripts/site-data' );
 
+const assetVersion = ( process.env.GITHUB_SHA || pkg.version ).slice( 0, 12 );
+
 const gulpConfig = ( () => {
     // template variable
     function template( variable, vars ) {
@@ -218,6 +220,23 @@ gulp.task( 'images', () => gulp.src( gulpConfig.images.from )
 
 
 /**
+ * Give local images a deployment-specific URL so browsers do not retain a
+ * cached failed response if GitHub Pages publishes HTML before every asset is
+ * available at the edge.
+ */
+gulp.task( 'version-images', () => gulp.src( `${ gulpConfig.variables.dist }/**/*.html`, { base: gulpConfig.variables.dist } )
+    .on( 'data', ( file ) => {
+        const html = file.contents.toString().replace(
+            /src=(['"])((?:assets|data)\/images\/[^'"?]+)(?:\?v=[^'"]*)?\1/g,
+            `src=$1$2?v=${ assetVersion }$1`,
+        );
+        // eslint-disable-next-line no-param-reassign
+        file.contents = Buffer.from( html );
+    } )
+    .pipe( gulp.dest( gulpConfig.variables.dist ) ) );
+
+
+/**
  * Default Task
  */
 gulp.task( 'default', ( cb ) => {
@@ -230,7 +249,7 @@ gulp.task( 'default', ( cb ) => {
  */
 gulp.task( 'production', ( cb ) => {
     process.env.NODE_ENV = process.env.NODE_ENV || 'production';
-    gulp.series( 'clean', 'html', 'publication-pages', 'css', 'js', 'static', 'images' )( cb );
+    gulp.series( 'clean', 'html', 'publication-pages', 'css', 'js', 'static', 'images', 'version-images' )( cb );
 } );
 
 
