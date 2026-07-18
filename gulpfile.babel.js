@@ -7,8 +7,6 @@ const named = require( 'vinyl-named' );
 const webpack = require( 'webpack-stream' );
 const gulp = require( 'gulp' );
 const autoprefixer = require('autoprefixer');
-const imageminJpegRecompress = require( 'imagemin-jpeg-recompress' );
-const imageminPngquant = require( 'imagemin-pngquant' );
 const CleanCSS = require('clean-css');
 const sass = require( 'gulp-sass' )( require( 'sass' ) );
 const $ = require( 'gulp-load-plugins' )();
@@ -182,7 +180,6 @@ gulp.task( 'js', () => gulp.src( gulpConfig.js.from )
     .pipe( $.if( ( file ) => !file.path.match( /-init.js$/ ), $.rename( {
         extname: '.min.js',
     } ) ) )
-    .pipe( $.sourcemaps.write( '.' ) )
     .pipe( gulp.dest( gulpConfig.js.to ) )
     .pipe( browserSync.stream() ) );
 
@@ -221,21 +218,6 @@ gulp.task( 'images', () => gulp.src( gulpConfig.images.from )
 
 
 /**
- * Images minified
- */
-gulp.task( 'images_min', () => gulp.src( gulpConfig.images.from )
-    .pipe( $.imagemin( [
-        imageminJpegRecompress( {
-            progressive: true,
-            max: 90,
-            min: 80,
-        } ),
-        imageminPngquant( { quality: [0.8, 0.9] } ),
-    ] ) )
-    .pipe( gulp.dest( gulpConfig.images.to ) ) );
-
-
-/**
  * Default Task
  */
 gulp.task( 'default', ( cb ) => {
@@ -248,7 +230,6 @@ gulp.task( 'default', ( cb ) => {
  */
 gulp.task( 'production', ( cb ) => {
     process.env.NODE_ENV = process.env.NODE_ENV || 'production';
-    // TODO: "images_min" disabled due to unsupported JPEG color space conversion
     gulp.series( 'clean', 'html', 'publication-pages', 'css', 'js', 'static', 'images' )( cb );
 } );
 

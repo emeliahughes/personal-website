@@ -2,7 +2,7 @@
 
 | Prerequisite      | How to check | How to install                    |
 | ----------------- | ------------ | --------------------------------- |
-| Node.js >= 16.x.x | `node -v`    | [nodejs.org](https://nodejs.org/) |
+| Node.js >= 22.x.x | `node -v`    | [nodejs.org](https://nodejs.org/) |
 
 ## Installation
 
