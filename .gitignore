@@ -3,5 +3,7 @@
 .sass-cache
 /dist
 /node_modules
+/bridge
+/tmp
 npm-debug.log
 src/images/art-originals
