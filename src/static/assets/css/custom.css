@@ -89,6 +89,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f6feb; outline-offs
 .about-beyond { padding: 72px 0; }
 .about-beyond-row { row-gap: 2rem; }
 .about-beyond-row > :last-child { padding-left: clamp(2rem, 4vw, 4rem); }
+.about-robotics-image { display: block; width: 100%; height: auto !important; aspect-ratio: 1 / 1; object-fit: cover; }
 .about-art { padding: 80px 0 96px; }
 .about-art-intro { max-width: 760px; margin-bottom: 38px; }
 .rounded-friendly { border-radius: 24px; }
