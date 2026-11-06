@@ -25,18 +25,18 @@
                     "title": "RushTok",
                     "summary": "A dissertation anchor case centered on RushTok, the annual wave of TikTok content documenting sorority recruitment—especially at the University of Alabama. The study examines how an event becomes an algorithmically assembled community and how viewers recognize, interpret, and position themselves in relation to it.",
                     "methods": "Interviews, content analysis, event-based community analysis",
-                    "status": "Completed",
+                    "status": "Preprint available",
                     "link": null,
-                    "publicationId": "rushtok-an-evaluation-of-event-based-communities-on-tiktok"
+                    "publicationId": "ephemeral-feeds-and-enduring-rituals"
                 },
                 {
                     "id": "tokornot",
                     "title": "TokOrNot",
                     "summary": "An experimental study of how people distinguish their own preferences from a video's perceived popularity and realized reach on TikTok. I designed and developed TokOrNot, a web-based research tool that makes these judgments observable and comparable.",
                     "methods": "Experiments, system design",
-                    "status": "In progress",
+                    "status": "Preprint available",
                     "link": null,
-                    "publicationId": null
+                    "publicationId": "echoes-in-the-algorithm"
                 },
                 {
                     "id": "winter-boots",

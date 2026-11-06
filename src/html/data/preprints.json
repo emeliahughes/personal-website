@@ -1,6 +1,56 @@
 {
 	"paper": [
 		{
+			"id": "ephemeral-feeds-and-enduring-rituals",
+			"title": "Ephemeral Feeds and Enduring Rituals: RushTok and the Formation of Event-Based Algorithmic Communities",
+			"author": [
+				{
+					"author_name": "Emelia Hughes"
+				},
+				{
+					"author_name": "Tim Weninger"
+				}
+			],
+			"year": "2026",
+			"conference": "arXiv",
+			"conference_full_name": "arXiv preprint",
+			"conference url": "https://arxiv.org/abs/2609.09331",
+			"is_preprint": true,
+			"picture": "data/images/aoir doc col.png",
+			"abstract": "Each August, TikTok's For You page turns the University of Alabama's sorority recruitment into RushTok. We examine RushTok as an event-based algorithmic community: a collective assembled around a bounded offline ritual and sustained by recommendation. Using a mixed-methods survey (n=71) and a reflexive account of creator outreach, we ask who participates, how, and with what stakes. Findings show an ambiguous and entertainment based throughline; many called it a community (51/71) but few claimed membership (11/71). Affiliation centered on creators rather than shared practices, with parasocial attention clustering around a small set of potential new members (PNMs) and returning figures. Higher content exposure tracked with self-identification as a community member; those members commented, followed creators, and engaged across videos. Attempts to interview creators were met with silence or refusals, reflecting community boundary-work despite viral visibility. We outline implications for platform governance, including time-bounded context, graduated visibility, and aftercare.",
+			"short_abstract": "A study of RushTok as an event-based algorithmic community, examining participation, belonging, creator boundaries, and the stakes of viral visibility.",
+			"links": {
+				"website_url": "https://arxiv.org/abs/2609.09331",
+				"pdf_url": "https://arxiv.org/pdf/2609.09331"
+			},
+			"bibtex": "@misc{hughes2026260909331,\n  title = {Ephemeral Feeds and Enduring Rituals: RushTok and the Formation of Event-Based Algorithmic Communities},\n  author = {Emelia Hughes and Tim Weninger},\n  year = {2026},\n  eprint = {2609.09331},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.HC},\n  doi = {10.48550/arXiv.2609.09331},\n  url = {https://arxiv.org/abs/2609.09331}\n}"
+		},
+		{
+			"id": "echoes-in-the-algorithm",
+			"title": "Echoes in the Algorithm: Analyzing the Fidelity of User Preferences Against Realized Platform Reach",
+			"author": [
+				{
+					"author_name": "Emelia Hughes"
+				},
+				{
+					"author_name": "Tim Weninger"
+				}
+			],
+			"year": "2026",
+			"conference": "arXiv",
+			"conference_full_name": "arXiv preprint",
+			"conference url": "https://arxiv.org/abs/2609.09365",
+			"is_preprint": true,
+			"picture": "data/images/aoir doc col.png",
+			"abstract": "What does popular content look like when platforms withhold the usual cues? On TikTok, users still form impressions about which videos are taking off even when likes and view counts are hidden, delayed, or pushed to the margins of the interface. We study this problem through TokOrNot, a web-based game in which participants compared pairs of TikTok videos and reported (i) which one they preferred and (ii) which one they believed had reached a larger audience. We benchmark these judgments against verified public view counts, which we use as a bounded proxy for realized platform reach. Across 3,513 judgments from 363 participants, participants identified the higher-reach video only modestly above chance (56.75%, 95% CI: 56.01-58.55). Preference aligned with the higher-view video at a similar rate, while preference and prediction matched in 83.48% of trials (95% CI: 83.12-85.95). Performance also varied across content categories. Taken together, these results do not suggest that users can reliably read platform success from content alone. Instead, they point to a looser and more uncertain interpretive process in which reach judgments often track personal taste or other weak heuristics when explicit popularity cues are absent. We discuss the implications for algorithmic literacy and for interface designs that reduce visible metrics without leaving users to infer reach from uneven or idiosyncratic cues alone.",
+			"short_abstract": "Using TokOrNot, we compare personal preferences and predictions of TikTok reach when popularity metrics are hidden, across 3,513 judgments from 363 participants.",
+			"links": {
+				"website_url": "https://arxiv.org/abs/2609.09365",
+				"pdf_url": "https://arxiv.org/pdf/2609.09365"
+			},
+			"bibtex": "@misc{hughes2026260909365,\n  title = {Echoes in the Algorithm: Analyzing the Fidelity of User Preferences Against Realized Platform Reach},\n  author = {Emelia Hughes and Tim Weninger},\n  year = {2026},\n  eprint = {2609.09365},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.HC},\n  doi = {10.48550/arXiv.2609.09365},\n  url = {https://arxiv.org/abs/2609.09365}\n}"
+		},
+		{
 			"picture": "data/images/Trush Social Figures (8.5 x 8.5 in).png",
 			"title": "Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse",
 			"id": "echo-chambers-information-brokers-truth-social",
@@ -16,13 +66,15 @@
 			"conference": "CSCW Companion",
 			"conference url": "https://doi.org/10.1145/3715070.3749241",
 			"year": "2025",
-			"is_preprint": true,
+			"is_preprint": false,
 			"short_abstract": "This study examines the structural dynamics of Truth Social, a politically aligned social media platform, during two major political events: the U.S. Supreme Court's overturning of Roe v. Wade and the FBI's search of Mar-a-Lago. Using a large-scale dataset of user interactions based on re-truths, we analyze how the network evolves in relation to fragmentation, polarization, and user influence.",
 			"abstract": "This study examines the structural dynamics of Truth Social, a politically aligned social media platform, during two major political events: the U.S. Supreme Court's overturning of Roe v. Wade and the FBI's search of Mar-a-Lago. Using a large-scale dataset of user interactions based on re-truths (platform-native reposts), we analyze how the network evolves in relation to fragmentation, polarization, and user influence. Our findings reveal a segmented and ideologically homogenous structure dominated by a small number of central figures. Political events prompt temporary consolidation around shared narratives, followed by rapid returns to fragmented, echo-chambered clusters. Centrality metrics highlight the disproportionate role of key influencers, particularly @realDonaldTrump, in shaping visibility and directing discourse. These results contribute to research on alternative platforms, political communication, and online network behavior, demonstrating how infrastructure and community dynamics together reinforce ideological boundaries and limit cross-cutting engagement.",
-			"bibtex": "@misc{hughes2025echochambers, title={Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse}, author={Emelia May Hughes and Tim Weninger}, year={2025}, eprint={2509.08676}, archivePrefix={arXiv}, primaryClass={cs.SI}, url={https://arxiv.org/abs/2509.08676}, doi={10.48550/arXiv.2509.08676}, note={arXiv:2509.08676 [cs.SI]} }",
+			"bibtex": "@inproceedings{hughes2025echochambers,\n  author = {Hughes, Emelia May and Weninger, Tim},\n  title = {Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse},\n  booktitle = {Proceedings of the Companion Publication of the 2025 Conference on Computer-Supported Cooperative Work and Social Computing},\n  series = {CSCW Companion '25},\n  year = {2025},\n  publisher = {Association for Computing Machinery},\n  doi = {10.1145/3715070.3749241},\n  url = {https://doi.org/10.1145/3715070.3749241}\n}",
 			"links": {
-				"pdf_url": "https://arxiv.org/pdf/2509.08676"
-			}
+				"pdf_url": "https://arxiv.org/pdf/2509.08676",
+				"website_url": "https://doi.org/10.1145/3715070.3749241"
+			},
+			"publication_format": "Poster"
 		},
 		{
 			"picture": "data/images/mainstream news square.jpeg",
@@ -51,39 +103,6 @@
 			"bibtex": "@inproceedings{10.1145/3678884.3681874, author = {Oguine, Ozioma Collins and Anuyah, Oghenemaro and Hughes, Emelia M. and Badillo-Urquiola, Karla}, title = {Examining Mainstream News Media Narratives on Youth Online Safety}, year = {2024}, isbn = {9798400711145}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3678884.3681874}, doi = {10.1145/3678884.3681874}, abstract = {People form their perspectives and opinions from their experiences and exposure to different information. Despite the growing literature on adolescent online safety, mainstream news media continues to be a large influence in shaping public perceptions of online safety. Understanding these narratives is essential for developing effective strategies to protect young internet users. This paper investigates the narratives surrounding youth online safety as depicted in mainstream news media. Through a systematic review of 157 news articles, we found three prevalent narratives: 1) a focus on negative youth risk experiences and heightened concerns regarding mental health issues, 2) an emphasis on restrictive practices as a primary intervention strategy, and 3) a lack of youth perspectives in online safety narratives. Our work highlights significant trends and discrepancies compared to current academic research on youth online safety. The insights from our findings offer important implications for media representation and the development of effective online safety strategies for youth. Content Warning: This paper discusses sensitive topics, such as emotional trauma, sexual exploitation, self-harm, and other adverse life events of children, which may be triggering. Reader discretion is advised.}, booktitle = {Companion Publication of the 2024 Conference on Computer-Supported Cooperative Work and Social Computing}, pages = {349–354}, numpages = {6}, keywords = {adolescent online safety, kids online safety act, kosa, mainstream news media, mental health, social media, youth online safety}, location = {San Jose, Costa Rica}, series = {CSCW Companion '24} }",
 			"links": {
 				"pdf_url": "https://doi.org/10.1145/3678884.3681874"
-			},
-			"is_preprint": false
-		},
-		{
-			"picture": "data/images/save the children square.jpg",
-			"title": "Misinformation or Activism: Mapping Networked Moral Panic Through an Analysis of #SaveTheChildren",
-			"id": "misinformation-or-activism-mapping-networked-moral-panic-savethechildren",
-			"author": [
-				{
-					"author_name": "Rachel Elizabeth Moran"
-				},
-				{
-					"author_name": "Stephen Prochaska"
-				},
-				{
-					"author_name": "Isabelle Schlegel"
-				},
-				{
-					"author_name": "Emelia May Hughes"
-				},
-				{
-					"author_name": "Owen Prout"
-				}
-			],
-			"conference_full_name": "Association of Internet Researchers Selected Papers of Internet Research",
-			"conference": "AoIR SPIR",
-			"conference url": "https://doi.org/10.5210/spir.v2021i0.12212",
-			"year": "2021",
-			"short_abstract": "QAnon's co-optation of the #SaveTheChildren movement exemplifies networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories.",
-			"abstract": "When looking at the recent social-political history of America it is difficult to avoid references to QAnon, a widespread, conservative-leaning conspiracy that amalgamates numerous conspiracies into a single movement. Central to the movement's growth has been a moral panic around child sex trafficking that has served as a gateway for new adherents to become exposed to broader QAnon rhetoric. QAnon's co-optation of the #SaveTheChildren (#STC) movement exemplifies this networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram—paying particular attention to their motivations, tactics and desired outcomes—in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories. Research is drawn from an inductive thematic analysis of 1,400 Instagram posts related to the #SaveTheChildren movement across 2020. Analysis illuminates how the #SaveTheChildren movement is defined more as an identity based, social-political movement rooted in moral panic— rather than one focused on truly supporting human rights. Our analysis illuminates how networked moral panics— facilitated by the affordances and tactics of social media —can bring together disparate communities to spread misinformation under the guise of activism.",
-			"bibtex": "@article{Moran_Prochaska_Schlegel_Hughes_Prout_2021, title={MISINFORMATION OR ACTIVISM: MAPPING NETWORKED MORAL PANIC THROUGH AN ANALYSIS OF #SAVETHECHILDREN}, volume={2021}, url={https://spir.aoir.org/ojs/index.php/spir/article/view/12212}, DOI={10.5210/spir.v2021i0.12212}, abstractNote={When looking at the recent social-political history of America it is difficult to avoid references to QAnon, a widespread, conservative-leaning conspiracy that amalgamates numerous conspiracies into a single movement. Central to the movement's growth has been a moral panic around child sex trafficking that has served as a gateway for new adherents to become exposed to broader QAnon rhetoric. QAnon's co-optation of the #SaveTheChildren (#STC) movement exemplifies this networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram—paying particular attention to their motivations, tactics and desired outcomes—in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories. Research is drawn from an inductive thematic analysis of 1,400 Instagram posts related to the #SaveTheChildren movement across 2020. Analysis illuminates how the #SaveTheChildren movement is defined more as an identity based, social-political movement rooted in moral panic— rather than one focused on truly supporting human rights. Our analysis illuminates how networked moral panics— facilitated by the affordances and tactics of social media —can bring together disparate communities to spread misinformation under the guise of activism.}, journal={AoIR Selected Papers of Internet Research}, author={Moran, Rachel Elizabeth and Prochaska, Stephen and Schlegel, Isabelle and Hughes, Emelia May and Prout, Owen}, year={2021}, month={Sep.} }",
-			"links": {
-				"pdf_url": "https://doi.org/10.5210/spir.v2021i0.12212"
 			},
 			"is_preprint": false
 		}

@@ -1,87 +1,31 @@
-# Pre-Deployment Checklist
+# Website update and deployment checklist
 
-Before deploying to GitHub Pages, complete these steps:
+## Edit source content
 
-## ✅ Switch Mavo Storage to Production
+- Update academic content in `src/html/data/`; see README.md for each file's purpose.
+- Publications are rendered at build time from JSON. The site no longer uses Mavo login or browser-based GitHub storage.
+- Keep publication IDs stable: each generates `publications/<id>.html`. Existing query-string detail links redirect to these pages.
+- Use `publication_format` for labels such as `Poster` or `Extended abstract`, and `is_preprint` for preprint status.
+- Keep the web CV and `src/html/data/pdfs/Emelia-Hughes-CV.pdf` synchronized. Regenerate the PDF with `python3 scripts/build-cv.py` after installing ReportLab, and update `cvLastUpdated` only when both are ready.
 
-### Files to Update:
+## Build and preview
 
-- [ ] **src/html/index.html** - Change 4 mv-storage attributes (publications + preprints + news + travel)
-- [ ] **src/html/publications.html** - Change 4 mv-storage attributes (publications + preprints + workshop papers + doctoral consortium)
-- [ ] **src/html/preprint-details.html** - Change 1 mv-storage attribute (preprints)
-- [ ] **src/html/workshop-details.html** - Change 1 mv-storage attribute (workshop papers)
-- [ ] **src/html/doctoral-consortium-details.html** - Change 1 mv-storage attribute (doctoral consortium)
+- Run `npm ci` when dependencies need installation, then `npm run build` (Node.js 22 or later).
+- Preview `dist/` with `npm run dev`, or serve it with `python3 -m http.server 8765 --directory dist`.
+- Check Home, Publications, Research, About, Teaching, CV, and publication detail pages.
+- Test mobile and desktop layouts, menu navigation, keyboard focus, and dialog opening/closing.
+- Verify publication categories, citations, images, links, and the downloaded PDF.
+- Inspect the PDF visually after regeneration. Do not edit generated HTML in `dist/`.
 
-### Quick Find & Replace:
+## Deploy when authorized
 
-1. **Publications Storage:**
-   - Find: `mv-storage="data/publications.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/publications.json"`
+- Review the source diff and build output before committing.
+- Pushes to `master` trigger `.github/workflows/publish.yml`.
+- That workflow runs `npm ci` and `npm run build`, then publishes `dist/` to the `main` branch of `emeliahughes/emeliahughes.github.io`.
+- Deployment requires the configured `PERSONAL_TOKEN` repository secret.
 
-2. **Preprints Storage:**
-   - Find: `mv-storage="data/preprints.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/preprints.json"`
+## Verify after deployment
 
-3. **Workshop Papers Storage:**
-   - Find: `mv-storage="data/workshop-papers.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/workshop-papers.json"`
-
-4. **Doctoral Consortium Storage:**
-   - Find: `mv-storage="data/doctoral-consortium.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/doctoral-consortium.json"`
-
-5. **News Storage:**
-   - Find: `mv-storage="data/news.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/news.json"`
-
-6. **Travel Storage:**
-   - Find: `mv-storage="data/travel.json"`
-   - Replace: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/travel.json"`
-
-3. **Update Comments:**
-   - Change `LOCAL (currently active)` to `LOCAL`
-   - Change `PRODUCTION` to `PRODUCTION (currently active)`
-
-## ✅ Build & Test
-
-- [ ] Run production build (if you have one) or `npm run dev`
-- [ ] Verify all pages load correctly in the `dist/` folder
-- [ ] Check that all images are present
-- [ ] Test navigation links
-
-## ✅ Commit & Push
-
-- [ ] Stage changes: `git add .`
-- [ ] Commit: `git commit -m "Deploy: Switch to production Mavo storage"`
-- [ ] Push: `git push origin master`
-
-## ✅ Verify Live Site
-
-After deployment:
-- [ ] Visit your live site
-- [ ] Test Mavo login functionality
-- [ ] Try editing a news item or publication
-- [ ] Verify changes save to GitHub
-
----
-
-## To Switch Back to Local (after deployment):
-
-Just reverse the process:
-1. Find: `mv-storage="https://github.com/emeliahughes/personal-website/src/html/data/FILENAME.json"`
-2. Replace back to local paths:
-   - `mv-storage="data/publications.json"`
-   - `mv-storage="data/preprints.json"`
-   - `mv-storage="data/workshop-papers.json"`
-   - `mv-storage="data/doctoral-consortium.json"`
-   - `mv-storage="data/news.json"`
-   - `mv-storage="data/travel.json"`
-3. Update comment markers
-4. Rebuild
-
----
-
-**Current Status:** 🚀 PRODUCTION MODE (GitHub storage)
-
-**Last Updated:** October 7, 2025
-
+- Confirm the live site displays the new content and loads its assets.
+- Test existing publication URLs and the CV download.
+- Check mobile navigation, publication labels, and CV dates again on the deployed site.

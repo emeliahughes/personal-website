@@ -39,3 +39,9 @@ After editing data, rebuild (`npm run dev` or `npx gulp production`). Publicatio
 ### Deployment
 
 Pushes to `master` run `.github/workflows/publish.yml`, which executes `gulp production` and deploys `./dist` to GitHub Pages.
+
+### Publication labels and CV PDF
+
+Use `publication_format` for a publication's format (for example, `Poster` or `Extended abstract`) and `is_preprint` for its preprint status. The labels appear on publication cards and detail pages.
+
+The web CV and downloadable PDF share `resume.json`. After updating it, install the Python `reportlab` package if needed, run `python3 scripts/build-cv.py --updated "November 2026"` with the appropriate month and year, visually inspect the PDF, then set `cvLastUpdated` in `site.json` to that same date. The PDF stays at its existing download URL. See `DEPLOY_CHECKLIST.md` for preview and deployment checks.

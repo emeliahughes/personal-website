@@ -11,16 +11,15 @@
     "bluesky": null,
     "orcid": null,
     "cvPdf": "data/pdfs/Emelia-Hughes-CV.pdf",
-    "cvLastUpdated": "July 2026",
+    "cvLastUpdated": "November 2026",
     "affiliation": "University of Notre Dame",
     "headshot": "assets/images/headshot-v2.jpg",
     "socialPreviewImage": "assets/images/headshot-v2.jpg",
     "selectedPublicationIds": [
+        "ephemeral-feeds-and-enduring-rituals",
+        "echoes-in-the-algorithm",
         "viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms",
-        "echo-chambers-information-brokers-truth-social",
-        "examining-mainstream-news-media-narratives-youth-online-safety",
-        "rushtok-an-evaluation-of-event-based-communities-on-tiktok",
-        "misinformation-or-activism-mapping-networked-moral-panic-savethechildren"
+        "echo-chambers-information-brokers-truth-social"
     ],
     "homepageMetaDescription": "Emelia Hughes is a PhD Candidate in Computer Science and Engineering at the University of Notre Dame studying algorithmic feeds, online communities, platform visibility, identity, belonging, misinformation, and social computing."
 }

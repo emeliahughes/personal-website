@@ -335,3 +335,28 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f6feb; outline-offs
     font-size: 1.5em;
     line-height: 0.8;
 }
+
+/* Publication formats and review status use the same labels on cards and detail pages. */
+.pub-format { font-size: .75rem; font-weight: 600; }
+.pub-status { display: inline-block; margin-left: .4rem; padding: 2px 6px; border-radius: 4px; background: #6c757d; color: #fff; font-size: .7rem; }
+.publication-detail-page .markdown { white-space: pre-wrap; overflow-wrap: anywhere; }
+.cv-content .citation { overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+    .cv-content { padding-right: 24px !important; padding-left: 24px !important; }
+    .cv-content .cv-entry-date .item-date { text-align: left; font-size: .9rem; line-height: 1.5; margin-top: .5rem; margin-bottom: 0; }
+    .cv-content .category-item > .cv-entry-copy ul { margin-bottom: 0; }
+    .cv-content .publication-list { padding-left: 1.25rem; }
+    .cv-content .citation { padding-left: .25rem; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .research-program-heading { grid-template-columns: 1fr; gap: 1.5rem; }
+    .research-program-cards { grid-template-columns: 1fr; }
+    .research-theme-header { margin-left: 0; }
+    .research-theme-header h2 { white-space: normal; }
+}
+
+@media (max-width: 991px) {
+    .cv-content .cv-dated-group .item-date { text-align: left; font-size: 1rem; line-height: 1.5; margin-top: 0; margin-bottom: .5rem; }
+    .cv-content .cv-dated-group .cv-entry-copy ul { margin-bottom: 0; }
+}

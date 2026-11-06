@@ -47,6 +47,11 @@
 {% endmacro %}
 
 
+{% macro publication_metadata(paper) %}
+{% if paper.publication_format %}<span class="pub-format"> · {{ paper.publication_format }}</span>{% endif %}
+{% if paper.is_preprint %}<span class="pub-status">Preprint</span>{% endif %}
+{% endmacro %}
+
 {% macro publication_card(paper, show_preprint_badge=false) %}
 <article class="row publication-card">
     {% if paper.picture %}
@@ -74,9 +79,7 @@
             <span>{{ paper.year }}</span>
         </span>
         {% endif %}
-        {% if show_preprint_badge and paper.is_preprint %}
-        <span class="btn btn-xs" style="padding: 2px 6px; font-size: 11px; background-color: #6c757d; color: white; border-color: #6c757d; margin-left: 5px; border-radius: 4px;">Preprint</span>
-        {% endif %}
+        {{ publication_metadata(paper) }}
         {% if paper.award %}
         <span class="btn btn-xs btn-warning" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span>{{ paper.award }}</span></span>
         {% endif %}
@@ -110,6 +113,7 @@
         {% else %}
         <span>{{ paper.conference }} {{ paper.year }}</span>
         {% endif %}
+        {{ publication_metadata(paper) }}
         {% if paper.award %}
         <span class="btn btn-xs btn-warning" style="padding-top:2px; border-radius: 4px;"><img src="assets/images/icons/award.png" style="margin-bottom: 0px;width: 22px; height:22px;"> <span>{{ paper.award }}</span></span>
         {% endif %}

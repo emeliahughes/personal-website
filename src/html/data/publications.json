@@ -36,6 +36,40 @@
 				"video_url": "https://www.youtube.com/watch?v=VNYnKQ-PV74"
 			},
 			"picture": "data/images/Viblio Logo.png"
+		},
+		{
+			"picture": "data/images/save the children square.jpg",
+			"title": "Misinformation or Activism: Mapping Networked Moral Panic Through an Analysis of #SaveTheChildren",
+			"id": "misinformation-or-activism-mapping-networked-moral-panic-savethechildren",
+			"author": [
+				{
+					"author_name": "Rachel Elizabeth Moran"
+				},
+				{
+					"author_name": "Stephen Prochaska"
+				},
+				{
+					"author_name": "Isabelle Schlegel"
+				},
+				{
+					"author_name": "Emelia May Hughes"
+				},
+				{
+					"author_name": "Owen Prout"
+				}
+			],
+			"conference_full_name": "Association of Internet Researchers Selected Papers of Internet Research",
+			"conference": "AoIR SPIR",
+			"conference url": "https://doi.org/10.5210/spir.v2021i0.12212",
+			"year": "2021",
+			"short_abstract": "QAnon's co-optation of the #SaveTheChildren movement exemplifies networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories.",
+			"abstract": "When looking at the recent social-political history of America it is difficult to avoid references to QAnon, a widespread, conservative-leaning conspiracy that amalgamates numerous conspiracies into a single movement. Central to the movement's growth has been a moral panic around child sex trafficking that has served as a gateway for new adherents to become exposed to broader QAnon rhetoric. QAnon's co-optation of the #SaveTheChildren (#STC) movement exemplifies this networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram—paying particular attention to their motivations, tactics and desired outcomes—in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories. Research is drawn from an inductive thematic analysis of 1,400 Instagram posts related to the #SaveTheChildren movement across 2020. Analysis illuminates how the #SaveTheChildren movement is defined more as an identity based, social-political movement rooted in moral panic— rather than one focused on truly supporting human rights. Our analysis illuminates how networked moral panics— facilitated by the affordances and tactics of social media —can bring together disparate communities to spread misinformation under the guise of activism.",
+			"bibtex": "@article{Moran_Prochaska_Schlegel_Hughes_Prout_2021, title={MISINFORMATION OR ACTIVISM: MAPPING NETWORKED MORAL PANIC THROUGH AN ANALYSIS OF #SAVETHECHILDREN}, volume={2021}, url={https://spir.aoir.org/ojs/index.php/spir/article/view/12212}, DOI={10.5210/spir.v2021i0.12212}, abstractNote={When looking at the recent social-political history of America it is difficult to avoid references to QAnon, a widespread, conservative-leaning conspiracy that amalgamates numerous conspiracies into a single movement. Central to the movement's growth has been a moral panic around child sex trafficking that has served as a gateway for new adherents to become exposed to broader QAnon rhetoric. QAnon's co-optation of the #SaveTheChildren (#STC) movement exemplifies this networked moral panic and has played a major role in facilitating the spread of misinformation under a banner of moral authority. This paper explores the proponents of #SaveTheChildren on social media platform Instagram—paying particular attention to their motivations, tactics and desired outcomes—in order to explore how networked social movements build knowledge and organize in spaces that are vulnerable to the spread of misinformation and conspiracy theories. Research is drawn from an inductive thematic analysis of 1,400 Instagram posts related to the #SaveTheChildren movement across 2020. Analysis illuminates how the #SaveTheChildren movement is defined more as an identity based, social-political movement rooted in moral panic— rather than one focused on truly supporting human rights. Our analysis illuminates how networked moral panics— facilitated by the affordances and tactics of social media —can bring together disparate communities to spread misinformation under the guise of activism.}, journal={AoIR Selected Papers of Internet Research}, author={Moran, Rachel Elizabeth and Prochaska, Stephen and Schlegel, Isabelle and Hughes, Emelia May and Prout, Owen}, year={2021}, month={Sep.} }",
+			"links": {
+				"pdf_url": "https://doi.org/10.5210/spir.v2021i0.12212"
+			},
+			"is_preprint": false,
+			"publication_format": "Extended abstract"
 		}
 	]
 }

@@ -5,7 +5,7 @@
       "category-item": [[
         {
           "item-heading": "University of Notre Dame",
-          "item-role": "Ph.D. Student, Computer Science and Engineering",
+          "item-role": "Ph.D. Candidate, Computer Science and Engineering",
           "item-description": [
             "Advisor: Dr. Tim Weninger",
             "Remick Graduate Fellow",
@@ -78,23 +78,30 @@
           "publication-item-heading": "Peer-Reviewed Publications",
           "publication-list": [
             "<strong>Emelia May Hughes</strong>, Renee Wang, Prerna Juneja, Tony W. Li, Tanushree Mitra, and Amy X. Zhang. 2024. Viblio: Introducing Credibility Signals and Citations to Video-Sharing Platforms. Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI '24), Article 807, 1–20. https://doi.org/10.1145/3613904.3642490",
-            "Moran, R. E., Prochaska, S., Schlegel, I., <strong>Hughes, E. M.</strong>, & Prout, O. (2021). Misinformation or Activism: Mapping Networked Moral Panic Through an Analysis of #SaveTheChildren. AoIR Selected Papers of Internet Research. https://doi.org/10.5210/spir.v2021i0.12212"
+            "Moran, R. E., Prochaska, S., Schlegel, I., <strong>Hughes, E. M.</strong>, & Prout, O. (2021). Misinformation or Activism: Mapping Networked Moral Panic Through an Analysis of #SaveTheChildren. AoIR Selected Papers of Internet Research. https://doi.org/10.5210/spir.v2021i0.12212 Extended abstract."
           ]
         },
         {
-          "publication-item-heading": "Posters, Companion Papers, and Works in Progress",
+          "publication-item-heading": "Posters, Companion Papers, and Symposium Presentations",
           "publication-list": [
-            "<strong>Hughes, E. M.</strong>, & Weninger, T. (2025). Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse. CSCW Companion '25. https://doi.org/10.1145/3715070.3749241",
+            "<strong>Hughes, E. M.</strong>, & Weninger, T. (2025). Echo Chambers and Information Brokers on Truth Social: A Study of Network Dynamics and Political Discourse. CSCW Companion '25. https://doi.org/10.1145/3715070.3749241 Poster.",
             "Oguine, O. C., Anuyah, O., <strong>Hughes, E. M.</strong>, & Badillo-Urquiola, K. (2024). Examining Mainstream News Media Narratives on Youth Online Safety. CSCW Companion '24, 349–354. https://doi.org/10.1145/3678884.3681874",
             "<strong>Hughes, E. M.</strong>, Wang, R., Huang, A., Juneja, P., Mitra, T., & Zhang, A. X. (2022). Introducing Credibility Signals and Citations to Video-Sharing Platforms. University of Washington Undergraduate Research Symposium.",
             "<strong>Hughes, E. M.</strong> (2021). WikiUX: Introducing Credibility Signals and Citations to YouTube. University of Washington Undergraduate Research Symposium."
           ]
         },
         {
+          "publication-item-heading": "Preprints",
+          "publication-list": [
+            "<strong>Hughes, E.</strong>, & Weninger, T. (2026). Ephemeral Feeds and Enduring Rituals: RushTok and the Formation of Event-Based Algorithmic Communities. arXiv preprint. https://arxiv.org/abs/2609.09331",
+            "<strong>Hughes, E.</strong>, & Weninger, T. (2026). Echoes in the Algorithm: Analyzing the Fidelity of User Preferences Against Realized Platform Reach. arXiv preprint. https://arxiv.org/abs/2609.09365"
+          ]
+        },
+        {
           "publication-item-heading": "Doctoral Consortium and Workshop Papers",
           "publication-list": [
             "<strong>Hughes, E. M.</strong> (2024). #RushTok: An Evaluation of Event-Based Communities on TikTok. Association of Internet Researchers Doctoral Colloquium.",
-            "<strong>Hughes, E. M.</strong>, Wang, R., Juneja, P., Mitra, T., & Zhang, A. X. (2021). Introducing Credibility Signals and Citations to Video-Sharing Platforms. CSCW Workshop on Information Credibility & Alternative Realities in Troubled Democracies."
+            "<strong>Hughes, E. M.</strong>, Wang, R., Juneja, P., Mitra, T., & Zhang, A. X. (2021). Introducing Credibility Signals and Citations to Video-Sharing Platforms. ICWSM Workshop on Information Credibility & Alternative Realities in Troubled Democracies."
           ]
         },
         {
@@ -110,11 +117,15 @@
       "category-item": [[
         {
           "date-list": "2026",
-          "item-description": ["Notre Dame–IBM Technology Ethics Fellow"]
+          "item-description": [
+            "Notre Dame–IBM Technology Ethics Fellow"
+          ]
         },
         {
           "date-list": "2025",
-          "item-description": ["Graduate Justice Fellowship, Institute for Social Concerns, University of Notre Dame"]
+          "item-description": [
+            "Graduate Justice Fellowship, Institute for Social Concerns, University of Notre Dame"
+          ]
         },
         {
           "date-list": "2024",
@@ -125,7 +136,9 @@
         },
         {
           "date-list": "2023",
-          "item-description": ["Remick Graduate Fellowship in Engineering, University of Notre Dame"]
+          "item-description": [
+            "Remick Graduate Fellowship in Engineering, University of Notre Dame"
+          ]
         },
         {
           "date-list": "2022",
@@ -144,7 +157,15 @@
         },
         {
           "date-list": "2020",
-          "item-description": ["RoboMaster Second Prize, Open Source Award"]
+          "item-description": [
+            "RoboMaster Second Prize, Open Source Award"
+          ]
+        },
+        {
+          "date-list": "2019",
+          "item-description": [
+            "RoboMaster, Shenzhen, China: Second Prize, International Regionals; Outstanding PR Manager Award; Third Prize, Hero Remote Firing; Most Aesthetic Robots; Outstanding Award A Level, Open Source Award"
+          ]
         }
       ]]
     },
@@ -154,7 +175,9 @@
         {
           "item-heading": "Conference Reviewer",
           "item-role": "CSCW, CHI, and ICWSM",
-          "item-description": ["CSCW 2025; CHI 2026; ICWSM 2025 and 2026"],
+          "item-description": [
+            "CSCW 2025; CHI 2026; ICWSM 2025 and 2026"
+          ],
           "item-date": "2025 - 2026"
         },
         {
@@ -169,7 +192,9 @@
         {
           "item-heading": "501(c)(3) Supporting Advanced Robotics at the University of Washington",
           "item-role": "President of the Board",
-          "item-description": ["Provide nonprofit governance and organizational support for ARUW"],
+          "item-description": [
+            "Provide nonprofit governance and organizational support for ARUW"
+          ],
           "item-date": "2023 - present"
         },
         {
@@ -185,7 +210,9 @@
         {
           "item-heading": "Advanced Robotics at the University of Washington",
           "item-role": "Vice President",
-          "item-description": ["Supported project management, sponsorship, and coordination across design, build, and competition cycles"],
+          "item-description": [
+            "Supported project management, sponsorship, and coordination across design, build, and competition cycles"
+          ],
           "item-date": "2019 - 2021"
         }
       ]]
@@ -198,7 +225,8 @@
           "item-role": "Instructor of Record, University of Notre Dame ESTEEM Master's Program",
           "item-description": [
             "Designed and developed a graduate course on generative AI, prompt design, ethics, and AI product development",
-            "Created course materials, assignments, readings, discussions, and project structure"
+            "Created course materials, assignments, readings, discussions, and project structure",
+            "Led class discussions on AI ethics, bias, labor, and responsible use of generative systems"
           ],
           "item-date": "Fall 2025; Fall 2026"
         },
@@ -214,26 +242,52 @@
         {
           "item-heading": "Human Computer Interaction (CSE 40424)",
           "item-role": "Teaching Assistant, University of Notre Dame",
-          "item-description": ["Instructor: Annalisa Szymanski", "Supported grading, office hours, assignment design, and student project mentorship"],
+          "item-description": [
+            "Instructor: Annalisa Szymanski",
+            "Supported grading, office hours, assignment design, and student project mentorship"
+          ],
           "item-date": "Spring 2025"
         },
         {
           "item-heading": "Database Concepts (CSE 30246)",
           "item-role": "Teaching Assistant, University of Notre Dame",
-          "item-description": ["Instructor: Dr. Tim Weninger", "Supported grading, office hours, and individual student support across two semesters"],
+          "item-description": [
+            "Instructor: Dr. Tim Weninger",
+            "Supported grading, office hours, and individual student support across two semesters"
+          ],
           "item-date": "Fall 2023; Fall 2024"
         },
         {
           "item-heading": "Forest Ridge School",
           "item-role": "Long-Term Substitute Teacher",
-          "item-description": ["Taught Calculus II and designed a new Web Development curriculum after taking over both courses mid-year"],
+          "item-description": [
+            "Taught Calculus II and designed a new Web Development curriculum after taking over both courses mid-year"
+          ],
           "item-date": "Mar 2023 - Jun 2023"
         },
         {
           "item-heading": "St. Catherine of Siena School",
           "item-role": "Robotics Teacher",
-          "item-description": ["Designed and taught a middle-school robotics elective using LEGO Mindstorms"],
+          "item-description": [
+            "Designed and taught a middle-school robotics elective using LEGO Mindstorms"
+          ],
           "item-date": "Sep 2022 - Jun 2023"
+        },
+        {
+          "item-heading": "St. Catherine of Siena School",
+          "item-role": "Extended Care Program Assistant",
+          "item-date": "Sep 2022 - Jun 2023",
+          "item-description": [
+            "Worked alongside the program director to run the after-school care program for kindergarten through eighth grade"
+          ]
+        },
+        {
+          "item-heading": "Private & Grade Potential Tutoring",
+          "item-role": "Tutor",
+          "item-date": "2016 - 2023",
+          "item-description": [
+            "Developed individual learning plans in mathematics (algebra through calculus), physics, chemistry, SAT/ACT preparation, English, and writing"
+          ]
         }
       ]]
     },
@@ -242,11 +296,15 @@
       "category-item": [[
         {
           "date-list": "2025",
-          "item-description": ["Event volunteer and livestream host, RoboMaster North America Competition, San Diego"]
+          "item-description": [
+            "Event volunteer and livestream host, RoboMaster North America Competition, San Diego"
+          ]
         },
         {
           "date-list": "2024",
-          "item-description": ["Event volunteer and livestream host, RoboMaster North America Competition, Boulder"]
+          "item-description": [
+            "Event volunteer and livestream host, RoboMaster North America Competition, Boulder"
+          ]
         },
         {
           "date-list": "2021 - 2022",
@@ -261,6 +319,13 @@
           "item-description": [
             "Organizer and volunteer for ARUW Dawg Daze, Engineering Discovery Days, Giving Day, and STEM outreach",
             "Volunteer English streaming host, RoboMaster 2019"
+          ]
+        },
+        {
+          "date-list": "2019 - 2022",
+          "item-description": [
+            "ARUW: Admitted Student Preview volunteer (2022); Mechanical Engineering and Electrical Engineering orientation speaker and volunteer (2020, 2022); School of Engineering Kick-off volunteer (2020-2022)",
+            "ARUW: Dawg Daze organizer (2019-2021); Giving Day and Engineering Discovery Days volunteer (2019); Sammamish High School STEM Fair volunteer (2019)"
           ]
         }
       ]]

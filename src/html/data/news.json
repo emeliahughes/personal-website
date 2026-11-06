@@ -1,6 +1,16 @@
 {
 	"news-item": [
 		{
+			"date": "August 2026",
+			"text": "Returned as instructor of record for Current State and Future of Generative AI (ESTM 60244) in Notre Dame’s ESTEEM master’s program.",
+			"url": "teaching.html"
+		},
+		{
+			"date": "June 2026",
+			"text": "Featured in Notre Dame’s ReSearching for the Common Good series, discussing platforms, visibility, and online belonging.",
+			"url": "https://graduateschool.nd.edu/news/researching-for-the-common-good-emelia-hughes/"
+		},
+		{
 			"date": "May 2026",
 			"text": "Completed my PhD candidacy exam, presenting a dissertation program on how algorithmically curated platforms shape communities, visibility, and belonging."
 		},
@@ -15,6 +25,11 @@
 			"url": "https://www.jbs.cam.ac.uk/2026/cambridge-disinformation-summit-focuses-on-downstream-harm/"
 		},
 		{
+			"date": "February 2026",
+			"text": "Featured in an ESTEEM faculty spotlight on research, teaching, and the role of my art background.",
+			"url": "https://esteem.nd.edu/news/faculty-spotlight-emelia-hughes/"
+		},
+		{
 			"date": "January 2026",
 			"text": "Began teaching Elements of Computing I (CSE 10101) as instructor of record at the University of Notre Dame.",
 			"url": "https://catalog.nd.edu/undergraduate/courses/cse/"
@@ -26,7 +41,7 @@
 		},
 		{
 			"date": "August 2025",
-			"text": "Began teaching Current State and Future of Generative AI (ESTEEM 60244-01), a graduate course exploring AI foundations, ethics, and innovation."
+			"text": "Began teaching Current State and Future of Generative AI (ESTM 60244), a graduate course exploring AI foundations, ethics, and innovation."
 		},
 		{
 			"date": "July 2025",
