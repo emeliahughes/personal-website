@@ -16,6 +16,7 @@
 - Test mobile and desktop layouts, menu navigation, keyboard focus, and dialog opening/closing.
 - Verify publication categories, citations, images, links, and the downloaded PDF.
 - Inspect the PDF visually after regeneration. Do not edit generated HTML in `dist/`.
+- Run `npm run test:discovery`; verify the generated sitemap, citation metadata, and paper exports. See RESEARCH_DISCOVERABILITY.md for summary provenance and evidence gaps.
 
 ## Deploy when authorized
 
@@ -28,4 +29,5 @@
 
 - Confirm the live site displays the new content and loads its assets.
 - Test existing publication URLs and the CV download.
+- Fetch `/robots.txt`, `/sitemap.xml`, `/llms.txt`, `/research-index.json`, and a paper’s `.md`, `.json`, and `.bib` files. Submit the sitemap through Search Console when available.
 - Check mobile navigation, publication labels, and CV dates again on the deployed site.

@@ -13,6 +13,7 @@ const $ = require( 'gulp-load-plugins' )();
 
 const pkg = require( './package.json' );
 const { loadSiteData, getAllPapers, registerNunjucksFilters, formatAuthors } = require( './scripts/site-data' );
+const { writeDiscoveryFiles, scholarlySchema, citationTags, safeJson } = require( './scripts/research-discovery' );
 
 const assetVersion = ( process.env.GITHUB_SHA || pkg.version ).slice( 0, 12 );
 
@@ -66,6 +67,7 @@ function getTemplateData( file ) {
     const data = loadSiteData();
     data.file = file;
     data.filename = path.basename( file.path );
+    data.noindex = [ 'pub-details.html', 'preprint-details.html', 'workshop-details.html', 'doctoral-consortium-details.html' ].includes( data.filename );
 
     data.isActiveMenuItem = function ( navFile, item, filename ) {
         if ( navFile === filename || ( item.sub && item.sub[filename] ) ) {
@@ -125,10 +127,17 @@ gulp.task( 'publication-pages', ( cb ) => {
 
     const outDir = path.join( gulpConfig.variables.dist, 'publications' );
     fs.mkdirSync( outDir, { recursive: true } );
+    const currentIds = new Set( papers.map( ( paper ) => paper.id ) );
+    for ( const filename of fs.readdirSync( outDir ) ) {
+        if ( filename.endsWith( '.html' ) && !currentIds.has( filename.slice( 0, -5 ) ) ) fs.unlinkSync( path.join( outDir, filename ) );
+    }
 
     papers.forEach( ( paper ) => {
         const data = getTemplateData( { path: path.join( outDir, `${ paper.id }.html` ) } );
         data.paper = paper;
+        data.researchRecord = data.researchRecords.find( ( record ) => record.id === paper.id );
+        data.scholarlyJson = safeJson( scholarlySchema( data.researchRecord, data.site ) );
+        data.citationTags = citationTags( data.researchRecord );
         data.page_title = paper.title;
         data.meta_description = paper.short_abstract || paper.abstract || `${ paper.title } — ${ formatAuthors( paper.author ) }`;
         data.canonical_path = `publications/${ paper.id }.html`;
@@ -136,6 +145,12 @@ gulp.task( 'publication-pages', ( cb ) => {
         fs.writeFileSync( path.join( outDir, `${ paper.id }.html` ), html );
     } );
 
+    cb();
+} );
+
+
+gulp.task( 'research-discovery', ( cb ) => {
+    writeDiscoveryFiles( loadSiteData(), gulpConfig.variables.dist );
     cb();
 } );
 
@@ -240,7 +255,7 @@ gulp.task( 'version-images', () => gulp.src( `${ gulpConfig.variables.dist }/**/
  * Default Task
  */
 gulp.task( 'default', ( cb ) => {
-    gulp.series( 'clean', 'images', 'html', 'publication-pages', 'css', 'js', 'static', 'watch' )( cb );
+    gulp.series( 'clean', 'images', 'html', 'publication-pages', 'css', 'js', 'static', 'research-discovery', 'watch' )( cb );
 } );
 
 
@@ -249,7 +264,7 @@ gulp.task( 'default', ( cb ) => {
  */
 gulp.task( 'production', ( cb ) => {
     process.env.NODE_ENV = process.env.NODE_ENV || 'production';
-    gulp.series( 'clean', 'html', 'publication-pages', 'css', 'js', 'static', 'images', 'version-images' )( cb );
+    gulp.series( 'clean', 'html', 'publication-pages', 'css', 'js', 'static', 'images', 'version-images', 'research-discovery' )( cb );
 } );
 
 
@@ -257,7 +272,14 @@ gulp.task( 'production', ( cb ) => {
  * Watch Task
  */
 gulp.task( 'watch', gulp.parallel( 'browserSyncTask', () => {
+    $.watch( 'scripts/{site-data,research-discovery}.js', () => {
+        // Build helpers are loaded at startup; restart dev mode after helper changes.
+        console.log( 'Research build helpers changed; restart npm run dev to reload them.' );
+    } );
     gulpConfig.watch.forEach( ( item ) => {
-        $.watch( item.from, gulp.series( item.task ) );
+        const tasks = item.task === 'html'
+            ? [ 'html', 'publication-pages', 'research-discovery' ]
+            : ( item.task === 'static' ? [ 'static', 'research-discovery' ] : [ item.task ] );
+        $.watch( item.from, gulp.series( ...tasks ) );
     } );
 } ) );

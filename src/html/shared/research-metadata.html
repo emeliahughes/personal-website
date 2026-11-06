@@ -1,0 +1,10 @@
+{% if filename == 'index.html' %}
+<script type="application/ld+json">{{ personJson | safe }}</script>
+{% endif %}
+{% if researchRecord %}
+{% for tag in citationTags %}<meta name="{{ tag.name | escape }}" content="{{ tag.content | escape }}">
+{% endfor %}<script type="application/ld+json">{{ scholarlyJson | safe }}</script>
+<link rel="alternate" type="text/markdown" href="{{ researchRecord.exports.markdown | escape }}">
+<link rel="alternate" type="application/json" href="{{ researchRecord.exports.json | escape }}">
+<link rel="alternate" type="application/x-bibtex" title="BibTeX citation" href="{{ researchRecord.exports.bibtex | escape }}">
+{% endif %}

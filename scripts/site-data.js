@@ -1,5 +1,6 @@
 const fs = require( 'fs' );
 const path = require( 'path' );
+const { normalizeResearch, personSchema, safeJson } = require( './research-discovery' );
 
 const DATA_DIR = path.join( __dirname, '../src/html/data' );
 
@@ -76,6 +77,7 @@ function loadSiteData() {
     const research = loadJson( 'research.json' );
     const teaching = loadJson( 'teaching.json' );
     const publications = getPublicationSections();
+    const researchRecords = normalizeResearch( publications.all, site, research, loadJson( 'research-summaries.json' ) );
 
     return {
         ...global,
@@ -86,6 +88,8 @@ function loadSiteData() {
         research,
         teaching,
         publications,
+        researchRecords,
+        personJson: safeJson( personSchema( site ) ),
         allPapers: publications.all,
         formatAuthors,
         getConferenceUrl,

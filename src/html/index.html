@@ -9,9 +9,7 @@
 {% extends 'layouts/layout-1.html' %}
 {% from 'macros/publications.html' import publication_card %}
 
-{% block head %}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"{{ site.name }}","url":"{{ site.url }}","image":"{{ site.url }}/{{ site.headshot }}","email":"mailto:{{ site.emailAcademic }}","jobTitle":"PhD Candidate in Computer Science and Engineering","affiliation":{"@type":"CollegeOrUniversity","name":"{{ site.affiliation }}"},"sameAs":["{{ site.googleScholar }}","{{ site.linkedin }}"]}</script>
-{% endblock %}
+
 
 {% block content %}
 <main id="main-content">

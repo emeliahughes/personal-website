@@ -22,6 +22,9 @@
 
     <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ site.homepageMetaDescription }}{% endif %}">
     <meta name="author" content="{{ site.name }}">
+    {% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
+    <link rel="describedby" href="{{ site.url }}/llms.txt">
+    <link rel="alternate" type="application/json" title="Research catalog" href="{{ site.url }}/research-index.json">
     {% if canonical_path %}
     <link rel="canonical" href="{{ site.url }}/{{ canonical_path }}">
     {% elif canonical_url %}
@@ -61,5 +64,5 @@
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-    {% block head %}{% endblock %}
+    {% include "shared/research-metadata.html" %}
 </head>

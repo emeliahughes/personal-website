@@ -14,7 +14,8 @@
         "css-lint": "stylelint --custom-syntax postcss-scss \"src/css/**/*.scss\"",
         "css-lint-fix": "stylelint --fix --custom-syntax postcss-scss \"src/css/**/*.scss\"",
         "js-lint": "eslint src/js/",
-        "js-lint-fix": "eslint --fix src/js/"
+        "js-lint-fix": "eslint --fix src/js/",
+        "test:discovery": "node --test scripts/research-discovery.test.js"
     },
     "gulp_config": {
         "variables": {

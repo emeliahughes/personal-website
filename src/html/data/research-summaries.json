@@ -1,0 +1,471 @@
+{
+    "schemaVersion": 1,
+    "papers": {
+        "viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms": {
+            "topics": [
+                "YouTube",
+                "credibility signals",
+                "video citations",
+                "contextual inquiry",
+                "misinformation"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://arxiv.org/html/2402.17218v1",
+                    "version": "arXiv:2402.17218v1; author manuscript of CHI 2024 paper"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "How do viewers assess YouTube credibility, and how can citations support that assessment?",
+                    "sourceId": "paper",
+                    "locator": "Sections 1 and 3"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "Twelve contextual-inquiry interviews informed a citation prototype, followed by a reflective evaluation with twelve participants.",
+                    "sourceId": "paper",
+                    "locator": "Sections 3.1 and 5.1"
+                }
+            ],
+            "findings": [
+                {
+                    "text": "Participants combined channel information, production quality, and prior knowledge, but encountered weaknesses in existing signals.",
+                    "sourceId": "paper",
+                    "locator": "Section 3.2"
+                },
+                {
+                    "text": "Evaluation participants found the prototype useful and intuitive for assessing credibility.",
+                    "sourceId": "paper",
+                    "locator": "Abstract and Section 5.2"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "A viewer-facing prototype links supporting, refuting, and contextual sources to specific moments in videos.",
+                    "sourceId": "paper",
+                    "locator": "Section 4"
+                }
+            ],
+            "limitations": [
+                {
+                    "text": "Large-scale adoption and defenses against malicious or low-quality citations remain untested directions for future work.",
+                    "sourceId": "paper",
+                    "locator": "Sections 6.2 and 7"
+                }
+            ],
+            "doi": "10.1145/3613904.3642490",
+            "arxivId": "2402.17218",
+            "relatedPaperIds": [
+                "introducing-credibility-signals-and-citations-to-video-sharing-platforms",
+                "examining-mainstream-news-media-narratives-youth-online-safety"
+            ]
+        },
+        "echo-chambers-information-brokers-truth-social": {
+            "topics": [
+                "Truth Social",
+                "network analysis",
+                "information brokers",
+                "political events",
+                "echo chambers"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://arxiv.org/html/2509.08676v2",
+                    "version": "arXiv:2509.08676v2, revised September 11, 2026; author version of CSCW Companion 2025 poster"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "How does the structure of Truth Social interactions shift around major political events?",
+                    "sourceId": "paper",
+                    "locator": "Section 1"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "Re-truth network analysis examines centrality and community structure around the Roe v. Wade decision and the Mar-a-Lago search.",
+                    "sourceId": "paper",
+                    "locator": "Sections 2 and 3"
+                }
+            ],
+            "findings": [
+                {
+                    "text": "A small set of highly central accounts shapes attention, while bridging accounts connect otherwise separated regions.",
+                    "sourceId": "paper",
+                    "locator": "Section 3.1.1"
+                },
+                {
+                    "text": "Both events coincide with temporary consolidation followed by fragmentation; their trajectories differ.",
+                    "sourceId": "paper",
+                    "locator": "Sections 3.2, 3.3, and 4.3"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "A cyclical account connects event-driven consolidation, influencer prominence, and recurring fragmentation.",
+                    "sourceId": "paper",
+                    "locator": "Section 4.3"
+                }
+            ],
+            "limitations": [
+                {
+                    "text": "The sample favors active accounts; incomplete follower access limits reconstruction. Reposts do not establish user intent, and the study does not test the ranking algorithm.",
+                    "sourceId": "paper",
+                    "locator": "Sections 2.2, 4.4, and 4.5"
+                }
+            ],
+            "doi": "10.1145/3715070.3749241",
+            "arxivId": "2509.08676",
+            "relatedPaperIds": [
+                "misinformation-or-activism-mapping-networked-moral-panic-savethechildren"
+            ]
+        },
+        "ephemeral-feeds-and-enduring-rituals": {
+            "topics": [
+                "RushTok",
+                "TikTok",
+                "event-based algorithmic communities",
+                "belonging",
+                "parasocial attention"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://arxiv.org/html/2609.09331",
+                    "version": "arXiv:2609.09331v1, September 8, 2026"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "Who participates in RushTok, how do they relate to its community, and what stakes accompany visibility?",
+                    "sourceId": "paper",
+                    "locator": "Section 1"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "A mixed-methods survey of 71 respondents is combined with a reflexive account of unsuccessful creator recruitment.",
+                    "sourceId": "paper",
+                    "locator": "Sections 3.1-3.3"
+                }
+            ],
+            "findings": [
+                {
+                    "text": "Many respondents recognized a community (51/71), but only 11/71 identified as members.",
+                    "sourceId": "paper",
+                    "locator": "Abstract and Section 4.1.3"
+                },
+                {
+                    "text": "Creator-centered attention and entertainment support participation without necessarily producing membership.",
+                    "sourceId": "paper",
+                    "locator": "Sections 4.1.2-4.1.4"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "RushTok illustrates a community assembled around an offline ritual and sustained through recommendation.",
+                    "sourceId": "paper",
+                    "locator": "Sections 1 and 5"
+                }
+            ],
+            "limitations": [
+                {
+                    "text": "Convenience recruitment, self-report, a predominantly female audience sample, and no completed creator interviews limit generalization and triangulation.",
+                    "sourceId": "paper",
+                    "locator": "Sections 3.3 and 3.4"
+                }
+            ],
+            "arxivId": "2609.09331",
+            "relatedPaperIds": [
+                "rushtok-an-evaluation-of-event-based-communities-on-tiktok",
+                "echoes-in-the-algorithm"
+            ]
+        },
+        "echoes-in-the-algorithm": {
+            "topics": [
+                "TikTok",
+                "TokOrNot",
+                "platform reach",
+                "popularity cues",
+                "preference",
+                "algorithmic literacy"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://arxiv.org/html/2609.09365v1",
+                    "version": "arXiv:2609.09365v1, September 8, 2026; preprint"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "How accurately do people infer relative TikTok reach without metrics, and how do those judgments align with preference?",
+                    "sourceId": "paper",
+                    "locator": "Section 1, RQ1-RQ4"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "TokOrNot elicited 3,513 paired-video judgments from 363 U.S. adults, benchmarked against verified public view counts.",
+                    "sourceId": "paper",
+                    "locator": "Section 3"
+                }
+            ],
+            "findings": [
+                {
+                    "text": "Higher-reach identification was 56.75% (95% CI 56.01-58.55); preference and prediction matched in 83.48% of trials (95% CI 83.12-85.95).",
+                    "sourceId": "paper",
+                    "locator": "Abstract and Section 4.1"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "An empirical benchmark examines judgments of observable reach under hidden metrics rather than the recommender itself.",
+                    "sourceId": "paper",
+                    "locator": "Sections 1 and 5.1"
+                }
+            ],
+            "limitations": [
+                {
+                    "text": "Fixed preference-first question order may anchor reach judgments. View counts are a bounded reach proxy; the task and older adult sample do not represent everyday TikTok use in full.",
+                    "sourceId": "paper",
+                    "locator": "Section 5.3"
+                }
+            ],
+            "arxivId": "2609.09365",
+            "relatedPaperIds": [
+                "ephemeral-feeds-and-enduring-rituals"
+            ]
+        },
+        "misinformation-or-activism-mapping-networked-moral-panic-savethechildren": {
+            "topics": [
+                "Instagram",
+                "QAnon",
+                "SaveTheChildren",
+                "networked moral panic",
+                "misinformation",
+                "activism"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://spir.aoir.org/ojs/index.php/spir/article/download/12212/10363",
+                    "version": "AoIR Selected Papers of Internet Research 2021, extended abstract"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "Who posts under #SaveTheChildren, what tactics do they use, and which motivations and actions do they advocate?",
+                    "sourceId": "paper",
+                    "locator": "Page 2, RQ1-RQ3"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "Five researchers iteratively coded 1,400 Instagram posts collected across four hashtags during 2020.",
+                    "sourceId": "paper",
+                    "locator": "Page 2, methods paragraph"
+                }
+            ],
+            "findings": [
+                {
+                    "text": "Accounts used differing visual and rhetorical strategies to circulate conspiracy narratives under a child-protection frame.",
+                    "sourceId": "paper",
+                    "locator": "Pages 2-3, account-level and content-level analyses"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "The case connects identity, moral authority, and misinformation within networked moral panic.",
+                    "sourceId": "paper",
+                    "locator": "Pages 1-3"
+                }
+            ],
+            "doi": "10.5210/spir.v2021i0.12212",
+            "coverageNote": "This is an extended abstract about hashtag-selected Instagram posts in 2020. No separate author-stated limitations section was identified.",
+            "relatedPaperIds": [
+                "echo-chambers-information-brokers-truth-social"
+            ]
+        },
+        "examining-mainstream-news-media-narratives-youth-online-safety": {
+            "topics": [
+                "youth online safety",
+                "news media",
+                "risk narratives",
+                "youth perspectives",
+                "platform governance"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://doi.org/10.1145/3678884.3681874",
+                    "version": "CSCW Companion 2024 published paper, pp. 349-354; verified against author-supplied six-page PDF"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "What youth online-safety narratives appear in mainstream news, and how do they compare with academic research?",
+                    "sourceId": "paper",
+                    "locator": "Sections 1 and 5, printed pp. 349-350 and 353"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "A PRISMA-guided review screened 306 articles to 157 textual articles from selected U.S. mainstream outlets (2020-2024); researchers used deductive thematic analysis and consensus coding.",
+                    "sourceId": "paper",
+                    "locator": "Sections 3.1-3.4 and Table 1, printed pp. 350-351"
+                }
+            ],
+            "findings": [
+                {
+                    "text": "The corpus emphasizes negative risk experiences and mental-health concerns rather than positive online experiences.",
+                    "sourceId": "paper",
+                    "locator": "Section 4.1, printed pp. 351-352"
+                },
+                {
+                    "text": "Parental control and legislative restrictions dominate suggested interventions, with minimal youth participation.",
+                    "sourceId": "paper",
+                    "locator": "Section 4.2, printed p. 352"
+                },
+                {
+                    "text": "Adult stakeholders dominate quoted perspectives; direct youth input is rare.",
+                    "sourceId": "paper",
+                    "locator": "Section 4.3, printed pp. 352-353"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "Comparison with academic research motivates youth participation, digital literacy, and developmentally appropriate parental mediation as recommendations, not experimentally tested interventions.",
+                    "sourceId": "paper",
+                    "locator": "Sections 5-5.1, printed pp. 353-354"
+                }
+            ],
+            "doi": "10.1145/3678884.3681874",
+            "coverageNote": "Verified against the full paper supplied by the author. No separate limitations section is present; the scope note describes the reported study design rather than an author-stated limitations list.",
+            "relatedPaperIds": [
+                "viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms"
+            ],
+            "limitations": [
+                {
+                    "text": "Scope of evidence: the selected textual news corpus is not a direct study of youth experiences or a causal test of media effects.",
+                    "sourceId": "paper",
+                    "locator": "Sections 3.1-3.4 and 6, printed pp. 350-351 and 354"
+                }
+            ]
+        },
+        "introducing-credibility-signals-and-citations-to-video-sharing-platforms": {
+            "topics": [
+                "YouTube",
+                "credibility signals",
+                "video citations",
+                "interface design",
+                "misinformation"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://www.zive.info/info-credibility-workshop/papers/IntroductingCredibilitySignalsYouTube.pdf",
+                    "version": "ICWSM 2021 workshop paper"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "How should credibility information be presented on YouTube search and playback pages?",
+                    "sourceId": "paper",
+                    "locator": "Pages 1-2, Introduction and Study Overview"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "Initial interviews inform designs for credibility signals and time-linked citations, with further studies proposed.",
+                    "sourceId": "paper",
+                    "locator": "Pages 1-3"
+                }
+            ],
+            "findings": [
+                {
+                    "text": "Initial interviews indicate that video intent and context shape how people would use credibility signals.",
+                    "sourceId": "paper",
+                    "locator": "Page 1, Abstract"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "Early interface proposals explore third-party information and citations within YouTube.",
+                    "sourceId": "paper",
+                    "locator": "Pages 2-3, Study Overview"
+                }
+            ],
+            "limitations": [
+                {
+                    "text": "The survey and extension deployment are planned work in this paper, not completed evaluations.",
+                    "sourceId": "paper",
+                    "locator": "Pages 1-3, Abstract and Methods"
+                }
+            ],
+            "relatedPaperIds": [
+                "viblio-introducing-credibility-signals-and-citations-to-video-sharing-platforms"
+            ]
+        },
+        "rushtok-an-evaluation-of-event-based-communities-on-tiktok": {
+            "topics": [
+                "RushTok",
+                "TikTok",
+                "algorithmic identity",
+                "event-based communities",
+                "doctoral colloquium"
+            ],
+            "sources": [
+                {
+                    "id": "paper",
+                    "url": "https://emeliahughes.com/data/pdfs/AoIR_Doctoral_Colloquium.pdf",
+                    "version": "Local doctoral colloquium research statement; cataloged for AoIR 2024"
+                }
+            ],
+            "summaryType": "Editorial paraphrases with source locators; not quotations.",
+            "questions": [
+                {
+                    "text": "How do event-based TikTok communities form, and how do creators and viewers understand participation?",
+                    "sourceId": "paper",
+                    "locator": "Pages 1-3, Research Summary"
+                }
+            ],
+            "methods": [
+                {
+                    "text": "The statement describes ongoing qualitative content coding and proposes creator interviews and a viewer survey.",
+                    "sourceId": "paper",
+                    "locator": "Pages 2-3, Research Summary"
+                }
+            ],
+            "contributions": [
+                {
+                    "text": "An early research agenda uses RushTok to study algorithmically assembled, event-based communities.",
+                    "sourceId": "paper",
+                    "locator": "Pages 1-3, Research Summary"
+                }
+            ],
+            "limitations": [
+                {
+                    "text": "This statement proposes future studies and does not report the completed 2026 survey findings.",
+                    "sourceId": "paper",
+                    "locator": "Pages 2-3, Research Summary"
+                }
+            ],
+            "coverageNote": "Research proposal summary, not a report of completed empirical findings.",
+            "relatedPaperIds": [
+                "ephemeral-feeds-and-enduring-rituals"
+            ]
+        }
+    }
+}
